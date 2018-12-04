@@ -13,7 +13,7 @@ class BottomHelper extends Component {
                         <h2 className="block-callask__title">Остались вопросы?</h2>
                         <h2 className="block-callask__title">Мы ответим!</h2>
                         <div className="block-callask__buttons">
-                            <ToggleQuestionPopup targetID="question"><a className="block-callask__button">Задать вопрос</a></ToggleQuestionPopup>
+                            <ToggleQuestionPopup targetID="question"><a className="block-callask__button">Задай вопрос</a></ToggleQuestionPopup>
                             <ToggleCallPopup targetID="call_me_bottom"><a className="block-callask__button">Заказать звонок</a></ToggleCallPopup>
                         </div>
                     </div>
