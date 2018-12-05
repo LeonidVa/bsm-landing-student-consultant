@@ -38,7 +38,7 @@ const page = () => (
 
 
             <section className="block-text">
-                <h1 className="block-text__title">Цена вашей работы</h1>
+                <span className="block-text__title__h2">Цена вашей работы</span>
                 <p className="block-text__par">
                     Ваша работа индивидуальна, она пишется преподавателем только для вас!
                 </p>
@@ -271,7 +271,7 @@ const page = () => (
             <FormOrder/>
 
             <section className="block-text">
-                <h1 className="block-text__title">У разных работ – разная стоимость</h1>
+                <span className="block-text__title__h2">У разных работ – разная стоимость</span>
                 <p className="block-text__par">
                     Стоимость заказа зависит от нескольких объективных факторов:
                 </p>
