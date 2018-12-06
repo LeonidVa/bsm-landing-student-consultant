@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import React, {Component} from 'react';
 
-import Wrapper from 'components/Wrapper';
+import Wrapper from 'components/Wrapper/indexH2';
 import NavRow from 'components/common/NavRow';
 
 import ImageBlock from 'components/common/ImageBlock'
@@ -22,7 +22,7 @@ import dopy from 'data/dopraboty'
 import MessBlock from "components/common/MessBlock";
 import infoBlockConfig from "data/infoBlock/diplom";
 import InfoBlock from "components/common/InfoBlock";
-import CurrentOffer from "components/content/offers/CurrentOffer";
+import CurrentOfferH2 from "components/content/offers/CurrentOfferH2";
 import MagisDisAnother from "components/common/ServiceBlock/ready-made/MagisDisAnother";
 
 
@@ -106,7 +106,7 @@ const page = () => (
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
-      <CurrentOffer/>
+      <CurrentOfferH2/>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

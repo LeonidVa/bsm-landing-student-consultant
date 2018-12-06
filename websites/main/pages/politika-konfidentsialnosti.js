@@ -1,4 +1,4 @@
-import Wrapper from 'components/Wrapper';
+import Wrapper from 'components/Wrapper/indexH2';
 import Title from 'components/common/Title';
 import Link from 'next/link';
 import FormOrder from 'components/common/forms/Big/Order';

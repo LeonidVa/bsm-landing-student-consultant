@@ -14,7 +14,7 @@ import FormEstimate from "components/common/forms/Big/Estimate";
 import InfoBlock from "components/common/InfoBlock";
 import infoBlockConfig from "data/infoBlock/diplom";
 
-import CurrentOffer from "components/content/offers/CurrentOffer";
+import CurrentOfferH2 from "components/content/offers/CurrentOfferH2";
 
 import reviewBlockConfig from "data/reviewBlockConfig";
 import ReviewBlockSlider from "components/common/ReviewBlockSlider";
@@ -123,7 +123,7 @@ const page = () => (
 
             <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
-            <CurrentOffer/>
+            <CurrentOfferH2/>
 
             <section className="block-text">
                 <h2 className="block-text__title">
