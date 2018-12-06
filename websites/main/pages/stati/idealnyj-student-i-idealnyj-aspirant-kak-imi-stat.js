@@ -49,11 +49,32 @@ const page = () => (
             <a>Статьи</a>
           </Link>
           <span> / </span>
-          <Link href="/kursovaya-rabota-na-zakaz">
+          <Link href="#">
             <a>Идеальный студент и идеальный аспирант: как ими стать?</a>
           </Link>
         </div>
       </section>
+
+        <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/stati">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Статьи</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/stati/idealnyj-student-i-idealnyj-aspirant-kak-imi-stat">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Идеальный студент и идеальный аспирант: как ими стать?</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "3"/>
+            </span>
+        </span>
 
       <section className="block-nav">
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
