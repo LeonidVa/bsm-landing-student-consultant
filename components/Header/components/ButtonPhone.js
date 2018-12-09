@@ -24,8 +24,8 @@ class ButtonPhone extends Component {
     );
     return (
       <div>
-        <div>{btnMobile}</div>
-        <div>{btnDesktop}</div>
+        {btnMobile}
+        {btnDesktop}
       </div>
     );
   }
