@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import React, {Component} from 'react';
 
-import Wrapper from 'components/Wrapper';
+import Wrapper from 'components/Wrapper/indexH2';
 import NavRow from 'components/common/NavRow';
 
 import ImageBlock from 'components/common/ImageBlock'
@@ -22,7 +22,7 @@ import dopy from 'data/dopraboty'
 import MessBlock from "components/common/MessBlock";
 import infoBlockConfig from "data/infoBlock/diplom";
 import InfoBlock from "components/common/InfoBlock";
-import CurrentOffer from "components/content/offers/CurrentOffer";
+import CurrentOfferH2 from "components/content/offers/CurrentOfferH2";
 import MagisDisAnother from "components/common/ServiceBlock/ready-made/MagisDisAnother";
 
 
@@ -38,11 +38,26 @@ const page = () => (
             <a>Главная</a>
           </Link>
           <span> / </span>
-          <Link href="/price">
+          <Link href="#">
             <a>Гарантии</a>
           </Link>
         </div>
       </section>
+
+        <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/garantii">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Гарантии</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
+            </span>
+        </span>
 
       <section className="block-nav">
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
@@ -106,7 +121,7 @@ const page = () => (
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
-      <CurrentOffer/>
+      <CurrentOfferH2/>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

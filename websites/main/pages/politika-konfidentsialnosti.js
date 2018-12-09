@@ -1,4 +1,4 @@
-import Wrapper from 'components/Wrapper';
+import Wrapper from 'components/Wrapper/indexH2';
 import Title from 'components/common/Title';
 import Link from 'next/link';
 import FormOrder from 'components/common/forms/Big/Order';
@@ -22,6 +22,21 @@ const page = () => (
           </Link>
         </div>
       </section>
+
+        <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/politika-konfidentsialnosti">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Политика конфиденциальности</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
+            </span>
+        </span>
 
       <Title>Политика конфиденциальности</Title>
       <section className="block-text">

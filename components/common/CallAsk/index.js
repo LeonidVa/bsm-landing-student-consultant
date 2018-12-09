@@ -77,23 +77,22 @@ const BlockCallaskButton = styles.a `
 `;
 
 class BottomHelper extends Component {
-
-    render() {
-        return (
-            <div>
-                <BlockCallask className="block-callask">
-                    <Inner className="inner">
-                        <BlockCallaskTitle className="block-callask__title">Остались вопросы?</BlockCallaskTitle>
-                        <BlockCallaskTitle className="block-callask__title">Мы ответим!</BlockCallaskTitle>
-                        <BlockCallaskButtons className="block-callask__buttons">
-                            <ToggleQuestionPopup targetID="question"><BlockCallaskButton className="block-callask__button">Задать вопрос</BlockCallaskButton></ToggleQuestionPopup>
-                            <ToggleCallPopup targetID="call_me_bottom"><BlockCallaskButton className="block-callask__button">Заказать звонок</BlockCallaskButton></ToggleCallPopup>
-                        </BlockCallaskButtons>
-                    </Inner>
-                </BlockCallask>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <BlockCallask className="block-callask">
+          <Inner className="inner">
+            <BlockCallaskTitle className="block-callask__title">Остались вопросы?</BlockCallaskTitle>
+            <BlockCallaskTitle className="block-callask__title">Мы ответим!</BlockCallaskTitle>
+            <BlockCallaskButtons className="block-callask__buttons">
+              <ToggleQuestionPopup targetID="question"><BlockCallaskButton className="block-callask__button">Задай вопрос</BlockCallaskButton></ToggleQuestionPopup>
+              <ToggleCallPopup targetID="call_me_bottom"><BlockCallaskButton className="block-callask__button">Закажи звонок</BlockCallaskButton></ToggleCallPopup>
+            </BlockCallaskButtons>
+          </Inner>
+        </BlockCallask>
+      </div>
+    )
+  }
 }
 
 export default BottomHelper
