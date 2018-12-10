@@ -64,6 +64,7 @@ const page = () => (
       <section className="block-nav">
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
       </section>
+
       <MessBlock/>
 
         <DipMBA/>
