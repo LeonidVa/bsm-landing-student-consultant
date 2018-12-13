@@ -62,13 +62,13 @@ const page = () => (
             </span>
             <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
                   itemType = "http://schema.org/ListItem">
-                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/diplom-na-zakaz">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/diplom-na-zakaz">
                     <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Дипломная работа</span></a>
                 <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
             </span>
             <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
                   itemType = "http://schema.org/ListItem">
-                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/diplom-na-zakaz/dorabotka-diplomnoj-raboty">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/dorabotka-diplomnoj-raboty">
                     <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Доработка</span></a>
                 <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "3"/>
             </span>
