@@ -14,7 +14,7 @@ import fields from 'data/form/main'
 import InfoBlock from 'components/common/InfoBlock';
 import infoBlockConfig from 'data/infoBlock/otchet-po-prak'
 
-import CurrentOffer from 'components/content/offers/CurrentOffer';
+import CurrentOfferH2 from 'components/content/offers/CurrentOfferH2';
 
 import reviewBlockConfig from 'data/reviewBlockConfig'
 import ReviewBlockSlider from 'components/common/ReviewBlockSlider';
@@ -54,6 +54,27 @@ const page = () => (
         </div>
       </section>
 
+        <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/zakazat-otchet-po-praktike">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Отчёт по практике</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/zakazat-otchet-po-praktike/proizvodstvennoj">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Производственной</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "3"/>
+            </span>
+        </span>
+
       <section className="block-nav">
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
       </section>
@@ -72,7 +93,7 @@ const page = () => (
           нас, чтобы избавить себя от лишних хлопот.
         </p>
         <p className="block-text__par">
-          Наши специалисты окажут вам помощь в написании отчета по производственной практике, а у вас появится свободное время для подготовки к ГОСам, а нервы будут в намного лучшем состоянии.
+            Наши специалисты окажут вам помощь в написании отчета по производственной практике на заказ. У вас появится свободное время для подготовки к ГОСам, а нервы будут в намного лучшем состоянии.
         </p>
       </section>
 
@@ -92,7 +113,7 @@ const page = () => (
             <b>Уникальность текста</b>. Наши сотрудники каждую работу пишут с «чистого листа». Осуществляют обязательную проверку уникальности на онлайн-ресурсах.
           </li>
           <li>
-            <b>Удобство</b>. Заказать отчет можно не только в Москве, но и с любого города России. Благодаря нашему сайту.
+            <b>Удобство</b>. Заказать отчет по производственной практике можно не только в Москве, но и из любого города России. Это возможно благодаря нашему сайту.
           </li>
           <li>
             <b>Оперативность</b>. Если заказчик пожелает, наши специалисты напишут производственную практику недорого (даже за день!), но на качество это не повлияет.
@@ -107,7 +128,7 @@ const page = () => (
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
-      <CurrentOffer/>
+      <CurrentOfferH2/>
 
       <section className="block-text">
         <h2 className="block-text__title">

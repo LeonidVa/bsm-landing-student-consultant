@@ -10,12 +10,11 @@ import dopy from "data/dopraboty";
 
 import FormOrder from "components/common/forms/Big/Order";
 import FormEstimate from "components/common/forms/Big/Estimate";
-import fields from "data/form/main";
 
 import InfoBlock from "components/common/InfoBlock";
 import infoBlockConfig from "data/infoBlock/diplom";
 
-import CurrentOffer from "components/content/offers/CurrentOffer";
+import CurrentOfferH2 from "components/content/offers/CurrentOfferH2";
 
 import reviewBlockConfig from "data/reviewBlockConfig";
 import ReviewBlockSlider from "components/common/ReviewBlockSlider";
@@ -24,11 +23,7 @@ import LinksBlock from "components/common/LinksBlock";
 import links from "data/linksBlock/diplom";
 
 import Video from "components/common/VideoBlock";
-import MetaTags from "react-meta-tags";
 import ImageBlock from "components/common/ImageBlock";
-
-import CardPopInfo from "components/common/ServiceBlock/CardPopInfo";
-import ServiceBlock from "components/common/ServiceBlock";
 
 import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl"
 import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
@@ -36,7 +31,7 @@ import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
 
 const page = () => (
     <Wrapper
-        title="Диплом на заказ – срочно заказать дипломную работу в Москве, помощь в написании и сопровождение до защиты"
+        title="Диплом на заказ – срочно заказать дипломную работу в Москве, помощь в написании диплома и сопровождение до защиты"
         description="Написание диплома на заказ! Быстрая, недорогая и профессиональная помощь в подготовке дипломной работы – компания BeSmarter. Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40."
     >
         <div className="wrapper bg bg-c2 bg-img bg-img3">
@@ -53,6 +48,21 @@ const page = () => (
                     </Link>
                 </div>
             </section>
+
+            <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/diplom-na-zakaz">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Дипломная работа</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
+            </span>
+        </span>
 
             <section className="block-nav">
                 <NavRow
@@ -104,13 +114,10 @@ const page = () => (
                     <li>
                         <b>Оперативность.</b> Возможна срочная помощь в написании диплома (от 1 дня).
                         Такая оперативность достигается благодаря использованию фирменного подхода,
-                        созданного в нашей компании. Вы можете не тратить время на сбор материалов,
-                        разработку плана и написание дипломного проекта, а сделать заказ и спокойно заниматься своими делами.
+                        созданного в нашей компании. Вы можете не тратить время на сбор материалов, разработку плана и написание дипломной работы, а сделать заказ и спокойно заниматься своими делами.
                     </li>
                     <li>
-                        <b>Универсальность.</b> Мы на одинаково высоком уровне пишем работы по любым
-                        специальностям – экономическим, техническим, юридическим и т. д. Сложность
-                        темы не играет роли – проблематика будет выявлена, глубоко раскрыта и проработана.
+                        <b>Универсальность.</b> Мы на одинаково высоком уровне пишем проекты по любым специальностям – экономическим, техническим, юридическим и т. д. Сложность темы диплома на заказ не играет роли – проблематика будет выявлена, глубоко раскрыта и проработана.
                     </li>
                     <li>
                         <b>Профессионализм.</b> Мы полностью раскроем тему, подготовим грамотный
@@ -119,7 +126,7 @@ const page = () => (
                     <li>
                         <b>Доступная цена.</b> Команда BeSmarter! понимает сложность жизненных ситуаций
                         наших клиентов, поэтому стоимость заказа диплома у нас невысока.
-                        Однако срочная помощь авторов стоит немного дороже.
+                        Однако срочная помощь в написании от наших авторов стоит немного дороже.
                     </li>
                 </ul>
             </section>
@@ -128,11 +135,11 @@ const page = () => (
 
             <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
-            <CurrentOffer/>
+            <CurrentOfferH2/>
 
             <section className="block-text">
                 <h2 className="block-text__title">
-                    Хотите сэкономить при заказе дипломной работы? Учитывайте несколько факторов:
+                    Хотите сэкономить при заказе диплома? Учитывайте несколько факторов:
                 </h2>
                 <ul>
                     <li>
@@ -172,9 +179,9 @@ const page = () => (
                 <h2 className="block-text__title">
                     Как и где заказать дипломную работу в Москве?
                 </h2>
-                <ul className="fitted">
+                <ol className="fitted">
                     <li>
-                        Получить помощи при написании диплома можно онлайн – просто{" "}
+                        Получить помощь при написании диплома можно онлайн – просто {" "}
                         <b>
                             <a href="#form">заполните заявку</a>
                         </b>{" "}
@@ -192,11 +199,9 @@ const page = () => (
                         </Link>{" "}
                         (пер. Большой Кисловский, дом 1 стр. 2, офис 211).
                     </li>
-                </ul>
+                </ol>
                 <p className="block-text__par">
-                    Общение с нашими менеджерами вызовет у вас только приятные эмоции!
-                    Обращайтесь, BeSmarter! – это качественная дипломная работа на заказ в
-                    Москве на самых выгодных условиях.
+                    Общение с нашими менеджерами вызовет у вас только приятные эмоции! Обращайтесь, BeSmarter! – это грамотная дипломная работа на заказ в Москве на самых выгодных условиях.
                 </p>
             </section>
 

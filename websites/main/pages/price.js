@@ -35,10 +35,25 @@ const page = () => (
                 </div>
             </section>
 
+            <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/price">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Услуги и цены</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
+            </span>
+        </span>
+
 
 
             <section className="block-text">
-                <h1 className="block-text__title">Цена вашей работы</h1>
+                <span className="block-text__title__h2">Цена вашей работы</span>
                 <p className="block-text__par">
                     Ваша работа индивидуальна, она пишется преподавателем только для вас!
                 </p>
@@ -271,7 +286,7 @@ const page = () => (
             <FormOrder/>
 
             <section className="block-text">
-                <h1 className="block-text__title">У разных работ – разная стоимость</h1>
+                <span className="block-text__title__h2">У разных работ – разная стоимость</span>
                 <p className="block-text__par">
                     Стоимость заказа зависит от нескольких объективных факторов:
                 </p>

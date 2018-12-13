@@ -4,11 +4,10 @@ import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
-import FormOrder from 'components/common/forms/Big/Order';
+import OrderForm from 'components/common/forms/Big/Order';
 import FormWithTimer from 'components/common/forms/WithTimer';
 import Title from 'components/common/Title'
 import telega from 'utils/telega';
-import redirect from 'utils/redirect';
 
 // Script errors occuring during initial client render can cause the server-rendered
 // content to be hidden by an error page. Track router events to determine if the
@@ -115,7 +114,7 @@ export default class Error extends React.Component {
           </section>
 
           <a name="form" id="form"/>
-          <FormOrder/>
+          <OrderForm />
 
         </div>
       </Wrapper>

@@ -33,7 +33,7 @@ import KandidatDis from "components/common/ServiceBlock/ready-made/KandidatDis";
 
 
 const page = () => (
-  <Wrapper title="Заказать диссертацию – помощь в написании диссертации на заказ в Москве, заказать диссертационную работу срочно в компании «BeSmarter!». Тел. +7 (495) 772-40-90."
+  <Wrapper title="Заказать диссертацию – написание диссертации на заказ в Москве, заказать диссертационную работу срочно в BeSmarter!, цена"
            description="Заказать диссертацию. В компании  BeSmarter! Вы сможете заказать помощь в написании диссертации от надежных и проверенных кандидатов и докторов наук, недорогие цены только в компании «BeSmarter!». Тел. +7 (495) 772-40-90.">
     <div className="wrapper bg bg-c2 bg-img bg-img2">
 
@@ -50,6 +50,21 @@ const page = () => (
           </Link>
         </div>
       </section>
+
+        <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/dissertaciya-na-zakaz">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Диссертация</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
+            </span>
+        </span>
 
       <section className="block-nav">
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
@@ -84,7 +99,7 @@ const page = () => (
 
       <section className="block-text">
         <h1 className="block-text__title">
-          Заказать диссертацию
+            Написание диссертации на заказ
         </h1>
         <ul>
           <li>
@@ -93,7 +108,7 @@ const page = () => (
           </li>
           <li>
             <b>Квалификация</b><br/>
-            Компания BeSmarter! имеет многолетний опыт написания диссертационных работ по любым дисциплинам, свыше 98% наших клиентов защитились на «отлично».
+              Компания BeSmarter! имеет многолетний опыт написания диссертаций на заказ по любым дисциплинам. Свыше 98% наших клиентов защитились на «отлично».
           </li>
           <li>
             <b>Профессионализм</b><br/>
@@ -120,7 +135,7 @@ const page = () => (
         <ul>
           <li>
 
-            Этап 1. Вы оформляете заявку на помощь в написании диссертации. Сделать это можно прямо на сайте или в нашем <Link href="/contacts"><b><a>офисе</a></b></Link> в Москве.
+            Этап 1. Вы оформляете заявку на помощь в написании диссертации. Сделать заказ можно прямо на сайте или в нашем <Link href="/contacts"><b><a>офисе</a></b></Link> в Москве.
 
           </li>
           <li>
@@ -137,7 +152,7 @@ const page = () => (
           Наши специалисты
         </h2>
         <p className="block-text__par">
-          В нашей компании написание диссертации на заказ поручается действующим преподавателям ведущих российских вузов по соответствующим специальностям с ученой степенью не ниже кандидатской. Это гарантирует максимально полное раскрытие темы и грамотность оформления.
+            В нашей компании написанием диссертаций на заказ занимаются действующие преподаватели ведущих российских ВУЗов по соответствующим специальностям с ученой степенью не ниже кандидатской. Это гарантирует максимально полное раскрытие темы и грамотность оформления.
         </p>
         <p className="block-text__par">
           Перед тем как заказать диссертационную работу, каждому клиенту предоставляется возможность переговорить с потенциальными исполнителями. Это позволит вам убедиться в их компетентности и выбрать наиболее подходящую на ваш взгляд кандидатуру.

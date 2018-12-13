@@ -14,7 +14,7 @@ import fields from 'data/form/main'
 import InfoBlock from 'components/common/InfoBlock';
 import infoBlockConfig from 'data/infoBlock/diplom'
 
-import CurrentOffer from 'components/content/offers/CurrentOffer';
+import CurrentOfferH2 from 'components/content/offers/CurrentOfferH2';
 
 import reviewBlockConfig from 'data/reviewBlockConfig'
 import ReviewBlockSlider from 'components/common/ReviewBlockSlider';
@@ -33,7 +33,7 @@ import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
 
 
 const page = () => (
-  <Wrapper title="Сколько стоит написать диплом – стоимость дипломной работы в компании «BeSmarter!» - 8900 рублей, закажите сейчас - тел. +7 (495) 772-40-90."
+  <Wrapper title="Сколько стоит дипломная работа – написать диплом на заказ в Москве в BeSmarter!, цена 8 900 р."
            description="Интересуетесь сколько стоит написать дипломную работу на заказ в Москве? Хотите разобраться сколько стоит заказать диплом? Звоните в компанию BeSmarter! И мы вам скажем точную стоимость дипломной работы!">
     <div className="wrapper bg bg-c2 bg-img bg-img3">
 
@@ -55,6 +55,27 @@ const page = () => (
         </div>
       </section>
 
+        <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/diplom-na-zakaz">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Дипломная работа</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/diplom-na-zakaz/skolko-stoit-diplomnaya-rabota">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Сколько стоит</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "3"/>
+            </span>
+        </span>
+
       <section className="block-nav">
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
       </section>
@@ -69,7 +90,7 @@ const page = () => (
           Сколько стоит дипломная работа
         </h1>
         <p className="block-text__par">
-          Сколько стоит дипломная работа? Для человека, который выполнил ее сам, – она бесценна, поскольку было потрачено личное время, нервы и силы. Но если поручить написать дипломную работу, стоимость ее приобретает вполне реальное цифровое значение. Причем иногда такой вариант даже предпочтительнее, особенно, если времени до
+          Сколько стоит дипломная работа? Для человека, который выполнил ее сам, – она бесценна, так как было потрачено личное время, нервы и силы. Но если поручить написать дипломную работу, стоимость ее приобретает вполне реальное цифровое значение. Причем иногда такой вариант даже предпочтительнее, особенно, если времени до
           защиты почти не осталось.
         </p>
         <p className="block-text__par">
@@ -102,7 +123,7 @@ const page = () => (
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
-      <CurrentOffer/>
+      <CurrentOfferH2/>
 
       <section className="block-text">
         <h2 className="block-text__title">
@@ -132,8 +153,7 @@ const page = () => (
           Алгоритм сотрудничества
         </h2>
         <p className="block-text__par">
-          Вы оформляете заявку одним из перечисленных ниже способов, и мы проводим собеседование – лично, по телефону или в онлайн-режиме. По его результатам составляется договор, в котором прописывается, сколько будет стоит написать дипломную работу, сроки его сдачи заказчику, а также все предъявляемые к работе требования, включая
-          обязательства о неразглашении данных.
+          Вы оформляете заявку одним из перечисленных ниже способов, и мы проводим собеседование – лично, по телефону или в онлайн-режиме. По его результатам составляется договор, в котором прописывается, сколько будет стоит написать диплом, сроки его сдачи заказчику, а также все предъявляемые требования, включая обязательства о неразглашении данных.
         </p>
         <p className="block-text__par">
           Далее после 50%-ной предоплаты согласованный с вами автор (кандидат наук) пишет хорошую дипломную работу и по главам сдает ее вам на проверку. После окончательной оплаты вы в оговоренный срок получаете готовый диплом, а исполнитель отвечает на вопросы и помогает подготовиться к защите.

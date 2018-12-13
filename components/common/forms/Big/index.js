@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 import React from 'react';
-import BaseForm from 'components/common/forms/BaseForm';
+import { BaseForm, connect } from 'components/common/forms/BaseForm';
 import Link from 'next/link';
 import Dropzone from 'react-dropzone';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,13 +20,9 @@ class OrderForm extends BaseForm {
     this.state.Extended = false;
   }
 
-  closeAlert() {
-    this.setState({ formSent: false });
-  }
+  closeAlert = () => this.setState({ formSent: false });
 
-  showFullForm() {
-    this.setState({ Extended: !this.state.Extended });
-  }
+  showFullForm = () => this.setState({ Extended: !this.state.Extended });
 
   renderForm() {
     const { fields } = this.props;
@@ -73,10 +69,10 @@ class OrderForm extends BaseForm {
         <input
           type={field.type}
           name={field.name}
-          id={field.id}
+          id={field.name}
           placeholder={field.placeholder}
           required={field.required}
-          value={this.state.data[field.name]}
+          value={this.props.form[field.name]}
           onChange={e => this.saveData({ [field.name]: e.target.value })}
         />
       </div>
@@ -86,7 +82,7 @@ class OrderForm extends BaseForm {
       return (
         <div
           className="block-form__item"
-          key={field.id}
+          key={field.name}
           style={{
             opacity: field.required ? 1 : this.state.Extended ? 1 : 0,
             maxHeight: field.required
@@ -101,14 +97,14 @@ class OrderForm extends BaseForm {
                 : 'hidden',
           }}
         >
-          <label htmlFor={field.id}>
+          <label htmlFor={field.name}>
             {field.label}
             {field.rlabel}
           </label>
 
           <DatePicker
             placeholder={field.placeholder}
-            value={this.state.data[field.name]}
+            value={this.props.form[field.name]}
             onDayChange={value => this.saveData({ [field.name]: value })}
           />
         </div>
@@ -119,7 +115,7 @@ class OrderForm extends BaseForm {
       return (
         <div
           className="block-form__item textarea"
-          key={field.id}
+          key={field.name}
           style={{
             opacity: field.required ? 1 : this.state.Extended ? 1 : 0,
             maxHeight: field.required
@@ -134,17 +130,17 @@ class OrderForm extends BaseForm {
                 : 'hidden',
           }}
         >
-          <label htmlFor={field.id}>
+          <label htmlFor={field.name}>
             {field.label}
             {field.rlabel}
           </label>
           <textarea
             type={field.type}
             name=""
-            id={field.id}
+            id={field.name}
             placeholder={field.placeholder}
             required={field.required}
-            value={this.state.data[field.name]}
+            value={this.props.form[field.name]}
             onChange={e => this.saveData({ [field.name]: e.target.value })}
           />
         </div>
@@ -152,10 +148,11 @@ class OrderForm extends BaseForm {
     }
 
     nptDropDown(field) {
+      const { worktype: { label = '' } = {} } = this.props.form;
       return (
         <div
           className="block-form__item"
-          key={field.id}
+          key={field.name}
           style={{
             opacity: field.required ? 1 : this.state.Extended ? 1 : 0,
             maxHeight: field.required
@@ -170,13 +167,13 @@ class OrderForm extends BaseForm {
                 : 'hidden',
           }}
         >
-          <label htmlFor={field.id}>
+          <label htmlFor={field.name}>
             {field.label}
             {field.rlabel}
           </label>
           <Dropdown
             onChange={e => this.saveData({ [field.name]: e })}
-            value={this.state.data.worktype.label}
+            value={label}
             options={field.options}
           />
         </div>
@@ -187,7 +184,7 @@ class OrderForm extends BaseForm {
       return (
         <div
           className="block-form__item"
-          key={field.id}
+          key={field.name}
           style={{
             opacity: field.required ? 1 : this.state.Extended ? 1 : 0,
             maxHeight: field.required
@@ -210,7 +207,7 @@ class OrderForm extends BaseForm {
           </div>
 
           <ul>
-            {(this.state.data.files || []).map((f, i) => (
+            {(this.props.form.files || []).map((f, i) => (
               <li
                 style={{ fontSize: '14px', display: 'flex', marginBottom: '5px' }}
                 key={i}
@@ -229,12 +226,9 @@ class OrderForm extends BaseForm {
     }
 
     render() {
-      let { title, buttonLabel, redForm } = this.props;
-      if (buttonLabel === undefined || buttonLabel === '') {
-        buttonLabel = 'Заказать работу';
-      }
-      return (
+      let { title, buttonLabel = 'Заказать работу', redForm } = this.props;
 
+      return (
         <section className={`block-form ${redForm ? 'form-red' : ''}`}>
           <a
             name="form"
@@ -298,4 +292,4 @@ OrderForm.propTypes = {
   fields: PropTypes.arrayOf(PropTypes.object),
 };
 
-export default OrderForm;
+export default connect(OrderForm);

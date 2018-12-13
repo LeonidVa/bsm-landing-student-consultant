@@ -1,15 +1,22 @@
 import Document, {Head, Main, NextScript} from 'next/document'
 import analytics from "utils/analytics";
-
+import { ServerStyleSheet } from 'styled-components'
 export default class MyDocument extends Document {
+  static getInitialProps ({ renderPage }) {
+    const sheet = new ServerStyleSheet()
+    const page = renderPage(App => props => sheet.collectStyles(<App {...props} />))
+    const styleTags = sheet.getStyleElement()
+    return { ...page, styleTags }
+  }
     render() {
         return (
-            <html>
+            <html lang="ru">
             <Head>
                 <script dangerouslySetInnerHTML={{ __html: analytics.getMetricsScript()}}/>
                 <noscript dangerouslySetInnerHTML={{ __html: analytics.getMetricsNoscript()}} />
                 <meta name="yandex-verification" content="49e34bd8a11a83fb"/>
                 <meta name="google-site-verification" content="f1gUUKPO-dFrcV5NVW5w7qX8C25fbJ5awHvDofRkQyE" />
+          {this.props.styleTags}
             </Head>
             <body>
             <Main/>
@@ -20,5 +27,7 @@ export default class MyDocument extends Document {
             </body>
             </html>
         )
+
+
     }
 }

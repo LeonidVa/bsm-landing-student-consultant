@@ -14,7 +14,7 @@ import fields from 'data/form/main'
 import InfoBlock from 'components/common/InfoBlock';
 import infoBlockConfig from 'data/infoBlock/magisterskaya'
 
-import CurrentOffer from 'components/content/offers/CurrentOffer';
+import CurrentOfferH2 from 'components/content/offers/CurrentOfferH2';
 
 import reviewBlockConfig from 'data/reviewBlockConfig'
 import ReviewBlockSlider from 'components/common/ReviewBlockSlider';
@@ -33,7 +33,7 @@ import MagisDis from "components/common/ServiceBlock/ready-made/MagisDis"
 
 
 const page = () => (
-  <Wrapper title="Магистерская диссертация на заказ в Москве и РФ – цены, сколько стоит, сроки написания диплома под ключ" description="Магистерская диссертация на заказ! Быстро, недорого и профессионально – компания BeSmarter! Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40.">
+  <Wrapper title="Магистерская диссертация – заказать в Москве и РФ, цена и сроки написания диплома магистра на заказ под ключ" description="Магистерская диссертация на заказ! Быстро, недорого и профессионально – компания BeSmarter! Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40.">
     <div className="wrapper bg bg-c2 bg-img bg-img2">
 
 
@@ -53,6 +53,27 @@ const page = () => (
           </Link>
         </div>
       </section>
+
+        <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/dissertaciya-na-zakaz">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Диссертация</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/dissertaciya-na-zakaz/magisterskaya">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Магистерская</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "3"/>
+            </span>
+        </span>
 
       <section className="block-nav">
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
@@ -91,7 +112,7 @@ const page = () => (
             Отличное качество написания магистерской диссертации на заказ, поскольку работу выполняют профессионалы с большим практическим опытом.
           </li>
           <li>
-            Сопровождение заказа вплоть до успешной защиты. Если необходимо внести правки, мы выполняем их бесплатно.
+              Сопровождение заказа вплоть до успешной защиты. Если необходимо внести правки в диплом магистра, мы выполняем их бесплатно.
           </li>
           <li>
             Конфиденциальность. Неразглашение личных данных гарантировано.
@@ -109,14 +130,14 @@ const page = () => (
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
-      <CurrentOffer/>
+      <CurrentOfferH2/>
 
       <section className="block-text">
         <h2 className="block-text__title">
           Магистерская диссертация: на заказ или готовая?
         </h2>
         <p className="block-text__par">
-          Заказ магистерской работы предусматривает тесное сотрудничество с научным руководителем проекта. Вначале вы согласовываете с ним план диссертации, затем отдаете на проверку отдельные главы. Специалист нашей компании при необходимости вносит дополнения и правки. Простое скачивание и редактирование готовой работы из
+            Решение заказать магистерскую диссертацию предусматривает тесное сотрудничество с научным руководителем проекта. Вначале вы согласовываете с ним план диплома, затем отдаете на проверку отдельные главы. Специалист нашей компании при необходимости вносит дополнения и правки. Простое скачивание и редактирование готовой работы из
           интернета связано с дополнительными рисками:
         </p>
         <ul>
@@ -141,7 +162,7 @@ const page = () => (
           От чего зависит цена
         </h2>
         <p className="block-text__par">
-          Сколько стоит написать магистерскую диссертацию на заказ в Москве? Стоимость выполнения заказа зависит от степени сложности, выбранной темы и объема. Например, диплом по архитектуре с большим количеством графического материала имеет более высокую стоимость, чем диссертация по менеджменту или экономике. Влияет на цену и
+          Сколько стоит написать магистерскую диссертацию на заказ в Москве? Стоимость выполнения работы зависит от степени сложности, выбранной темы и объема. Например, заказ диплома магистра по архитектуре с большим количеством графического материала имеет более высокую стоимость, чем диссертация по менеджменту или экономике. Влияет на цену и
           срочность выполнения задания.
         </p>
       </section>
@@ -155,10 +176,10 @@ const page = () => (
         </p>
         <ul>
           <li>
-            Заказ на написание не всей работы, а лишь ее части. Это может быть расчетная, теоретическая или практическая часть.
+              Заявка на написание не всей работы, а лишь ее части. Это может быть расчетная, теоретическая или практическая часть.
           </li>
           <li>
-            Оформление заказа на выполнение нескольких работ (можно договориться с однокурсниками).
+              Оформление заказа на выполнение нескольких дипломов магистра (можно договориться с однокурсниками).
           </li>
           <li>
             Спецпредложения, акции со снижением цен. Это шанс получить качественную услугу по невысокой стоимости.
@@ -195,7 +216,7 @@ const page = () => (
           </li>
         </ul>
         <p className="block-text__par">
-          Оформите заказ в BeSmarter!, и ваша защита пройдет блестяще!
+            Оформите заказ на написание диплома магистра в BeSmarter!, и ваша защита пройдет блестяще!
         </p>
       </section>
 

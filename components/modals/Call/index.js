@@ -21,9 +21,7 @@ class CallPopup extends Component {
     constructor(props) {
         super(props);
         this.state = callPopupState;
-
-    }
-
+    };
 
     render() {
         return (
@@ -48,10 +46,10 @@ class CallPopup extends Component {
                                 </div>
                                 <div className="block-form__message" style={{display: context.sent ? "none" : "block"}}>
                                     <Form
-                                        question={context.question}
-                                        targetID={context.targetID}
-                                        formType={context.question ? 'Вопрос' : 'Заказ обратного звонка'}
-                                        onSent={context.onSent}
+                                      question={context.question}
+                                      targetID={context.targetID}
+                                      formType={context.question ? 'Вопрос' : 'Заказ обратного звонка'}
+                                      onSent={context.onSent}
                                     />
                                 </div>
                             </div>

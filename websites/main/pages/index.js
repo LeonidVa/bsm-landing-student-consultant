@@ -12,7 +12,7 @@ import FormEstimate from 'components/common/forms/Big/Estimate';
 import InfoBlock from 'components/common/InfoBlock';
 import infoBlockConfig from 'data/infoBlock/diplom'
 
-import CurrentOffer from 'components/content/offers/CurrentOffer';
+import CurrentOfferH2 from 'components/content/offers/CurrentOfferH2';
 
 import ImageBlock from "components/common/ImageBlock";
 import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
@@ -21,8 +21,11 @@ import DisserRabotyMain from "components/common/ServiceBlock/ready-made/DisserRa
 
 
 const page = () => (
-  <Wrapper title="Помощь студентам в написании работ - заказать дипломную, курсовую, магистерскую и другие работы в Москве в компании «BeSmarter!». Тел. +7 (495) 772-40-90"
-           description="Компания BeSmarter! профессионально оказывает помощь студентам в написании работ! Дипломные и курсовые работы на заказ, написание магистерских диссертаций, а также можно заказать рефераты, контрольные, отчеты по пратике в Москве, звоните Тел. +7 (495) 772-40-90">
+  <Wrapper
+    isSiteMapShown = {true}
+    title="Помощь студентам в написании работ - заказать дипломную, курсовую, магистерскую и другие работы в Москве в компании «BeSmarter!». Тел. +7 (495) 772-40-90"
+    description="Компания BeSmarter! профессионально оказывает помощь студентам в написании работ! Дипломные и курсовые работы на заказ, написание магистерских диссертаций, а также можно заказать рефераты, контрольные, отчеты по пратике в Москве, звоните Тел. +7 (495) 772-40-90"
+  >
     <div className="wrapper main">
 
 
@@ -98,7 +101,7 @@ const page = () => (
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
-      <CurrentOffer/>
+      <CurrentOfferH2/>
 
       <section className="block-text">
         <h2 className="block-text__title">

@@ -1,16 +1,25 @@
-import React, {Component} from "react";
-import stat from "utils/analytics";
-import axios from "axios";
+import React, { Component } from 'react';
+import stat from 'utils/analytics';
+import axios from 'axios';
 import getConfig from 'next/config';
-import {toast} from "react-toastify"
+import { connect as reduxConnect } from 'react-redux'
 
+import { showModal } from '@redux/ui/modal';
+import { changeField } from '@redux/data/form';
 const config = getConfig();
 
-
-class BaseForm extends Component {
+export class BaseForm extends Component {
+  constructor(props) {
+    super(props);
+    const {formType = "default formType" } = props;
+    this.state = {
+      formType: formType,
+      formSent: {bool: false, number: "", error: false},
+    };
+  }
 
   verifyCallback = value => {
-    this.setState({verified: value});
+    this.setState({ verified: value });
   };
   handleSubmit = (successCallBack, errorCallBack) => async e => {
     e.preventDefault();
@@ -28,13 +37,8 @@ class BaseForm extends Component {
       comment = "",
       files = [],
       verified = false,
-    } = this.state.data;
-    if (!this.state.verified) {
-      //window.alert('Пожалуйста, пройдите каптчу');
-      //return
-    }
-    let {formType = "unknown"} = this.state;
-    const _this = this;
+    } = this.props.form;
+    const { formType = 'unknown' } = this.state;
     let formData = new FormData();
     formData.append("brand", "besmarter");
     formData.append("form", formType);
@@ -62,72 +66,33 @@ class BaseForm extends Component {
       data: formData,
       config: {headers: {"Content-Type": "multipart/form-data"}}
     })
-      .then(function (response) {
+      .then(response => {
         const {data = {}} = response;
         const {error = false, id, msg} = data;
         if (error) {
           /* ошибка со стороны сервера */
-          _this.setState({
-            formSent: {
-              ..._this.state.formSent,
-              error: msg
-            }
-          });
+          this.props.onShowModalAction();
         } else {
           /* ушло хорошо */
-          _this.setState({
+          this.setState({
             formSent: {
-              ..._this.state.formSent,
+              ...this.state.formSent,
               bool: true,
               number: id
             }
-          }, _this.onSent);
+          }, this.onSent);
           successCallBack && successCallBack();
         }
-        _this.clearFormData();
+        this.clearFormData();
       })
-      .catch(function (error) {
-        //handle error
+      .catch(error => {
         if (error.response === undefined) {
-          // not an axios error
           console.log('not an axios error, here is dump:', error);
-          return;
         }
-        console.log('catch and toast', error);
-        /*catch and toast TypeError: t is not a function
-    at l (commons.85fc1ee1e428f389dabb.js:formatted:7842)
-    at commons.85fc1ee1e428f389dabb.js:formatted:6485*/
-        toast.error(<span>Ой! Что-то пошло не так и заявка не отправилась. Пожалуйста, позвоните нам по <a className="" href='tel:+74957724090'>+7 495 772 40 90.</a></span>, {
-          position: toast.POSITION.TOP_RIGHT
-        });
+        this.props.onShowModalAction();
         errorCallBack && errorCallBack();
       });
   };
-
-  constructor(props) {
-    super(props);
-    // Don't call this.setState() here!
-    this.dataDefaults = {
-      name: "",
-      phone: "",
-      email: "",
-      theme: "",
-      worktype: {label: "Укажите тип работы", value: ""},
-      discipline: "",
-      deadline: "",
-      size: "",
-      comment: "",
-      files: [],
-      fileName: "Добавить файл",
-      verified: "",
-    };
-    const {formType = "default formType"} = props;
-    this.state = {
-      data: this.dataDefaults,
-      formType: formType,
-      formSent: {bool: false, number: "", error: false}
-    };
-  }
 
   onSent() {
     console.log('BaseForm calls onSent');
@@ -137,30 +102,28 @@ class BaseForm extends Component {
   }
 
   saveData(changes) {
-    let data = this.state.data;
+    let data = this.props.form;
+    const { onChangeFieldAction } = this.props;
     Object.keys(changes).map((key) => {
       data[key] = changes[key]
     });
-    this.setState({data}, () => {
-      this.formDataSave(this.state.data);
-      window.dispatchEvent(new CustomEvent('form data', {detail: this.state.data}));
-    });
+    onChangeFieldAction(data);
   }
 
   formDataLoad() {
     let data = localStorage.getItem('form data');
     if (data === undefined || data === null || data === "") {
-      return this.dataDefaults
+      return this.props.form;
     }
     try {
       data = JSON.parse(data);
     } catch (e) {
-      return this.dataDefaults
+      return this.props.form;
     }
     // put defaults to absent keys
-    Object.keys(this.dataDefaults).map((key) => {
+    Object.keys(this.props.form).map((key) => {
       if (data[key] === undefined) {
-        data[key] = this.dataDefaults[key];
+        data[key] = this.props.form[key];
       }
     });
     data.files = [];
@@ -190,35 +153,50 @@ class BaseForm extends Component {
     });
   }
 
-  componentWillUnmount() {
-    this.saveData(this.state.data);
-  }
-
   clearFormData() {
-    const data = this.state.data;
-    const {name, phone, email} = this.state.data;
-    this.saveData(this.dataDefaults);
-    this.saveData({name, phone, email});
+    const { onChangeFieldAction } = this.props;
+    onChangeFieldAction({
+      name: '',
+      phone: '',
+      email: '',
+      theme: '',
+      worktype: {
+        label: 'Укажите тип работы',
+        value: '',
+      },
+      discipline: '',
+      deadline: '',
+      size: '',
+      comment: '',
+      files: [],
+      fileName: '',
+      verified: '',
+    });
   }
 
   onDrop(files) {
     if (files.length === 0) {
       return;
     }
-    files.map(file => this.saveData({files: [...this.state.data.files, file]}));
+    const { onChangeFieldAction } = this.props;
+    let data = this.props.form;
+    files.map(file => {
+      data.files.push(file);
+    });
+    onChangeFieldAction(data);
   }
 
   removeFile(index) {
-    this.saveData({
-      files: [
-        ...this.state.data.files.slice(0, index),
-        ...this.state.data.files.slice(index + 1, this.state.data.files.length)
-      ]
-    });
+    const { onChangeFieldAction } = this.props;
+    let data = this.props.form;
+    data.files.splice(index, 1);
+    onChangeFieldAction(data);
   }
 
   render() {
-    return (<div>Do not use me like this. Read the manual.</div>);
+    return (
+      <div>Do not use me like this. Read the manual.</div>
+    );
   }
 
   getSource() {
@@ -229,4 +207,17 @@ class BaseForm extends Component {
   }
 }
 
-export default BaseForm;
+const mapStateToProps = ({ data: { form } }) => ({ form });
+const mapDispatchToProps = {
+  onChangeFieldAction: field => changeField(field),
+  onShowModalAction: () => showModal(),
+};
+
+export function connect(Component) {
+  return reduxConnect(
+    mapStateToProps,
+    mapDispatchToProps,
+  )(Component);
+}
+
+export default connect(BaseForm)

@@ -14,7 +14,7 @@ import fields from 'data/form/main';
 import InfoBlock from 'components/common/InfoBlock';
 import infoBlockConfig from 'data/infoBlock/esse';
 
-import CurrentOffer from 'components/content/offers/CurrentOffer';
+import CurrentOfferH2 from 'components/content/offers/CurrentOfferH2';
 
 import reviewBlockConfig from 'data/reviewBlockConfig';
 import ReviewBlockSlider from 'components/common/ReviewBlockSlider';
@@ -49,6 +49,21 @@ const page = () => (
           </Link>
         </div>
       </section>
+
+        <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
+            </span>
+            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+                  itemType = "http://schema.org/ListItem">
+                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/zakazat-esse">
+                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Эссе</span></a>
+                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
+            </span>
+        </span>
 
       <section className="block-nav">
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
@@ -99,7 +114,7 @@ const page = () => (
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
-      <CurrentOffer/>
+      <CurrentOfferH2/>
 
       <section className="block-text">
         <h2 className="block-text__title">
@@ -110,7 +125,7 @@ const page = () => (
           пр.
         </p>
         <p className="block-text__par">
-          При этом у вас всегда есть возможность экономии. Желаете получить эссе по философии, экономике или другому предмету на заказ недорого? Заранее проконсультируйтесь с нами по поводу выбора темы. Или принесите нам свои наработки, и мы снизим цену. И, конечно, старайтесь оформить заказ как можно раньше.
+          При этом у вас всегда есть возможность экономии. Желаете получить эссе по философии, экономике или другому предмету на заказ недорого? Заранее проконсультируйтесь с нами по поводу выбора темы. Или принесите нам свои наработки, и мы снизим цену. И, конечно, старайтесь заказать написание как можно раньше.
         </p>
       </section>
 
@@ -138,7 +153,7 @@ const page = () => (
           Как оформить эссе на заказ?
         </h2>
         <p className="block-text__par">
-          Нашими услугами могут воспользоваться студенты из любого уголка России. Самый универсальный вариант – оформление заявки на сайте. Желаете переговорить лично – позвоните нам по номеру 8 (495) 772-40-90.
+          Нашими услугами могут воспользоваться студенты из любого уголка России. Самый универсальный вариант – заказать эссе на сайте. Желаете переговорить лично – позвоните нам по номеру 8 (495) 772-40-90.
         </p>
         <p className="block-text__par">
           Наконец, жители Москвы могут просто зайти к нам по адресу: переулок Большой Кисловский, дом 1, строение 2, офис 211. Выбирайте удобный для себя вариант – мы ждем вас!
