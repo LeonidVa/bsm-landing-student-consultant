@@ -1,6 +1,6 @@
 module.exports = {
     '/diplomnaya-rabota-po-buhgalterskomu-uchetu': '/diplom-na-zakaz/buhgalterskij-uchet',
-    '/diplomnaya-rabota-po-menedjmentu': '/besmarter.ru/diplom-na-zakaz/menedjment',
+    '/diplomnaya-rabota-po-menedjmentu': '/diplom-na-zakaz/menedjment',
     '/diplomnaya-rabota-po-pedagogike': '/diplom-na-zakaz/pedagogika',
     '/diplomnaya-rabota-po-yurisprydencii': '/diplom-na-zakaz/yurisprudenciya-pravo',
     '/kursovaya-rabota-po-buhgalterskomu-uchetu': '/kursovaya-rabota-na-zakaz/buhgalterskiy-uchet',
