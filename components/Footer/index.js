@@ -2,8 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 
 import './index.scss';
-import foxLogo from 'static/images/fox-logo.png';
-import BottomHelper from 'components/common/CallAsk';
+import foxLogo from 'static/images/fox-circle.svg'
+import BottomHelper from 'components/common/CallAsk'
 
 export const SiteMapBlock = ({
   isSiteMapShown,
