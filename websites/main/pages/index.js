@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
+import stat from 'utils/analytics'
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
 import dopy from 'data/dopraboty'
@@ -20,7 +21,7 @@ import KursovayaRabotaMain from "components/common/ServiceBlock/ready-made/Kurso
 import DisserRabotyMain from "components/common/ServiceBlock/ready-made/DisserRabotyMain"
 
 
-const page = () => (
+const Page = () => (
   <Wrapper
     isSiteMapShown = {true}
     title="Помощь студентам в написании работ - заказать дипломную, курсовую, магистерскую и другие работы в Москве в компании «BeSmarter!». Тел. +7 (495) 772-40-90"
@@ -201,5 +202,9 @@ const page = () => (
   </Wrapper>
 );
 
+Page.getInitialProps = () => {
+  const url = window.location.href;
+  stat.triggerTarget.pageView(url);
+}
 
-export default page
+export default Page;
