@@ -40,7 +40,7 @@ class CallPopup extends Component {
                             <div className="block-form block-form2 modal-form modal__body" onClick={(e) => e.stopPropagation()}>
                                 <Close onClick={context.hide} inverse/>
                                 <div className="block-form__message" style={{display: context.sent ? "block" : "none"}}>
-                                    <img width="100%" src={require("static/images/fox-logo.png")}/>
+                                    <img width="100%" src={require("static/images/fox-circle.svg")}/>
                                     <br/>
                                     <br/>
                                     <div className="block-form__title">Спасибо!</div>
