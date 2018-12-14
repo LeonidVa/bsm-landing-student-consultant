@@ -56,17 +56,21 @@ const BlockAccordionBody = styles.div`
 
 const Div = styles.div `
     font-size: 2rem;
-      width: 0.625rem;
-      height: 0.625rem;
-      border-right: 0.125rem solid #f4511e;
-      border-bottom: 0.125rem solid #f4511e;
-      transform: rotate(45deg);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-top: -0.375rem;
-      margin-left: -0.31rem;
-      transition: all 0.4s ease-out;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-left: 0.125rem solid #f4511e;
+    border-bottom: 0.125rem solid #f4511e;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: 0.2rem;
+    margin-right: 3.1rem;
+    margin-left: -0.31rem;
+    transition: all 0.4s ease-out;
+    &.up {
+        transform: rotate(-45deg);
+    }
 `;
 
 
@@ -83,7 +87,7 @@ const BlockAccordionTable = styles.table `
 `;
 
 
-const BlockAccordionArrow= styles.div`
+const BlockAccordionArrow = styles.div`
     font-size: 2rem;
     width: 2rem;
     height: 2rem;
@@ -187,9 +191,7 @@ class Accordion extends Component {
             <SectionBlockAccordion className="block-accordion" data-accordion="open" style={{paddingBottom: 0}}>
                 <BlockAccordionHeader className="block-accordion__header" onClick={() => this.setState({open: !this.state.open})}>
                     <BlockAccordionTitle className="block-accordion__title">{title}</BlockAccordionTitle>
-                    <Div className={classes}>
-                        <Div></Div>
-                    </Div>
+                    <Div className={classes}></Div>
                 </BlockAccordionHeader>
                 <BlockAccordionBody className="block-accordion__body" style={{opacity: this.state.open ? 1 : 0, maxHeight: this.state.open ? "100000px" : "0"}}>
                     <BlockTextPar className="block-text__par">{this.props.children}</BlockTextPar>
