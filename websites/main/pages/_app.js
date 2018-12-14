@@ -1,9 +1,11 @@
 import React from "react";
+import Router from 'next/router';
 import App, { Container } from "next/app";
 import { Provider } from 'react-redux'
+import withGA from "next-ga";
 import { PersistGate } from 'redux-persist/lib/integration/react';
-
 import { persistor, store } from '@store';
+import stat from 'utils/analytics';
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -14,6 +16,12 @@ class MyApp extends App {
     }
 
     return { pageProps };
+  }
+
+  componentDidMount() {
+    Router.onRouteChangeComplete = url => {
+      stat.triggerTarget.pageView(url);
+    }
   }
 
   render() {
@@ -33,4 +41,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp;
+export default withGA('UA-119183335-1', Router)(MyApp);

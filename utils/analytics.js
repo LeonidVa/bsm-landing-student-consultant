@@ -1,5 +1,4 @@
 import ReactGA from 'react-ga';
-
 import getConfig from 'next/config';
 import ReactPixel from 'react-facebook-pixel';
 
@@ -14,6 +13,8 @@ class StatInstance {
             if (!this.isClient()) {
                 return null;
             }
+            this.ReactGA.ga('set', 'page', url);
+            this.ReactGA.ga('send', 'pageview');
             this.ReactGA.pageview(url); //обычно window.location.pathname + window.location.search
             this.ReactPixel.pageView();
 
