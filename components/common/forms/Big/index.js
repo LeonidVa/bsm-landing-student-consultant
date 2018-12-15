@@ -279,7 +279,11 @@ class OrderForm extends BaseForm {
                 <a>Политику конфиденциальности</a>
               </Link>
             </span>
-            <button type="submit" className="block-form__btn">
+            <button
+              type="submit"
+              className="block-form__btn"
+              disabled={this.props.spinner}
+            >
               {buttonLabel}
             </button>
           </form>
