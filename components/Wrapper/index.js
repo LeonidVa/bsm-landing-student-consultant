@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import Head from 'next/head';
+import Router from 'next/router';
 import { connect as reduxConnect } from 'react-redux'
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -11,6 +12,10 @@ import getConfig from 'next/config';
 import stat from 'utils/analytics'
 import { sendForm } from '@redux/data/form';
 import { isStringEmpty } from '@helpers/isStringEmpty';
+
+import * as gtag from '@lib/gtag'
+
+Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 
 const {publicRuntimeConfig = {}} = getConfig();
 
