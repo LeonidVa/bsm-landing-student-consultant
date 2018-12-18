@@ -13,7 +13,7 @@ import stat from 'utils/analytics'
 import { sendForm } from '@redux/data/form';
 import { isStringEmpty } from '@helpers/isStringEmpty';
 
-import * as gtag from '@lib/gtag'
+import * as gtag from 'lib/gtag'
 
 Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 

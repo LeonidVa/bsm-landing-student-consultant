@@ -8,8 +8,7 @@
         "alias": {
           "@store": "./data/store",
           "@redux": "./data/redux",
-          "@helpers": "./helpers",
-          "@lib": "./lib"
+          "@helpers": "./helpers"
         }
       }
     ],
