@@ -15,7 +15,6 @@ class Form extends BaseForm {
                 <div className="block-form__item">
                     <label htmlFor="form-name">Имя*</label>
                     <input type="text"
-                           name=""
                            id="form-name"
                            placeholder="Ваше имя"
                            required
@@ -26,7 +25,6 @@ class Form extends BaseForm {
                 <div className="block-form__item">
                     <label htmlFor="form-phone">Телефон*</label>
                     <input type="text"
-                           name=""
                            id="form-phone"
                            placeholder="Ваш телефон"
                            required
@@ -36,15 +34,19 @@ class Form extends BaseForm {
                 <div className="block-form__item textarea" style={{display: this.props.question ? 'block' : 'none'}}>
                     <label htmlFor="form-phone">Вопрос</label>
                     <textarea
-                        type="textarea"
-                        name=""
                         placeholder="Ваш вопрос"
                         value={this.props.form.comment}
                         onChange={(e) => this.saveData({comment: e.target.value})}
                     />
                 </div>
-
-                <button type="submit" className="block-form__btn" onClick={() => stat.triggerTarget.phoneClicked()}>Позвоните мне!</button>
+                <button
+                  type="submit"
+                  disabled={this.props.spinner}
+                  className="block-form__btn"
+                  onClick={() => stat.triggerTarget.phoneClicked()}
+                >
+                  Позвоните мне!
+                </button>
             </form>
         );
     }
