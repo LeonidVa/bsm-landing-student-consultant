@@ -62,9 +62,9 @@ class OrderForm extends BaseForm {
               : 'hidden',
         }}
       >
-        <label htmlFor={field.id}>
+        <label htmlFor={field.name}>
           {field.label}
-          {field.rlabel}
+          {field.rlabel}    
         </label>
         <input
           type={field.type}
@@ -166,7 +166,7 @@ class OrderForm extends BaseForm {
                 : 'hidden',
           }}
         >
-          <label htmlFor={field.name}>
+        <label htmlFor={field.name}>
             {field.label}
             {field.rlabel}
           </label>
