@@ -31,6 +31,9 @@ app.prepare()
             if (redirUrl !== undefined) {
                 res.redirect(301, redirUrl);
                 return;
+            } else if (req.path.endsWith('/')) {
+                res.redirect(301, removeTrailingSlash(req.path));
+                return;
             }
             /* serving page */
             return renderAndCache(req, res)
@@ -82,3 +85,14 @@ async function renderAndCache(req, res) {
         app.renderError(err, req, res, req.path, req.query)
     }
 }
+
+/**
+ * Remove trailing slashes from the given `str`
+ *
+ * @param {String} str
+ * @return {String}
+ */
+function removeTrailingSlash(str) {
+    let regex = /\/+$/;
+    return String(str).replace(regex, '');
+};
