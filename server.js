@@ -29,8 +29,7 @@ app.prepare()
         server.get('*', (req, res) => {
             const redirUrl = redirectList[req.path];
             if (redirUrl !== undefined) {
-                res.status(301).redirect(redirUrl);
-                res.end();
+                res.redirect(301, redirUrl);
                 return;
             }
             /* serving page */
