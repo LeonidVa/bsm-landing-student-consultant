@@ -18,6 +18,7 @@ import {ToggleCallPopup, ToggleQuestionPopup} from "components/modals/Call"
 import MetaTags from "react-meta-tags";
 import stat from 'utils/analytics';
 import ContactsPage from "components/common/ServiceBlock/ready-made/ContactsPage";
+import ImageBlock from 'components/common/ImageBlock';
 
 class page extends Component {
     render() {
@@ -128,6 +129,8 @@ class page extends Component {
                             </div>
                         </section>
                     </div>
+
+                    <ImageBlock imageSrc={require('static/images/block/happy-new-year.jpg')}/>
 
                     <MapBlock/>
                     <section className="block-text">
