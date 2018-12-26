@@ -16,6 +16,7 @@ import  {
   HeaderUl,
   HeaderNavA,
   } from '/components/Header/style.js';
+import ImageBlock from 'components/common/ImageBlock';
 
 
 /**/
@@ -276,6 +277,8 @@ class page extends Component {
               </div>
             </section>
           </div>
+
+          <ImageBlock imageSrc={require('static/images/block/happy-new-year.jpg')}/>
 
           <MapBlock/>
           <section className="block-text">
