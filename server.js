@@ -33,7 +33,7 @@ app.prepare()
                 return;
             }
             /* serving page */
-             res.setHeader('Link', '<https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i&subset=cyrillic>; rel=prefetch');
+            res.setHeader('Link', '<https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i&subset=cyrillic>; rel=prefetch');
             return renderAndCache(req, res)
         });
 
