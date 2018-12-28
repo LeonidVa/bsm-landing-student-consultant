@@ -21,6 +21,8 @@ import MetaTags from "react-meta-tags";
 import stat from 'utils/analytics';
 import ContactsPage from "components/common/ServiceBlock/ready-made/ContactsPage";
 import ImageBlock from 'components/common/ImageBlock';
+import ItemScope from "components/common/schema.org/ItemScope"
+import ItemListElement from "components/common/schema.org/ItemListElement"
 
 class page extends Component {
     render() {
@@ -41,20 +43,12 @@ class page extends Component {
                         </div>
                     </section>
 
-                    <span style={{visibility:"hidden", height:0, width:0}} itemScope itemType = "http://schema.org/BreadcrumbList">
-            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
-                  itemType = "http://schema.org/ListItem">
-                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
-                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Главная</span></a>
-                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
-            </span>
-            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
-                  itemType = "http://schema.org/ListItem">
-                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/contacts">
-                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Контакты</span></a>
-                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
-            </span>
-        </span>
+                    <ItemScope type="http://schema.org/BreadcrumbList">
+                        <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
+                        <ItemListElement url="https://besmarter.ru/contacts" name="Контакты" position="2" />
+                    </ItemScope>
+
+
 
                     <BlockNav>
                         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>

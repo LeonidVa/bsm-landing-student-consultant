@@ -35,7 +35,8 @@ import ServiceBlock from "components/common/ServiceBlock";
 import MatZashDisser from "components/common/ServiceBlock/ready-made/MatZashDisser";
 import DoctorskayaDis from "components/common/ServiceBlock/ready-made/DoctorskayaDis";
 import KandidatDis from "components/common/ServiceBlock/ready-made/KandidatDis";
-
+import ItemScope from "components/common/schema.org/ItemScope"
+import ItemListElement from "components/common/schema.org/ItemListElement"
 
 const page = () => (
   <Wrapper title="Сколько стоит кандидатская диссертация – цена кандидатской диссертации от 150 000 рублей | Закажите кандидатскую диссертацию по выгодной стоимости, в компании «BeSmarter!». Тел. +7 (495) 772-40-90."
@@ -63,6 +64,13 @@ const page = () => (
           </Link>
         </div>
       </section>
+
+        <ItemScope type="http://schema.org/BreadcrumbList">
+            <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
+            <ItemListElement url="https://besmarter.ru/dissertaciya-na-zakaz" name="Диссертация" position="2" />
+            <ItemListElement url="https://besmarter.ru/dissertaciya-na-zakaz/kandidatskaya" name="Кандидатская" position="3" />
+            <ItemListElement url="https://besmarter.ru/dissertaciya-na-zakaz/kandidatskaya/skolko-stoit" name="Стоимость" position="4" />
+        </ItemScope>
 
         <span style={{visibility:"hidden", height:0, width:0}} itemScope itemType = "http://schema.org/BreadcrumbList">
             <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope

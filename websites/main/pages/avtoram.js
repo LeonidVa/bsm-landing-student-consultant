@@ -23,6 +23,8 @@ import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
 import dopy from 'data/dopraboty'
 import MetaTags from "react-meta-tags";
 import MagisDisAnother from "components/common/ServiceBlock/ready-made/MagisDisAnother";
+import ItemScope from "components/common/schema.org/ItemScope"
+import ItemListElement from "components/common/schema.org/ItemListElement"
 
 
 const page = () => (
@@ -44,6 +46,10 @@ const page = () => (
         </div>
       </section>
 
+      <ItemScope type="http://schema.org/BreadcrumbList">
+          <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
+          <ItemListElement url="https://besmarter.ru/avtoram" name="Авторам" position="2" />
+      </ItemScope>
       <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
       </BlockNav>

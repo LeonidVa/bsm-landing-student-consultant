@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React, {Component} from 'react';
 
 import Wrapper from 'components/Wrapper';
-import PageWrapper from 'components/common/PageWrapper';
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
 
@@ -23,6 +22,8 @@ import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
 import dopy from 'data/dopraboty'
 import ContactsPage from "components/common/ServiceBlock/ready-made/ContactsPage";
 import MagisDisAnother from "components/common/ServiceBlock/ready-made/MagisDisAnother";
+import ItemScope from "components/common/schema.org/ItemScope"
+import ItemListElement from "components/common/schema.org/ItemListElement"
 
 
 const page = () => (
@@ -42,6 +43,11 @@ const page = () => (
           </Link>
         </div>
       </section>
+
+        <ItemScope type="http://schema.org/BreadcrumbList">
+            <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
+            <ItemListElement url="https://besmarter.ru/about" name="О нас" position="2" />
+        </ItemScope>
 
       <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
