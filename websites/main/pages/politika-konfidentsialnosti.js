@@ -4,6 +4,8 @@ import Link from 'next/link';
 import FormOrder from 'components/common/forms/Big/Order';
 import MetaTags from "react-meta-tags";
 import React from "react";
+import ItemScope from "components/common/schema.org/ItemScope"
+import ItemListElement from "components/common/schema.org/ItemListElement"
 
 
 const page = () => (
@@ -23,20 +25,12 @@ const page = () => (
         </div>
       </section>
 
-        <span style={{visibility:"hidden", height:0, width:0}} itemScope itemType = "http://schema.org/BreadcrumbList">
-            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
-                  itemType = "http://schema.org/ListItem">
-                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
-                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Главная</span></a>
-                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
-            </span>
-            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
-                  itemType = "http://schema.org/ListItem">
-                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/politika-konfidentsialnosti">
-                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Политика конфиденциальности</span></a>
-                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
-            </span>
-        </span>
+        <ItemScope type="http://schema.org/BreadcrumbList">
+            <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
+            <ItemListElement url="https://besmarter.ru/politika-konfidentsialnosti" name="Политика конфиденциальности" position="2" />
+        </ItemScope>
+
+
 
       <Title>Политика конфиденциальности</Title>
       <section className="block-text">

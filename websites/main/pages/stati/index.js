@@ -27,6 +27,8 @@ import ServiceBlock from "components/common/ServiceBlock";
 import React from "react";
 import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl"
 import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
+import ItemScope from "components/common/schema.org/ItemScope"
+import ItemListElement from "components/common/schema.org/ItemListElement"
 
 const page = () => (
   <Wrapper title="Разные статьи о том, как подготовиться студенту!" description="Полезные статьи в помощь студентам и аспирантам, читайте на сайте BeSmarter!">
@@ -45,6 +47,11 @@ const page = () => (
           </Link>
         </div>
       </section>
+
+        <ItemScope type="http://schema.org/BreadcrumbList">
+            <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
+            <ItemListElement url="https://besmarter.ru/stati" name="Статьи" position="2" />
+        </ItemScope>
 
         <span style={{visibility:"hidden", height:0, width:0}} itemScope itemType = "http://schema.org/BreadcrumbList">
             <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope

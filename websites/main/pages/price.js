@@ -15,6 +15,8 @@ import dopy from 'data/dopraboty'
 import MagisDisPricePage from "components/common/ServiceBlock/ready-made/MagisDisPricePage";
 import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl";
 import Title from "components/common/Title";
+import ItemScope from "components/common/schema.org/ItemScope"
+import ItemListElement from "components/common/schema.org/ItemListElement"
 
 
 const page = () => (
@@ -34,6 +36,12 @@ const page = () => (
                     </Link>
                 </div>
             </section>
+
+            <ItemScope type="http://schema.org/BreadcrumbList">
+                <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
+                <ItemListElement url="https://besmarter.ru/price" name="Услуги и цены" position="2" />
+            </ItemScope>
+
 
             <span style={{visibility:"hidden", height:0, width:0}} itemScope itemType = "http://schema.org/BreadcrumbList">
             <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope

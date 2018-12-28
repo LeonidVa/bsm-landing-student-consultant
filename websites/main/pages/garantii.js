@@ -24,6 +24,8 @@ import infoBlockConfig from "data/infoBlock/diplom";
 import InfoBlock from "components/common/InfoBlock";
 import CurrentOffer from "components/content/offers/CurrentOffer";
 import MagisDisAnother from "components/common/ServiceBlock/ready-made/MagisDisAnother";
+import ItemScope from "components/common/schema.org/ItemScope"
+import ItemListElement from "components/common/schema.org/ItemListElement"
 
 
 const page = () => (
@@ -43,6 +45,11 @@ const page = () => (
           </Link>
         </div>
       </section>
+
+        <ItemScope type="http://schema.org/BreadcrumbList">
+            <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
+            <ItemListElement url="https://besmarter.ru/garantii" name="Гарантии" position="2" />
+        </ItemScope>
 
         <span style={{visibility:"hidden", height:0, width:0}} itemScope itemType = "http://schema.org/BreadcrumbList">
             <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope

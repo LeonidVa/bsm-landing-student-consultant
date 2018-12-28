@@ -4,6 +4,9 @@ import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
 import FormOrder from 'components/common/forms/Big/Order';
 import MetaTags from 'react-meta-tags';
+import ItemScope from "components/common/schema.org/ItemScope"
+import ItemListElement from "components/common/schema.org/ItemListElement"
+import React from "react";
 
 
 const page = () => (
@@ -23,20 +26,12 @@ const page = () => (
         </div>
       </section>
 
-        <span style={{visibility:"hidden", height:0, width:0}} itemScope itemType = "http://schema.org/BreadcrumbList">
-            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
-                  itemType = "http://schema.org/ListItem">
-                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
-                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Главная</span></a>
-                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
-            </span>
-            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
-                  itemType = "http://schema.org/ListItem">
-                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/map">
-                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Карта сайта</span></a>
-                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
-            </span>
-        </span>
+        <ItemScope type="http://schema.org/BreadcrumbList">
+            <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
+            <ItemListElement url="https://besmarter.ru/map" name="Карта сайта" position="2" />
+        </ItemScope>
+
+
 
       <section className="block-nav">
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
