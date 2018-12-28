@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 import socials from 'data/socials';
 import stat from 'utils/analytics';
 import './index.scss'
-import styles from "styled-components"
+import styled from "styled-components"
 
 
-const BlockMess = styles.section `
+const BlockMess = styled.section `
     font-size: 1em;
     width: 34em;
     margin: 1em auto 0;
@@ -23,7 +23,7 @@ const BlockMess = styles.section `
 `;
 
 
-const BlockMessItem = styles.a `
+const BlockMessItem = styled.a `
 width: 20%;
 display: flex;
 display: -webkit-box;
@@ -44,14 +44,14 @@ transition: all .3s;
 }
 `;
 
-const BlockMessList = styles.div `
+const BlockMessList = styled.div `
     display: flex;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
 `;
 
-const BlockMessTitle = styles.span`
+const BlockMessTitle = styled.span`
 font-size: 2em;
 display: block;
 padding: 0.625em 1.06em 0.56em;

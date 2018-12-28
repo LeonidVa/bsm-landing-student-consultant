@@ -1,20 +1,15 @@
 import Link from 'next/link';
-import './index.scss'
-import styles from "styled-components"
+import styled from "styled-components"
 
 
-
-const UlBlockTextLinksList = styles.ul `
-list-style: disc;
-@media (max-width: 660px) {
-
-}
+const UlBlockTextLinksList = styled.ul `
+    list-style: disc;
 `;
 
 
-const renderLinks=(links)=>(
-    links.map((item, index)=>{
-        if (item.url === undefined ){
+const renderLinks = (links) => (
+    links.map((item, index) => {
+        if (item.url === undefined) {
             item.url = ""
         }
         return (
@@ -27,8 +22,8 @@ const renderLinks=(links)=>(
     })
 )
 
-const LinksBlock = ({links})=>(
-    
+const LinksBlock = ({links}) => (
+
     <section className="block-text">
         <UlBlockTextLinksList className="block-text__links-list">
             {renderLinks(links)}
