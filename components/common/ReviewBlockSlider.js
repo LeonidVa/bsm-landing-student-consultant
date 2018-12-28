@@ -74,7 +74,7 @@ const Review = ({ faceImg, reviewText, bottom, name, prof }) => (
         {reviewText}
     </ReviewBlock>
     <ReviwsAuthor className="reviews-author">
-        <Img src={faceImg} alt={"Студент " + name} />
+        <Img src={faceImg} alt={prof + ' ' + name} />
         <ReviewsAuthorData className="reviews-author__data">
             <ReviewsName className="reviews-name">{name}</ReviewsName>
             <ReviewsJob className={`reviews-job ${bottom ? 'job-orange': ''}`}>{prof}</ReviewsJob>
