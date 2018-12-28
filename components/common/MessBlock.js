@@ -1,7 +1,6 @@
-import React, {Component} from 'react'
+import {Component} from 'react'
 import socials from 'data/socials';
 import stat from 'utils/analytics';
-import './index.scss'
 import styled from "styled-components"
 
 
@@ -24,6 +23,7 @@ const BlockMess = styled.section `
 
 
 const BlockMessItem = styled.a `
+color: white;
 width: 20%;
 display: flex;
 display: -webkit-box;
@@ -39,6 +39,7 @@ justify-content: center;
 -ms-flex-pack: justify;
 height: 7em;
 transition: all .3s;
+svg { font-size: 3em; }
 @media (max-width: 660px) {
     height: 4.5em;
 }
@@ -84,7 +85,7 @@ class MessBlock extends Component {
                target="_blank"
                key={index}
                className="block-mess__item"
-               style={{background: colors[index], padding: "2.25em"}}
+               style={{background: colors[index]}}
                title={item.title}
                rel="nofollow noopener"
                onClick={handleClick}

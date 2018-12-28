@@ -4,7 +4,8 @@ import 'components/contacts/style.scss'
 
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 
 import Title from 'components/common/Title'
 import MapBlock from 'components/common/MapBlock';
@@ -55,9 +56,9 @@ class page extends Component {
             </span>
         </span>
 
-                    <section className="block-nav">
+                    <BlockNav>
                         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-                    </section>
+                    </BlockNav>
 
                     <div itemScope itemType="http://schema.org/Organization">
                         <section className="block-text">

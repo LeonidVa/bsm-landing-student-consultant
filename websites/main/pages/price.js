@@ -2,7 +2,8 @@ import Link from 'next/link';
 import React, {Component} from 'react';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import ImageBlock from 'components/common/ImageBlock'
 import Accordion from 'components/common/Accordion'
 import FormOrder from 'components/common/forms/Big/Order';

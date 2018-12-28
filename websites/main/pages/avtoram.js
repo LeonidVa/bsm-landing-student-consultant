@@ -4,7 +4,8 @@ import React, {Component} from 'react';
 
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 
 import ImageBlock from 'components/common/ImageBlock'
 import Accordion from 'components/common/Accordion'
@@ -43,9 +44,9 @@ const page = () => (
         </div>
       </section>
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
+      </BlockNav>
 
       <section className="block-text">
         <h1 className="block-text__title">

@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 import FormOrder from 'components/common/forms/Big/Order';
 import MetaTags from 'react-meta-tags';
@@ -39,10 +40,10 @@ const page = () => (
             </span>
         </span>
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
       <section className="block-text">
         <h1 className="block-text__title center">

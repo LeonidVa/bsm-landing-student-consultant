@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -68,11 +69,10 @@ const page = () => (
                 <ItemListElement url="https://besmarter.ru/dissertaciya-na-zakaz/magisterskaya/psihologiya" name="По психологии" position="4"/>
             </ItemScope>
 
-            <section className="block-nav">
+            <BlockNav>
                 <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-            </section>
-
-            <MessBlock/>
+            </BlockNav>
+ <MessBlock/>
 
             <MagisDisGdeZakazat/>
 
