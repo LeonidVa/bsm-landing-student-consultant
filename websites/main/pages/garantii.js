@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, {Component} from 'react';
 
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 import NavRow from 'components/common/NavRow';
 
 import ImageBlock from 'components/common/ImageBlock'
@@ -28,7 +29,7 @@ import MagisDisAnother from "components/common/ServiceBlock/ready-made/MagisDisA
 
 const page = () => (
   <Wrapper title="Гарантия качества в компании BeSmarter!. Тел. +7 (495) 772-40-90." description="Наши довольные клиенты — это самая главная и важная гарантия, которую мы предоставляем тебе. Ведь это — реальный показатель высокого качества нашей работы. Все наши авторы — преподаватели, кандидаты или доктора наук.">
-    <div className="wrapper bg bg-c2 bg-img bg-img2">
+    <PageWrapper className="bg bg-c2 bg-img bg-img2">
 
 
 
@@ -130,7 +131,7 @@ const page = () => (
 
       <LinksBlock links={links}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

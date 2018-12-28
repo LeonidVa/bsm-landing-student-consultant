@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -33,7 +34,7 @@ import KandidatDis from "components/common/ServiceBlock/ready-made/KandidatDis";
 
 const page = () => (
   <Wrapper title="Соискательство | «BeSmarter!». Тел. +7 (495) 772-40-90." description="Если у Вас нет времени учиться в аспирантуре, а Вы хотите защитить кандидатскую диссертацию, то Вы можете стать соискателем ученой степени кандидата наук.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -148,7 +149,7 @@ const page = () => (
       <FormOrder/>
 
       <LinksBlock links={disSoiskat}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

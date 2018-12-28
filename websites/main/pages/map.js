@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
 import FormOrder from 'components/common/forms/Big/Order';
@@ -8,7 +9,7 @@ import MetaTags from 'react-meta-tags';
 
 const page = () => (
   <Wrapper title="Карта сайта" description="Карта сайта BeSmarter!">
-    <div className="wrapper bg bg-c2 bg-img bg-img4">
+    <PageWrapper className="bg bg-c2 bg-img bg-img4">
 
 
       <section className="breadcrumbs">
@@ -501,7 +502,7 @@ const page = () => (
       <a name="form" id="form"/>
       <FormOrder/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

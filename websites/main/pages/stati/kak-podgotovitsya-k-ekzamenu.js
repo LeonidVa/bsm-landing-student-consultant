@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -34,7 +35,7 @@ import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
 const page = () => (
   <Wrapper title="Как подготовиться к экзамену | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Даже круглый отличник порой сомневается в своих силах и не может перебороть волнение, возникающее накануне экзамена. Ведь от того, сдашь или не сдашь предмет, зависит многое, а у молодых людей, порой, очень многое. Поэтому, перед чередой экзаменов, следует придерживаться некоторых правил, благодаря которым можно смело рассчитывать на успех.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -137,7 +138,7 @@ const page = () => (
       <FormOrder/>
 
             <LinksBlock links={links}/>
-        </div>
+        </PageWrapper>
     </Wrapper>
 );
 

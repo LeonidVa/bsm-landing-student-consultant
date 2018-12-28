@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -34,7 +35,7 @@ import KandidatDis from "components/common/ServiceBlock/ready-made/KandidatDis";
 const page = () => (
   <Wrapper title="Как защитить диссертацию | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Компания BeSmarter! окажет Вам все виды помощи, которые могут потребоваться аспирантам и соискателям ученых степеней кандидата и доктора наук на любом этапе от принятия решения о поступлении в аспирантуру до написания диссертации, вплоть до ее защиты.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
       <MetaTags>
         {/* <title></title> */}
@@ -922,7 +923,7 @@ const page = () => (
       <FormOrder/>
 
       <LinksBlock links={disSteps}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

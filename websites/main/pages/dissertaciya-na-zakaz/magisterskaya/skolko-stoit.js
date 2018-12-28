@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -35,7 +36,7 @@ import MagisDisGdeZakazat from "components/common/ServiceBlock/ready-made/MagisD
 const page = () => (
   <Wrapper title="Сколько стоит магистерская диссертация – цена написания магистерской диссертации на заказ – от 24 000 руб. | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Интересует, цена магистерской диссертации? Позвоните в компанию BeSmarter! и мы вам скажем сколько стоит магистерская диссертация | Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img2">
+    <PageWrapper className="bg bg-c2 bg-img bg-img2">
 
 
 
@@ -184,7 +185,7 @@ const page = () => (
           {url: "/diplom-na-zakaz#form", text: "Дипломная работа срочно"},
         ]
       }/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

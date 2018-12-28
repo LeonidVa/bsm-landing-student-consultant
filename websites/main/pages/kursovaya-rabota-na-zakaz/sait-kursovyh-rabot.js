@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -34,7 +35,7 @@ import KursovayaRabota from "components/common/ServiceBlock/ready-made/Kursovaya
 
 const page = () => (
   <Wrapper title="Где заказать курсовую работу – можно заказать курсовую работу в Москве, в компании «BeSmarter!». Тел. +7 (495) 772-40-90." description="Ищите где заказать курсовую работу надежно и быстро? Не можете решить где лучше купить курсовую? BeSmarter!– лучший сайт для заказа вашей курсовой работы в Москве!">
-    <div className="wrapper bg bg-c2 bg-img bg-img1">
+    <PageWrapper className="bg bg-c2 bg-img bg-img1">
 
 
 
@@ -198,7 +199,7 @@ const page = () => (
           {url: "/kursovoj-proekt-na-zakaz", text: "Заказать курсовой проект"},
         ]
       }/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

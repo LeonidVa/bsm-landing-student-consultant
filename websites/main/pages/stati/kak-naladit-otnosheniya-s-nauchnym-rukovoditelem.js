@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -35,7 +36,7 @@ import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
 const page = () => (
   <Wrapper title="Как наладить отношения с научным руководителем? | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Как наладить отношения с научным руководителем? Эта тема волнует множество дипломников. В большинстве случаев нужно совсем немного, чтобы наладить отношения с научным руководителем. Требуется всего лишь хорошая, грамотно написанная работа и знание её содержания. К сожалению, не все темы оказываются простыми для изучения, литературы или знаний может недоставать.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -157,7 +158,7 @@ const page = () => (
 
         <LinksBlock links={links}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

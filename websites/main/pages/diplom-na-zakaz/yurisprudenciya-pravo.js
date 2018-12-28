@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -34,7 +35,7 @@ import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
 
 const page = () => (
   <Wrapper title="Дипломная работа по юриспруденции на заказ в Москве и РФ – сколько стоит написание диплома под ключ, купить недорого" description="В компании «BeSmarter!» можно срочно и недорого заказать дипломную работу по юриспруденции по выгодной цене в Москве. Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -178,7 +179,7 @@ const page = () => (
       <FormOrder/>
 
       <LinksBlock links={links}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

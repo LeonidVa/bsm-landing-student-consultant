@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, {Component} from 'react';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 import NavRow from 'components/common/NavRow';
 import ImageBlock from 'components/common/ImageBlock'
 import Accordion from 'components/common/Accordion'
@@ -19,7 +20,7 @@ import Title from "components/common/Title";
 
 const page = () => (
     <Wrapper title="Услуги и цены" description="На этой странице представлены цены на дипломные, курсовые работы и многие другие услуги компании.">
-        <div className="wrapper bg bg-c2 bg-img bg-img2">
+        <PageWrapper className="bg bg-c2 bg-img bg-img2">
             <Title><span className="black">Стоимость услуг</span></Title>
 
 
@@ -330,7 +331,7 @@ const page = () => (
 
             <LinksBlock links={links}/>
 
-        </div>
+        </PageWrapper>
     </Wrapper>
 );
 

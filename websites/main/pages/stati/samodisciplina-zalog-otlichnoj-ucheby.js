@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -34,7 +35,7 @@ import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
 const page = () => (
   <Wrapper title="Самодисциплина – залог отличной учебы | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Известно с давних пор: самодисциплина – ключ к покорению мира. Самодисциплине учились самые стойкие характеры в истории человечества. Однако сейчас это слово затерто до дыр. Данной тематике посвящены сотни тренингов и множество книг. Но, даже осознав слабые места в своей дисциплине и разобравшись в теме, нелегко исправить свою дисциплину. Ведь мы так любим это слово – «завтра».">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -157,7 +158,7 @@ const page = () => (
 
         <LinksBlock links={links}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

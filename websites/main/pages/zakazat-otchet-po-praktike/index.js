@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -36,7 +37,7 @@ import OtchPoPrak from "components/common/ServiceBlock/ready-made/OtchPoPrak"
 const page = () => (
   <Wrapper title="Заказать отчет по практике недорого – сколько стоит написать отчет по практике с печатью в Москве и РФ, цена и сроки на заказ" description="В компании BeSmarter! вы можете заказать отчет по практике недорого с печатью в Москве. Тел. +7 (495) 772-40-90.">
 
-    <div className="wrapper bg bg-c2 bg-img bg-img4">
+    <PageWrapper className="bg bg-c2 bg-img bg-img4">
 
 
 
@@ -171,7 +172,7 @@ const page = () => (
       <FormOrder/>
 
       <LinksBlock links={otchet}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

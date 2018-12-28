@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -36,7 +37,7 @@ import KandidatDisForm from "components/common/ServiceBlock/ready-made/KandidatD
 
 const page = () => (
   <Wrapper title="Кандидатская диссертация на заказ в Москве и РФ – сколько стоит заказать написание диссертации под ключ, цена" description="Кандидатская диссертация на заказ! Быстрое, недорогое и профессиональное написание – компания BeSmarter! Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40.">
-    <div className="wrapper bg bg-c2 bg-img bg-img1">
+    <PageWrapper className="bg bg-c2 bg-img bg-img1">
 
 
 
@@ -243,7 +244,7 @@ const page = () => (
 
       <LinksBlock links={disserNew}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

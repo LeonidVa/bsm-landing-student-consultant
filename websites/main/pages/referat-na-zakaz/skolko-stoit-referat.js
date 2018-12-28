@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -34,7 +35,7 @@ import Referat from "components/common/ServiceBlock/ready-made/Referat";
 const page = () => (
   <Wrapper title="Сколько стоит заказать реферат – стоимость реферата на заказ в компании «BeSmarter!» - 1 500 рублей, закажите реферат сейчас - тел. +7 (495) 772-40-90."
            description="Хотите узнать, сколько стоит заказать реферат в Москве? Звоните в компанию BeSmarter! и мы вам скажем сколько стоит написать реферат | Звоните: +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img5">
+    <PageWrapper className="bg bg-c2 bg-img bg-img5">
 
 
       <section className="breadcrumbs">
@@ -199,7 +200,7 @@ const page = () => (
       <FormOrder/>
 
       <LinksBlock links={referatLinks}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

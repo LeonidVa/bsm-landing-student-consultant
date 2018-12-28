@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -34,7 +35,7 @@ import KandidatDis from "components/common/ServiceBlock/ready-made/KandidatDis";
 const page = () => (
   <Wrapper title="Редактирование диссертации – стоимость (расценки) редактирование диссертации в Москве, в компании «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="В компании  BeSmarter! Вы сможете заказать редактирование диссертации от надежных и проверенных кандидатов и докторов наук, недорогие цены только в компании «BeSmarter!». Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img5">
+    <PageWrapper className="bg bg-c2 bg-img bg-img5">
 
 
 
@@ -190,7 +191,7 @@ const page = () => (
       <FormOrder/>
 
       <LinksBlock links={disRedaktirovanie}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

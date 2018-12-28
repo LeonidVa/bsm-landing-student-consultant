@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -35,7 +36,7 @@ import KursovayaRabota from "components/common/ServiceBlock/ready-made/Kursovaya
 const page = () => (
   <Wrapper title="Сколько стоит курсовая работа – стоимость курсовой работы в Москве - 2000 рублей, звоните в компанию «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Хотите узнать сколько стоит написать курсовую работу на заказ в Москве? Примерная стоимость курсовой работы – 2000 рублей! Звоните в компанию BeSmarter! И мы вам скажем точно сколько стоит написать курсовую работу.">
-    <div className="wrapper bg bg-c2 bg-img bg-img1">
+    <PageWrapper className="bg bg-c2 bg-img bg-img1">
 
 
 
@@ -201,7 +202,7 @@ const page = () => (
           {url: "/kursovoj-proekt-na-zakaz", text: "Заказать курсовой проект"},
         ]
       }/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

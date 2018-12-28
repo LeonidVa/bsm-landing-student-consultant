@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -30,7 +31,7 @@ import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl"
 
 const page = () => (
   <Wrapper title="Речь к дипломной работе образец – как написать речь (доклад) к дипломной работе пример | «BeSmarter!». Тел. +7 (495) 772-40-90." description="Полезная статья на тему «Как написать речь к дипломной работе», приведены примеры и образцы докладов и защитных речей.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -275,7 +276,7 @@ const page = () => (
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

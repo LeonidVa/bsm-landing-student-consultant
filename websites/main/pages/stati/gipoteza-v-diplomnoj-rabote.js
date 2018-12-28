@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -33,7 +34,7 @@ import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl"
 
 const page = () => (
   <Wrapper title="Гипотеза в дипломной работе – пример гипотезы в дипломной работе на сайте компании «BeSmarter!». Тел. +7 (495) 772-40-90." description="В статье раскрыта тема: «Гипотеза в дипломной работе», приведены общие рекомендации, примеры и образцы гипотез дипломных работ.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -218,7 +219,7 @@ const page = () => (
       <a name="form" id="form"/>
       <FormOrder/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

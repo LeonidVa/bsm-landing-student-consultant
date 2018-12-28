@@ -3,6 +3,7 @@ import Link from 'next/link';
 import 'components/contacts/style.scss'
 
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 import NavRow from 'components/common/NavRow';
 
 import Title from 'components/common/Title'
@@ -24,7 +25,7 @@ class page extends Component {
     render() {
         return (
             <Wrapper title="BeSmarter - Контакты" description="На этой страницы указан наш адрес офиса, наша почта и телефоны в Москве, звоните, приезжайте в компанию.">
-                <div className="wrapper bg bg-c2 bg-img bg-img5">
+                <PageWrapper className="bg bg-c2 bg-img bg-img5">
                     <Title>Контакты</Title>
 
                     <section className="breadcrumbs">
@@ -237,7 +238,7 @@ class page extends Component {
 
                     <FormOrder/>
                     <LinksBlock links={links}/>
-                </div>
+                </PageWrapper>
             </Wrapper>
         )
     }

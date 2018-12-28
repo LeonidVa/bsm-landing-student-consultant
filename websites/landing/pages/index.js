@@ -61,7 +61,7 @@ class page extends Component {
           </ul>
         }
       >
-        <div className="wrapper bg bg-c2 bg-img bg-img3">
+        <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
           <section className="block-nav">
             <NavRow
@@ -381,7 +381,7 @@ class page extends Component {
             </Address>
           </section>
 
-        </div>
+        </PageWrapper>
       </Wrapper>
     )
   }

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -34,7 +35,7 @@ import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl"
 const page = () => (
   <Wrapper title="Несколько правил удачной защиты | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Самообладанием может похвастаться не каждый, особенно при таком важном процессе, как защита дипломной работы, от которой зависит будущее. Зачастую, волнительным бывает не только процесс защиты, но и написания. Поэтому, чтобы оградить себя от лишних переживаний, стоит незамедлительно сделать диплом на заказ и быть уверенным в успехе.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -171,7 +172,7 @@ const page = () => (
 
         <LinksBlock links={links}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

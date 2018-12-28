@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
 import NavRow from 'components/common/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -35,7 +36,7 @@ import KandidatDis from "components/common/ServiceBlock/ready-made/KandidatDis";
 const page = () => (
   <Wrapper title="Заказать диссертацию – написание диссертации на заказ в Москве, заказать диссертационную работу срочно в BeSmarter!, цена"
            description="Заказать диссертацию. В компании  BeSmarter! Вы сможете заказать помощь в написании диссертации от надежных и проверенных кандидатов и докторов наук, недорогие цены только в компании «BeSmarter!». Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img2">
+    <PageWrapper className="bg bg-c2 bg-img bg-img2">
 
 
 
@@ -191,7 +192,7 @@ const page = () => (
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
       <LinksBlock links={disserNew}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

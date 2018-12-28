@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, {Component} from 'react';
 
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 import NavRow from 'components/common/NavRow';
 
 import ImageBlock from 'components/common/ImageBlock'
@@ -27,7 +28,7 @@ const page = () => (
   <Wrapper title="Стать автором компании BeSmarter!" description="Компания BeSmarter – несомненный лидер в сфере образовательного консалтинга.
                 Заработать отличную репутацию помогают наши авторы – практикующие преподаватели. Вместе с ними мы оказываем клиентам
                  комплексные услуги по подготовке дипломных проектов и диссертаций, консультируем и разъясняем непонятные моменты, даем советы по защите и выступлению.">
-    <div className="wrapper bg bg-c2 bg-img bg-img2">
+    <PageWrapper className="bg bg-c2 bg-img bg-img2">
 
 
       <section className="breadcrumbs">
@@ -110,7 +111,7 @@ const page = () => (
 
       <LinksBlock links={links}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 
