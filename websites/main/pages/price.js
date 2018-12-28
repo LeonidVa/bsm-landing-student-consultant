@@ -39,26 +39,14 @@ const page = () => (
                 </div>
             </section>
 
+
             <ItemScope type="http://schema.org/BreadcrumbList">
                 <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
                 <ItemListElement url="https://besmarter.ru/price" name="Услуги и цены" position="2" />
             </ItemScope>
 
 
-            <span style={{visibility:"hidden", height:0, width:0}} itemScope itemType = "http://schema.org/BreadcrumbList">
-            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
-                  itemType = "http://schema.org/ListItem">
-                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
-                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Главная</span></a>
-                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
-            </span>
-            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
-                  itemType = "http://schema.org/ListItem">
-                <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/price">
-                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Услуги и цены</span></a>
-                <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
-            </span>
-        </span>
+
 
 
 
