@@ -83,6 +83,7 @@ const page = () => (
 
         <DoctorskayaDis/>
 
+
       <section className="block-text">
         <h1 className="block-text__title">
           Сколько стоит кандидатская диссертация

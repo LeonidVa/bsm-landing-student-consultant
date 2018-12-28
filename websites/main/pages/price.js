@@ -39,6 +39,7 @@ const page = () => (
                 </div>
             </section>
 
+
             <ItemScope type="http://schema.org/BreadcrumbList">
                 <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
                 <ItemListElement url="https://besmarter.ru/price" name="Услуги и цены" position="2" />
