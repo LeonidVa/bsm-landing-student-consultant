@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, {Component} from 'react';
-import Wrapper from 'components/Wrapper/indexH2';
+import Wrapper from 'components/Wrapper';
 import NavRow from 'components/common/NavRow';
 import ImageBlock from 'components/common/ImageBlock'
 import Accordion from 'components/common/Accordion'
