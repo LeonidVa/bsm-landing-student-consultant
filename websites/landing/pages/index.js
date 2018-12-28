@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import Link from "next/link";
 import Wrapper from "components/Wrapper";
-import NavRow from "components/common/NavRow";
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from "components/common/MessBlock";
 import ProfitsBlockSlider from "components/common/ProfitsBlockSlider";
 import Form from "components/common/forms/Big";
@@ -61,9 +62,9 @@ class page extends Component {
           </ul>
         }
       >
-        <div className="wrapper bg bg-c2 bg-img bg-img3">
+        <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
-          <section className="block-nav">
+          <BlockNav>
             <NavRow
               url="#form"
               scroll={true}
@@ -76,8 +77,8 @@ class page extends Component {
               title="Контакты"
               description="Адрес, телефон и время работы"
             />
-          </section>
-          <MessBlock/>
+          </BlockNav>
+ <MessBlock/>
 
           <ServiceBlock
             color="#333333"
@@ -381,7 +382,7 @@ class page extends Component {
             </Address>
           </section>
 
-        </div>
+        </PageWrapper>
       </Wrapper>
     )
   }

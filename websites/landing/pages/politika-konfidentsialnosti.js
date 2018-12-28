@@ -1,5 +1,6 @@
 import React from "react";
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 import Title from 'components/common/Title';
 import Link from 'next/link';
 import FormOrder from 'components/common/forms/Big/Order';
@@ -30,7 +31,7 @@ const page = () => (
       </HeaderUl>
     }
   >
-    <div className="wrapper bg bg-c2 bg-img bg-img4">
+    <PageWrapper className="bg bg-c2 bg-img bg-img4">
       <section className="breadcrumbs">
         <div className="inner">
           <Link href="/">
@@ -98,7 +99,7 @@ const page = () => (
 
       <FormOrder/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

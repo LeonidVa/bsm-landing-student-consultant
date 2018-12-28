@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -38,7 +40,7 @@ import ItemListElement from "components/common/schema.org/ItemListElement"
 const page = () => (
   <Wrapper title="Заказать отчет по практике недорого – сколько стоит написать отчет по практике с печатью в Москве и РФ, цена и сроки на заказ" description="В компании BeSmarter! вы можете заказать отчет по практике недорого с печатью в Москве. Тел. +7 (495) 772-40-90.">
 
-    <div className="wrapper bg bg-c2 bg-img bg-img4">
+    <PageWrapper className="bg bg-c2 bg-img bg-img4">
 
 
 
@@ -61,10 +63,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
         <OtchPoPrak/>
 
@@ -165,7 +167,7 @@ const page = () => (
       <FormOrder/>
 
       <LinksBlock links={otchet}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

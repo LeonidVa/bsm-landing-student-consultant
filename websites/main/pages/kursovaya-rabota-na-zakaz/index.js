@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -37,7 +39,7 @@ import ItemListElement from "components/common/schema.org/ItemListElement"
 const page = () => (
   <Wrapper title="Заказать курсовую работу недорого – написание курсовой работы на заказ в Москве, цены под ключ"
            description="Хотите качественно заказать курсовую работу в Москве? Только в BeSmarter! можно заказать курсовую работу онлайн, недорого и срочно, даже за 1 день. Не теряйте времени, оформляйте заказ курсовых работ прямо сейчас | Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img1">
+    <PageWrapper className="bg bg-c2 bg-img bg-img1">
 
 
       <section className="breadcrumbs">
@@ -59,10 +61,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
         <KursovayaRabota/>
 
@@ -152,7 +154,7 @@ const page = () => (
       <FormOrder/>
 
       <LinksBlock links={links}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

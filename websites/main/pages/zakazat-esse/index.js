@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -38,7 +40,7 @@ import React from "react";
 
 const page = () => (
   <Wrapper title="Заказать эссе срочно и недорого – написание эссе на заказ по философии в Москве и РФ – цены и сроки под ключ" description="Заказать эссе. Напишем эссе на заказ недорого в Москве. Срочная помощь в написании эссе от надежных профессионалов в компании «BeSmarter!». Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img1">
+    <PageWrapper className="bg bg-c2 bg-img bg-img1">
 
 
       <section className="breadcrumbs">
@@ -60,10 +62,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
         <Esse/>
 
@@ -158,7 +160,7 @@ const page = () => (
       <a name="form" id="form"/>
       <FormOrder/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

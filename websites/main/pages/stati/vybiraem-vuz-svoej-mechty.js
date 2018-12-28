@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -33,7 +35,7 @@ import React from "react";
 const page = () => (
   <Wrapper title="Выбираем вуз своей мечты | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="На дворе лето. Для тысяч школьников это возможно самые волнующие три месяца в жизни, потому что это их последнее лето в школе. Они – выпускники. И в этом году им предстоит начать полную незабываемых деньков студенческую жизнь. Но прежде придется решить по-настоящему серьезный вопрос – выбрать вуз своей мечты. Это трудно, ведь каждый думает: «А вдруг выберу не то? А что если не справлюсь? А кто поможет мне, ведь семья занимается абсолютно другим?». Но не нужно бояться, ведь Вы всегда сможете найти помощь у специалистов и выполнить любое задание, например, курсовую работу или диплом на заказ.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -61,10 +63,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
       <Diplom/>
 
@@ -131,7 +133,7 @@ const page = () => (
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

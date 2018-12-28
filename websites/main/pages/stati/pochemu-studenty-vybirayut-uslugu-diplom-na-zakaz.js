@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -33,7 +35,7 @@ import React from "react";
 const page = () => (
   <Wrapper title="Почему студенты выбирают услугу «диплом на заказ»? | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Многие студенты в настоящее время отказываются от самостоятельного написания диплома и предпочитают поручать написание дипломного проекта профессиональным исполнителям. Почему так происходит, почему многие предпочитают диплом на заказ?">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -61,10 +63,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
       <section className="block-service">
         <Link href="/stati/pochemu-studenty-vybirayut-uslugu-diplom-na-zakaz#form">
@@ -157,7 +159,7 @@ const page = () => (
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

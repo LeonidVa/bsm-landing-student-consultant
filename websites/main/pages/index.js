@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
-import NavRow from 'components/common/NavRow';
+import PageWrapper from 'components/common/PageWrapper';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -26,15 +28,16 @@ const page = () => (
     title="Помощь студентам в написании работ - заказать дипломную, курсовую, магистерскую и другие работы в Москве в компании «BeSmarter!». Тел. +7 (495) 772-40-90"
     description="Компания BeSmarter! профессионально оказывает помощь студентам в написании работ! Дипломные и курсовые работы на заказ, написание магистерских диссертаций, а также можно заказать рефераты, контрольные, отчеты по пратике в Москве, звоните Тел. +7 (495) 772-40-90"
   >
-    <div className="wrapper main">
+    <PageWrapper className="main">
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
         <NavRow url='/price' title="Услуги и цены" description="Все для твоей учебы"/>
         <NavRow url='/contacts' title="Контакты" description="Узнай, где нас найти"/>
-      </section>
+      </BlockNav>
+
       <MessBlock/>
 
         <Diplom/>
@@ -197,7 +200,7 @@ const page = () => (
         </ul>
       </section>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -37,7 +39,7 @@ import React from "react";
 const page = () => (
   <Wrapper title="Совместить работу и учебу – реально! | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Последние годы в вузе – это то время, когда молодые и амбициозные люди впервые начинают по-настоящему искать возможности для реализации себя в профессиональном направлении. Бытует мнение, что начинать работать по специальности лучше всего, когда ты учишься. И это правильно и интересно. Но интересы часто выходят за рамки средств, которыми располагают молодые люди-студенты. Тогда и начинается поиск работы. Но как быть с тем, что на учебу остается совсем немного времени? Многие студенты задумываются о том, чтобы сделать диплом на заказ. И это правильное направление мысли. Почему? Это просто: потому что это делает реальным и работать, строя карьеру и набираясь опыта, и оставаться в строю успешных студентов.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
       <section className="breadcrumbs">
@@ -64,10 +66,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
       <Diplom/>
 
@@ -129,7 +131,7 @@ const page = () => (
 
         <LinksBlock links={links}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

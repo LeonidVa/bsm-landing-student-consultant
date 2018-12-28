@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -37,7 +39,7 @@ import React from "react";
 const page = () => (
   <Wrapper title="Стань лучшим студентом в вузе! | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Чтобы изначально стать хорошим студентом, необходимо точно знать: хотите Вы учиться или нет. Можно сделать диплом на заказ и это будет равноценно тому, что Вы поступили не по своему желанию.  Если вас заставили учиться, то Вам будет тяжело стремиться к хорошей учебе. А если у Вас есть желание, то Вы будете полностью отдаваться учебе и обращать внимание на другие аспекты.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -65,10 +67,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
       <Diplom/>
 
@@ -138,7 +140,7 @@ const page = () => (
 
         <LinksBlock links={links}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

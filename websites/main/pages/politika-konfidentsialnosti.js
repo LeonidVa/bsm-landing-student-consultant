@@ -1,4 +1,5 @@
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 import Title from 'components/common/Title';
 import Link from 'next/link';
 import FormOrder from 'components/common/forms/Big/Order';
@@ -10,7 +11,7 @@ import ItemListElement from "components/common/schema.org/ItemListElement"
 
 const page = () => (
   <Wrapper title="Согласие на обработку персональных данных Пользователей | Компания «BeSmarter!». Тел. +7 (495) 772-40-90." description="Согласие на обработку персональных данных пользователей компанией «BeSmarter!». Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img4">
+    <PageWrapper className="bg bg-c2 bg-img bg-img4">
 
 
       <section className="breadcrumbs">
@@ -72,7 +73,7 @@ const page = () => (
 
       <FormOrder/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

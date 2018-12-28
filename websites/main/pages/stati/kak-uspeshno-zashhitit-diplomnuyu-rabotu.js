@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -33,7 +35,7 @@ import React from "react";
 const page = () => (
   <Wrapper title="Как успешно защитить дипломную работу | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Многие из студентов ведущих вузов защищают в первый раз (и частенько в последний) в своей жизни дипломный проект. Поэтому только одно упоминание о защите дипломной работы и недостаток опыта в данном деле приводит в ужас. Еще бы, ведь испытание для дипломника предстоит не из легких! Возникает мысль – купить диплом на заказ. Однако не стоит бояться, страх Вам отнюдь не товарищ. А вот сведущие специалисты с высшим образованием, написавшие не одну сотню дипломов – как раз наоборот, верные помощники и опора. Ведь кто кроме их знает досконально все правила написания дипломного проекта или работы.">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
       <section className="breadcrumbs">
@@ -60,10 +62,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
       <section className="block-service">
         <Link href="#form">
@@ -155,7 +157,7 @@ const page = () => (
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from "components/common/NavRow";
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from "components/common/MessBlock";
 
 import ProfitsBlockSlider from "components/common/ProfitsBlockSlider";
@@ -36,7 +38,7 @@ const page = () => (
         title="Диплом на заказ – срочно заказать дипломную работу в Москве, помощь в написании диплома и сопровождение до защиты"
         description="Написание диплома на заказ! Быстрая, недорогая и профессиональная помощь в подготовке дипломной работы – компания BeSmarter. Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40."
     >
-        <div className="wrapper bg bg-c2 bg-img bg-img3">
+        <PageWrapper className="wrapper bg bg-c2 bg-img bg-img3">
 
 
             <section className="breadcrumbs">
@@ -59,15 +61,15 @@ const page = () => (
 
 
 
-            <section className="block-nav">
+            <BlockNav>
                 <NavRow
                     url="#form"
                     scroll={false}
                     title="Заказать работу"
                     description="Узнай цену твоей работы"
                 />
-            </section>
-            <MessBlock/>
+            </BlockNav>
+ <MessBlock/>
 
             <Diplom/>
 
@@ -212,7 +214,7 @@ const page = () => (
             <FormOrder/>
 
             <LinksBlock links={links}/>
-        </div>
+        </PageWrapper>
     </Wrapper>
 );
 

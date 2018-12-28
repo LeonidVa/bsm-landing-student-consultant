@@ -3,7 +3,9 @@ import Link from 'next/link';
 import 'components/contacts/style.scss'
 
 import Wrapper from 'components/Wrapper';
-import NavRow from 'components/common/NavRow';
+import PageWrapper from 'components/common/PageWrapper';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 
 import Title from 'components/common/Title'
 import MapBlock from 'components/common/MapBlock';
@@ -26,7 +28,7 @@ class page extends Component {
     render() {
         return (
             <Wrapper title="BeSmarter - Контакты" description="На этой страницы указан наш адрес офиса, наша почта и телефоны в Москве, звоните, приезжайте в компанию.">
-                <div className="wrapper bg bg-c2 bg-img bg-img5">
+                <PageWrapper className="bg bg-c2 bg-img bg-img5">
                     <Title>Контакты</Title>
 
                     <section className="breadcrumbs">
@@ -48,9 +50,9 @@ class page extends Component {
 
 
 
-                    <section className="block-nav">
+                    <BlockNav>
                         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-                    </section>
+                    </BlockNav>
 
                     <div itemScope itemType="http://schema.org/Organization">
                         <section className="block-text">
@@ -231,7 +233,7 @@ class page extends Component {
 
                     <FormOrder/>
                     <LinksBlock links={links}/>
-                </div>
+                </PageWrapper>
             </Wrapper>
         )
     }

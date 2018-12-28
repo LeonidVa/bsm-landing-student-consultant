@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import React, {Component} from 'react';
 import Wrapper from 'components/Wrapper';
-import NavRow from 'components/common/NavRow';
+import PageWrapper from 'components/common/PageWrapper';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import ImageBlock from 'components/common/ImageBlock'
 import Accordion from 'components/common/Accordion'
 import FormOrder from 'components/common/forms/Big/Order';
@@ -21,7 +23,7 @@ import ItemListElement from "components/common/schema.org/ItemListElement"
 
 const page = () => (
     <Wrapper title="Услуги и цены" description="На этой странице представлены цены на дипломные, курсовые работы и многие другие услуги компании.">
-        <div className="wrapper bg bg-c2 bg-img bg-img2">
+        <PageWrapper className="bg bg-c2 bg-img bg-img2">
             <Title><span className="black">Стоимость услуг</span></Title>
 
 
@@ -325,7 +327,7 @@ const page = () => (
 
             <LinksBlock links={links}/>
 
-        </div>
+        </PageWrapper>
     </Wrapper>
 );
 

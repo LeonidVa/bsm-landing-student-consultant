@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -37,7 +39,7 @@ import ItemListElement from "components/common/schema.org/ItemListElement"
 const page = () => (
   <Wrapper title="Заказать диссертацию – написание диссертации на заказ в Москве, заказать диссертационную работу срочно в BeSmarter!, цена"
            description="Заказать диссертацию. В компании  BeSmarter! Вы сможете заказать помощь в написании диссертации от надежных и проверенных кандидатов и докторов наук, недорогие цены только в компании «BeSmarter!». Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img2">
+    <PageWrapper className="bg bg-c2 bg-img bg-img2">
 
 
 
@@ -60,10 +62,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
         <KandidatDis/>
 
@@ -185,7 +187,7 @@ const page = () => (
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
       <LinksBlock links={disserNew}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

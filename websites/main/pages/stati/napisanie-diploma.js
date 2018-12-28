@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -33,7 +35,7 @@ import React from "react";
 const page = () => (
   <Wrapper title="Написание диплома | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Представьте себе, что написание диплома может стать очень приятным занятием! Никаких бессонных ночей за монитором компьютера, часов просиживания в библиотеках в поисках нужного материала и необходимости избегать научного руководителя в вузе, поскольку Вы еще не готовы предоставить ему свои наработки. Ваше время можно потратить гораздо более интересно и продуктивно, например, посвятив его работе, семье или встречам с лучшими друзьями. И мы поможем Вам в этом!">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
       <section className="breadcrumbs">
@@ -60,10 +62,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
       <section className="block-service">
         <Link href="#form">
@@ -162,7 +164,7 @@ const page = () => (
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

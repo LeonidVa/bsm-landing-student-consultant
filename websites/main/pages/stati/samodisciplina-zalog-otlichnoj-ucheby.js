@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -37,7 +39,7 @@ import React from "react";
 const page = () => (
   <Wrapper title="Самодисциплина – залог отличной учебы | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Известно с давних пор: самодисциплина – ключ к покорению мира. Самодисциплине учились самые стойкие характеры в истории человечества. Однако сейчас это слово затерто до дыр. Данной тематике посвящены сотни тренингов и множество книг. Но, даже осознав слабые места в своей дисциплине и разобравшись в теме, нелегко исправить свою дисциплину. Ведь мы так любим это слово – «завтра».">
-    <div className="wrapper bg bg-c2 bg-img bg-img3">
+    <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
 
 
@@ -65,10 +67,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
      <Diplom/>
 
@@ -147,7 +149,7 @@ const page = () => (
 
         <LinksBlock links={links}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

@@ -3,7 +3,8 @@ import Link from 'next/link';
 import React, {Component} from 'react';
 
 import Wrapper from 'components/Wrapper';
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 
 import ImageBlock from 'components/common/ImageBlock'
 import Accordion from 'components/common/Accordion'
@@ -27,7 +28,7 @@ import ItemListElement from "components/common/schema.org/ItemListElement"
 
 const page = () => (
   <Wrapper title="О компании BeSmarter!" description="Информация о компании BeSmarter! Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img2">
+    <PageWrapper className="bg bg-c2 bg-img bg-img2">
 
 
 
@@ -48,9 +49,9 @@ const page = () => (
             <ItemListElement url="https://besmarter.ru/about" name="О нас" position="2" />
         </ItemScope>
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
+      </BlockNav>
 
       <section className="block-text">
         <h1 className="block-text__title">
@@ -137,7 +138,7 @@ const page = () => (
 
       <LinksBlock links={links}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

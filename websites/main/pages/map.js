@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
-import NavRow from 'components/common/NavRow';
+import PageWrapper from 'components/common/PageWrapper';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 import FormOrder from 'components/common/forms/Big/Order';
 import MetaTags from 'react-meta-tags';
@@ -11,7 +13,7 @@ import React from "react";
 
 const page = () => (
   <Wrapper title="Карта сайта" description="Карта сайта BeSmarter!">
-    <div className="wrapper bg bg-c2 bg-img bg-img4">
+    <PageWrapper className="bg bg-c2 bg-img bg-img4">
 
 
       <section className="breadcrumbs">
@@ -33,10 +35,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
       <section className="block-text">
         <h1 className="block-text__title center">
@@ -496,7 +498,7 @@ const page = () => (
       <a name="form" id="form"/>
       <FormOrder/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

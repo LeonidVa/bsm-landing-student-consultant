@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -36,7 +38,7 @@ import ItemListElement from "components/common/schema.org/ItemListElement"
 const page = () => (
   <Wrapper title="Сколько стоит магистерская диссертация – цена написания магистерской диссертации на заказ – от 24 000 руб. | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Интересует, цена магистерской диссертации? Позвоните в компанию BeSmarter! и мы вам скажем сколько стоит магистерская диссертация | Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img2">
+    <PageWrapper className="bg bg-c2 bg-img bg-img2">
 
 
 
@@ -69,10 +71,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
         <MagisDisGdeZakazat/>
 
@@ -167,7 +169,7 @@ const page = () => (
           {url: "/diplom-na-zakaz#form", text: "Дипломная работа срочно"},
         ]
       }/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

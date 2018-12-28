@@ -3,7 +3,9 @@ import Link from 'next/link';
 import React, {Component} from 'react';
 
 import Wrapper from 'components/Wrapper';
-import NavRow from 'components/common/NavRow';
+import PageWrapper from 'components/common/PageWrapper';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 
 import ImageBlock from 'components/common/ImageBlock'
 import Accordion from 'components/common/Accordion'
@@ -30,7 +32,7 @@ import ItemListElement from "components/common/schema.org/ItemListElement"
 
 const page = () => (
   <Wrapper title="Гарантия качества в компании BeSmarter!. Тел. +7 (495) 772-40-90." description="Наши довольные клиенты — это самая главная и важная гарантия, которую мы предоставляем тебе. Ведь это — реальный показатель высокого качества нашей работы. Все наши авторы — преподаватели, кандидаты или доктора наук.">
-    <div className="wrapper bg bg-c2 bg-img bg-img2">
+    <PageWrapper className="bg bg-c2 bg-img bg-img2">
 
 
 
@@ -53,11 +55,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-
-      <MessBlock/>
+      </BlockNav>
+ <MessBlock/>
 
         <MagisDisAnother/>
 
@@ -124,7 +125,7 @@ const page = () => (
 
       <LinksBlock links={links}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

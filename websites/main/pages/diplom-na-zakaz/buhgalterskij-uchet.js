@@ -1,7 +1,9 @@
  import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -36,7 +38,7 @@ import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl"
 
 const page = () => (
   <Wrapper title="Заказать дипломную работу по бухгалтерскому учёту в Москве, в компании «BeSmarter!». Тел. +7 (495) 772-40-90." description="В компании «BeSmarter!» можно срочно и недорого заказать дипломную работу по бухгалтерскому учету по выгодной цене в Москве. Тел. +7 (495) 772-40-90.">
-    <div className="wrapper bg bg-c2 bg-img bg-img5">
+    <PageWrapper className="bg bg-c2 bg-img bg-img5">
 
 
 
@@ -64,9 +66,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
+      </BlockNav>
+      
       <MessBlock/>
 
         <Diplom/>
@@ -179,7 +182,7 @@ const page = () => (
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
       <LinksBlock links={links}/>
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

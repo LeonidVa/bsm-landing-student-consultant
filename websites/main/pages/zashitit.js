@@ -1,4 +1,5 @@
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 import Title from 'components/common/Title';
 import Link from 'next/link';
 
@@ -10,7 +11,7 @@ import React from "react";
 
 const page = () => (
   <Wrapper title="Как точно защититься | Компания «BeSmarter!». Тел. +7 (495) 772-40-90." description="Комфортная и успешная защита обеспечена!">
-    <div className="wrapper bg bg-c2 bg-img bg-img4">
+    <PageWrapper className="bg bg-c2 bg-img bg-img4">
       <section className="breadcrumbs">
         <div className="inner">
           <Link href="/">
@@ -60,7 +61,7 @@ const page = () => (
 
       <FormOrder/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 

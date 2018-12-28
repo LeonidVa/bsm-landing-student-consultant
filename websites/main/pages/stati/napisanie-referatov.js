@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 
-import NavRow from 'components/common/NavRow';
+import BlockNav from 'components/common/BlockNav';
+import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
 
 import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
@@ -34,7 +36,7 @@ import React from "react";
 const page = () => (
   <Wrapper title="Написание рефератов | «BeSmarter!». Тел. +7 (495) 772-40-90."
            description="Каждому студенту знакома такая ситуация: через пару дней уже начинается сессия, а рефераты, которые нужно было сделать в течение семестра, еще не готовы. Казалось бы, всего лишь какие-то рефераты могут стать препятствием на пути к сессии! Но, увы и ах, это так. Время летит так быстро, а работа, семья, друзья, естественно, требуют к себе внимания. Чтобы написание реферата не превратилось в препятствие к успешной сессии, наша компания BeSmarter! всегда готова протянуть свою руку помощи!">
-    <div className="wrapper bg bg-c2 bg-img bg-img5">
+    <PageWrapper className="bg bg-c2 bg-img bg-img5">
 
 
 
@@ -62,10 +64,10 @@ const page = () => (
 
 
 
-      <section className="block-nav">
+      <BlockNav>
         <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
-      </section>
-      <MessBlock/>
+      </BlockNav>
+            <MessBlock/>
 
         <Referat/>
 
@@ -142,7 +144,7 @@ const page = () => (
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
-    </div>
+    </PageWrapper>
   </Wrapper>
 );
 
