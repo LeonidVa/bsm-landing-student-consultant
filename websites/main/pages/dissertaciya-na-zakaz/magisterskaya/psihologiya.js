@@ -60,33 +60,12 @@ const page = () => (
                 </div>
             </section>
 
-
-
-<ItemScope>
-    <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
-    <ItemListElement url="https://besmarter.ru/dissertaciya-na-zakaz" name="Диссертация" position="2" />
-    <ItemListElement url="https://besmarter.ru/dissertaciya-na-zakaz/magisterskaya" name="Магистерская" position="3" />
-    <ItemListElement url="https://besmarter.ru/dissertaciya-na-zakaz/magisterskaya/psihologiya" name="По психологии" position="4" />
-</ItemScope>
-
-            <span itemScope itemType="http://schema.org/BreadcrumbList">
-                <span itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
-                    <a itemProp="item" href="https://besmarter.ru/"><span itemProp="name">Главная</span></a>
-                    <meta itemProp="position" content="1"/>
-                </span>
-                <span itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
-                    <a itemProp="item" href="https://besmarter.ru/dissertaciya-na-zakaz"><span itemProp="name">Диссертация</span></a>
-                    <meta itemProp="position" content="2"/>
-                </span>
-                <span itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
-                    <a itemProp="item" href="https://besmarter.ru/dissertaciya-na-zakaz/magisterskaya"><span itemProp="name">Магистерская</span></a>
-                    <meta itemProp="position" content="3"/>
-                </span>
-                <span itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
-                    <a itemProp="item" href="https://besmarter.ru/dissertaciya-na-zakaz/magisterskaya/psihologiya"><span itemProp="name">По психологии</span></a>
-                    <meta itemProp="position" content="4"/>
-                </span>
-            </span>
+            <ItemScope>
+                <ItemListElement url="https://besmarter.ru/" name="Главная" position="1"/>
+                <ItemListElement url="https://besmarter.ru/dissertaciya-na-zakaz" name="Диссертация" position="2"/>
+                <ItemListElement url="https://besmarter.ru/dissertaciya-na-zakaz/magisterskaya" name="Магистерская" position="3"/>
+                <ItemListElement url="https://besmarter.ru/dissertaciya-na-zakaz/magisterskaya/psihologiya" name="По психологии" position="4"/>
+            </ItemScope>
 
             <section className="block-nav">
                 <NavRow url='#form' scroll={false} title="Заказать работу" description="Узнай цену твоей работы"/>
