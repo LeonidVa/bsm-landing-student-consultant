@@ -53,23 +53,23 @@ const page = () => (
         </div>
       </section>
 
-        <span visibility = "hidden" height = "0" weidht = "0" itemScope itemType = "http://schema.org/BreadcrumbList">
-            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+        <span style={{visibility:"hidden", height:0, width:0}} itemScope itemType = "http://schema.org/BreadcrumbList">
+            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
                   itemType = "http://schema.org/ListItem">
                 <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href = "https://besmarter.ru/">
-                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Главная</span></a>
+                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Главная</span></a>
                 <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "1"/>
             </span>
-            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
                   itemType = "http://schema.org/ListItem">
                 <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/stati">
-                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Статьи</span></a>
+                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Статьи</span></a>
                 <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "2"/>
             </span>
-            <span visibility = "hidden" height = "0" width = "0" itemProp = "itemListElement" itemScope
+            <span style={{visibility:"hidden", height:0, width:0}} itemProp = "itemListElement" itemScope
                   itemType = "http://schema.org/ListItem">
                 <a visibility = "hidden" height = "0" width = "0" itemProp = "item" href= "https://besmarter.ru/stati/gipoteza-v-diplomnoj-rabote">
-                    <span visibility = "hidden" height = "0" width = "0" itemProp = "name">Гипотеза в дипломной работе</span></a>
+                    <span style={{visibility:"hidden", height:0, width:0}} itemProp = "name">Гипотеза в дипломной работе</span></a>
                 <meta visibility = "hidden" height = "0" width = "0" itemProp = "position" content = "3"/>
             </span>
         </span>
