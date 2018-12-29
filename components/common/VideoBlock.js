@@ -1,5 +1,5 @@
 import playIcon from 'static/images/play-icon.svg'
-import {Component} from 'react';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 
 const VideoSection = styled.section`
