@@ -18,7 +18,7 @@ import  {
   HeaderNavA,
   } from '/components/Header/style.js';
 import ImageBlock from 'components/common/ImageBlock';
-
+import PageWrapper from 'components/common/PageWrapper'
 
 /**/
 class page extends Component {
