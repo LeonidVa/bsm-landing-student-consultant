@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -60,9 +61,9 @@ const page = () => (
 
       <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">Разработка и написание дипломного проекта</h1>
-        <p className="block-text__par">
+      <TextBlock>
+        <h1 className="title">Разработка и написание дипломного проекта</h1>
+        <p className="par">
           Вы можете заказать дипломный проект в BeSmarter!, чтобы сэкономить время и нервы, и, конечно же, успешно защититься. К нам обращаются в таких ситуациях:
         </p>
         <ul>
@@ -79,17 +80,17 @@ const page = () => (
             не получается посвятить время исследованиям и практической части.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/dip-proekt.jpg')} altText="Разработка и написание дипломного проекта"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества выполнения под заказ
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Поскольку разработка дипломного проекта всегда начинается с подготовки плана, то при сотрудничестве с BeSmarter! под ключ вы получите действительно уникальный материал, а не частично скопированный из сети. Есть и другие преимущества:
         </p>
         <ol>
@@ -103,18 +104,18 @@ const page = () => (
             Структурированная и понятная форма подачи материала. Вам не потребуется слишком много времени для того, чтобы все изучить, поэтому и защититься на «отлично» более чем реально.
           </li>
         </ol>
-        <p className="block-text__par">
+        <p className="par">
           Почему лучше заказывать написание, а не совершать покупку готового материала? Мы гарантируем вам уникальность и актуальность подготовленного проекта. Кроме того, есть возможность договориться о внесении бесплатных правок и уточнений.
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Что входит в стоимость
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Цена обговаривается индивидуально по каждому заказу, однако типичный набор услуг включает в себя:
         </p>
         <ul>
@@ -137,20 +138,20 @@ const page = () => (
             Сдача в оговоренный срок.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Если есть необходимость, то техническая документация для дипломной работы прорабатывается отдельно.
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Факторы, от которых зависит цена
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Стоимость зависит от:
         </p>
         <ol>
@@ -167,18 +168,18 @@ const page = () => (
             Объема.
           </li>
         </ol>
-        <p className="block-text__par">
+        <p className="par">
           Также нужно понимать, что технический дипломный проект, как правило, будет стоить дороже, ведь в нем обязательно должны быть чертежи и схемы.
         </p>
-      </section>
+      </TextBlock>
 
       <VideoBlock>
           <iframe src="https://www.youtube.com/embed/vlRE-nF5CRo" frameBorder="0"
               allow="autoplay; encrypted-media" allowFullScreen></iframe>
       </VideoBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Хотите сэкономить?
         </h2>
         <ul>
@@ -192,7 +193,7 @@ const page = () => (
             Исследования по гуманитарным направлениям всегда стоят дешевле, чем заказы по техническим дисциплинам (а также по информатике, лингвистике).
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
@@ -200,8 +201,8 @@ const page = () => (
         <iframe src="//drive.google.com/file/d/0ByS0VqTi2Rm7R2liV1NPYkN5MVk/preview" frameBorder="0" allowFullScreen></iframe>
       </VideoBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы сотрудничества
         </h2>
         <ul>
@@ -215,7 +216,7 @@ const page = () => (
             Внесите предоплату, чтобы задание поступило в работу авторам BeSmarter!
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

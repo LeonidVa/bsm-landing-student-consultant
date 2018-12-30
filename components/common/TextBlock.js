@@ -22,7 +22,6 @@ import styled from "styled-components"
 * */
 
 const BlockText = styled.div  `
-    
   font-size: 1rem;
   width: 34em;
   margin: 3rem auto 0;
@@ -43,23 +42,8 @@ const BlockText = styled.div  `
       color: #f4511e;
     }
   }
-  ul.marker {
-    li {
-      list-style-type: none;
-    }
-    li:before {
-      content: "\2B24";
-      margin-right: 10px;
-    }
-  }
-  ul.marker-dot {
-    li {
-      list-style-type: none;
-    }
-    li {
-      list-style-image: url("/static/images/marker.png");
-      margin-right: 10px;
-    }
+  b {
+    font-weight: 700;
   }
 
   @media (max-width: 900px) {
@@ -70,11 +54,10 @@ const BlockText = styled.div  `
     width: 100%;
     padding: 1rem;
   }
-
-  &.no-bottom-padd {
+  .no-bottom-padd {
     padding-bottom: 0;
   }
-  title {
+  .title {
     font-size: 2rem;
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
@@ -116,7 +99,6 @@ const BlockText = styled.div  `
     font-weight: bold;
     line-height: 1.2;
     color: #4a4a4a;
-    font-weight: bold;
     .subtitle-orange {
       color: #f4511e;
       margin-bottom: .625rem;
@@ -140,7 +122,7 @@ const BlockText = styled.div  `
     margin: 0;
     padding: 0;
   }
-  par {
+  .par {
     font-size: 1rem;
     margin-bottom: 1rem;
     line-height: 1.5;
@@ -261,12 +243,8 @@ const BlockText = styled.div  `
       }
     }
   }
-  b {
-    font-weight: 700;
-  }
+
 `;
-
-
 
 class TextBlock extends Component{
     render() {

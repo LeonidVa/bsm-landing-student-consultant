@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -79,34 +80,34 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Где заказать магистерскую диссертацию
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Не секрет, что большинство студентов старших курсов помимо учебы еще и работают. И времени на написание магистерской диссертации у них не так много. Кроме того, отсутствует и опыт выполнения научных работ такого уровня. Обычные курсовые и даже диплом не идут ни в какое сравнение с диссертацией.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Предлагаем не рисковать получением магистерской степени, которая открывает дорогу к вашему всестороннему профессиональному развитию. Закажите выполнение работы высококлассным ученым, работающим в компании BeSmarter!. А сами продолжайте спокойно зарабатывать деньги и не спеша готовиться к защите.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/mag-gde-z.jpg')} altText="Где заказать магистерскую диссертацию"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как определяется стоимость услуги?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           В первом приближении диапазон цен вы сможете прикинуть в соответствующем разделе нашего сайта. Стоимость именно вашей магистерской диссертации мы определим в процессе предварительной консультации. Следует понимать, что трудоемкость конкретной работы существенно варьируется в зависимости от сопутствующих факторов.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Главный критерий ценообразования – это, конечно же, сложность предмета и выбранной темы. Дешевле всего стоят диссертации по гуманитарным специальностям, в то время, как расценки по техническим дисциплинам существенно выше среднего. Также влияние на итоговую стоимость услуги оказывает срочность выполнения и специальные
           требования.
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -114,8 +115,8 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как мы работаем?
         </h2>
         <ul>
@@ -132,7 +133,7 @@ const page = () => (
             Защита. Мы поможем вам качественно подготовиться к защите диссертации, включая содействие в подготовке доклада и презентации, тренировку ответов на вопросы комиссии и другие аспекты.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

@@ -1,11 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styled from "styled-components"
-
-
-const UlBlockTextLinksList = styled.ul `
-    list-style: disc;
-`;
+import TextBlock from 'components/common/TextBlock'
 
 
 const renderLinks = (links) => (
@@ -21,15 +16,8 @@ const renderLinks = (links) => (
             </li>
         )
     })
-)
+);
 
-const LinksBlock = ({links}) => (
-
-    <section className="block-text">
-        <UlBlockTextLinksList className="block-text__links-list">
-            {renderLinks(links)}
-        </UlBlockTextLinksList>
-    </section>
-)
+const LinksBlock = ({links}) => (<TextBlock><ul>{renderLinks(links)}</ul></TextBlock>);
 
 export default LinksBlock

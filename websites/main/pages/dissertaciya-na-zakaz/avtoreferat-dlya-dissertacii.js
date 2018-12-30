@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -74,15 +75,15 @@ const page = () => (
 
         <DoctorskayaDis2/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Автореферат диссертации на заказ
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Автореферат представляет собой краткую выдержку из диссертации, докторской или кандидатской. Это документ, имеющий юридическую силу. Без его написания диссертационная работа не будет принята к защите. Изначально получается право на размножение автореферата, после чего следует допуск соискателя к защите. Компания
           BeSmarter! предлагает вам заказать написание автореферата диссертации под ключ.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -95,8 +96,8 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/aspirant.jpg')}/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Вопросы, освещаемые в автореферате
         </h2>
         <ul>
@@ -110,16 +111,16 @@ const page = () => (
             Значимость путей и методов решения поставленных задач для использования на практике.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Содержание, структура и объем автореферата определяются Высшей аттестационной комиссией (ВАК). Его написание – трудоемкая и кропотливая работа, требующая специальных знаний. Если у вас не хватает времени на выполнение, обратитесь в нашу компанию.
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества написания на заказ
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Заказывая услугу по написанию автореферата в нашей компании, вы получаете такие выгоды:
         </p>
         <ul>
@@ -136,7 +137,7 @@ const page = () => (
             Возможность самостоятельного выбора компетентного исполнителя.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Почему лучше заказать написание, а не купить готовый автореферат? Приобретение готового автореферата сопряжено с определенными рисками:
         </p>
         <ul>
@@ -150,20 +151,20 @@ const page = () => (
             Несоблюдение стандартов ГОСТ.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Беспроигрышный вариант – узнать точные требования к оформлению и лишь после этого оформлять заказ автореферата диссертации. Этим вы повышаете вероятность успешной защиты.
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От чего зависит цена
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           На стоимость подготовки автореферата влияют:
         </p>
         <ul>
@@ -177,13 +178,13 @@ const page = () => (
             Срочность написания.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы сотрудничества с BeSmarter!
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Работа по написанию автореферата к кандидатской или докторской диссертации выполняется по такому алгоритму:
         </p>
         <ul>
@@ -197,10 +198,10 @@ const page = () => (
             Вы получаете написанный автореферат. На протяжении 2 месяцев все правки выполняются бесплатно.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Чтобы оформить заказ в BeSmarter!, заполните специальную контактную форму на сайте или позвоните нам по телефону: +7 (495) 772-40-90, +7 (495) 772-90-40. В самом скором времени наш специалист свяжется с вами. Сотрудничество с проверенной командой специалистов – залог вашего успеха на защите.
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

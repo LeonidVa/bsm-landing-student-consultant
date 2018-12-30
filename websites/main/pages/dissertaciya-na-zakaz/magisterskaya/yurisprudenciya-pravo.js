@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -79,11 +80,11 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Магистерская диссертация по юриспруденции
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           В каких случаях стоит обращаться к нам за помощью? Если у вас катастрофически не хватает свободного времени, то магистерская диссертация по юриспруденции может быть написана сотрудниками агентства, где работают преподаватели-практики с опытом. Обратитесь в компанию BeSmarter! – мы специализируемся на услугах высокого
           качества исполнения. К нам приходят, когда с написанием работы совсем сложно:
         </p>
@@ -101,17 +102,17 @@ const page = () => (
             когда нужно срочно поступать в другой ВУЗ (например, за границей), а вы не готовы.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/magiuri.jpg')} altText="Магистерская диссертация по юриспруденции"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества написания под ключ
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           В каждом отдельном случае магистерская диссертация по юриспруденции пишется с учетом требований научного руководителя и пожеланий самого заказчика. Таким образом, нам удается добиться высоких показателей качества работы:
         </p>
         <ul>
@@ -125,11 +126,11 @@ const page = () => (
             не нужно переживать о том, что части работы появлялись в сети, и теперь вы не защититесь из-за низкой уникальности материала.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Почему лучше сделать выбор в пользу написания, а не покупки готовой диссертации? Одна из самых частых жалоб тех, кто хотел сэкономить и просто купить материал – отсутствие научной новизны, авторского подхода к изложению, а также устаревшие данные. Когда магистерская диссертация по юриспруденции выполняется под ключ, с
           такими проблемами почти не сталкиваются. Кроме того, вам гарантировано оформление по стандартам ГОСТ, исчерпывающие и развернутые ответы на все поднятые и исследуемые вопросы. При написании наши авторы ориентируются исключительно на актуальные и проверенные данные.
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -137,8 +138,8 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От чего зависит цена услуги
         </h2>
         <ol>
@@ -158,13 +159,13 @@ const page = () => (
             Сложность выбранного направления.
           </li>
         </ol>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Какие варианты экономии существуют?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Если вам важно заплатить минимальную цену, учтите следующие возможности:
         </p>
         <ul style={{listStyle: 'none'}}>
@@ -178,7 +179,7 @@ const page = () => (
             - Чем больше практических исследований в проекте, тем выше цена, ведь дополнительные данные под ключ всегда обходятся дороже.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
@@ -187,11 +188,11 @@ const page = () => (
                     allow="autoplay; encrypted-media" allowFullScreen></iframe>
         </Video>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы сотрудничества с нами
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Вы можете заполнить заявку на сайте компании BeSmarter! или позвонить по телефонам <span className="tel1">+7 (495) 772-40-90</span>, <span className="tel1">+7 (495) 772-90-40</span>, чтобы сэкономить время. Далее действует такая схема работы:
         </p>
         <ol>
@@ -205,14 +206,14 @@ const page = () => (
             Начало работы над проектом.
           </li>
         </ol>
-        <p className="block-text__par">
+        <p className="par">
           В зависимости от того, нужна ли вам сразу вся работа целиком или частями, происходит расчет и передача самих материалов. Мы советуем не заказывать отдельные главы, ведь когда на руках есть вся работа целиком, вы сможете без проблем ответить на любой вопрос научного руководителя. В этом случае вообще никто не заподозрит,
           что магистерская диссертация по юриспруденции написана на заказ.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Обратитесь в BeSmarter!, чтобы сэкономить личное время и избежать неприятностей в учебе. Вас ждет не только безупречное содержимое, но и структурированная, понятная подача материала, а также оформление диссертации по всем действующим правилам и стандартам.
         </p>
-      </section>
+      </TextBlock>
 
       <Video>
         <iframe src="https://www.youtube.com/embed/ajkrUquzqB4" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>

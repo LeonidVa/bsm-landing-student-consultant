@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -75,23 +76,23 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать отчет по учебной практике
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           В нашей компании собран лучший преподавательский состав, состоящий из действующих специалистов разных дисциплин с учеными степенями, начиная от преподавателей вузов до кандидатов наук. Вы будете довольны результатом!
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Перед совершением заказа клиент может лично пообщаться с возможными исполнителями и выбрать на свой взгляд лучшего кандидата. Более 98% наших заказчиков защищаются на «отлично» вследствие такого профессионального подхода.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
       <ImageBlock imageSrc={require('static/images/block/otchet-po-uchebnoy-praktike.jpg')} altText="Заказать отчет по учебной практике"/> 
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как заказать отчет по учебной практике недорого
         </h2>
         <ul>
@@ -108,14 +109,14 @@ const page = () => (
             Особые требования. Мы поможем, если вам требуется заказать написание отчета по учебной практике на другом иностранном языке или 100% уникальность текста (при стандартных 80-98%).
           </li>
         </ul>
-      </section>
+      </TextBlock>
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Какие гарантии предоставляет компания BeSmarter!
         </h2>
         <ul>
@@ -132,13 +133,13 @@ const page = () => (
             <b>Конфиденциальность</b>. Факт сотрудничества остается втайне. В юридически заверенном договоре прописываются обязательства о неразглашении. В нашей компании вы сможете заказать отчет по учебной практике недорого, срочно и с гарантией качества.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как купить отчет по учебной практике в Москве
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Есть несколько способов заказать работу:
         </p>
         <ul>
@@ -152,10 +153,10 @@ const page = () => (
             Либо встретиться лично у нас - в удобном офисе, в центре столицы по адресу, указанному в наших <Link href="/contacts"><b><a>контактах</a></b></Link>.
           </li>
         </ul>
-        <p className="block-text__par" style={{fontStyle: 'italic', textAlign: 'center'}}>
+        <p className="par" style={{fontStyle: 'italic', textAlign: 'center'}}>
           BeSmarter! – это качественные, уникальные, грамотно оформленные работы под заказ в Москве на выгодных условиях!
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

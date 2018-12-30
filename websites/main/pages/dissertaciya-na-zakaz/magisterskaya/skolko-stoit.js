@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -80,24 +81,24 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Сколько стоит магистерская диссертация
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Грамотно написанная и уверенно защищенная магистерская диссертация – цена получения первого значительного научного звания в карьере будущего ученого. Тем не менее, далеко не каждый студент обладает навыками и, главное – достаточным количеством свободного времени, чтобы выполнить данную работу.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Предлагаем заказать магистерскую диссертацию по доступной цене у опытных специалистов компании BeSmarter! Мы напишем работу в сжатые сроки и в полном соответствии со всеми вузовскими требованиями. Кроме того, вы получите квалифицированную поддержку вплоть до момента успешной защиты.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/mag-ckolko.jpg')} altText="Сколько стоит магистерская диссертация"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Почему написать магистерскую диссертацию в BeSmarter – надежно?
         </h2>
         <ul className="fitted">
@@ -111,7 +112,7 @@ const page = () => (
             Наконец, компания придерживается политики прозрачного ценообразования, поэтому стоимость магистерской диссертации на заказ полностью соответствует трудоемкости и сложности конкретной работы. Кроме того, вы можете рассчитывать на скидки и гибкую систему оплаты.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -119,11 +120,11 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От чего зависит стоимость написания магистерской диссертации на заказ?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Разумеется, этот вопрос волнует каждого. Ориентировочно узнать, сколько стоит написать магистерскую диссертацию на заказ, можно в соответствующем разделе нашего сайта. Точная цена будет определена во время общения с менеджером на основании следующих критериев.
         </p>
         <ul>
@@ -137,21 +138,21 @@ const page = () => (
             Сроки сдачи. Оптимальное время, необходимое для написания работы – от 5 дней. Если же вам нужно за день-два написать магистерскую диссертацию, цена будет немного выше, поскольку нам придется привлечь несколько авторов.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как узнать сколько стоит магистерская диссертация на заказ?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Выберите наиболее удобный для себя способ связи. Жители Москвы имеют возможность непосредственно посетить наш <b><Link href="/contacts"><a>офис</a></Link></b> по адресу Большой Кисловский переулок, д. 1 стр. 2, офис 211. А если вы живете в другом регионе России, заполните <b><a href="#form">онлайн-форму</a></b> на сайте
           или позвоните по одному из номеров: +7(495)772-40-90, +7(495)772-90-40.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           После собеседования мы, заключим с вами официальный договор и зафиксируем в нем все важные моменты сотрудничества, в том числе стоимость написания магистерской диссертации. Далее согласованный с вами автор приступит к написанию магистерской диссертации, а вы сможете заниматься другими делами, не переживая за будущее своей
           научной карьеры!
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

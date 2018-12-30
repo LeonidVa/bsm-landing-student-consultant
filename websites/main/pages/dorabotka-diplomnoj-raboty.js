@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -80,47 +81,47 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/dip-rabota.jpg')} altText="Доработка дипломной работы"/>
 
-        <section className="block-text">
-            <h1 className="block-text__title">
+        <TextBlock>
+            <h1 className="title">
                 Доработка дипломной работы
             </h1>
-            <p className="block-text__par">
+            <p className="par">
                 Сроки сдачи становятся минимальными и нужно дописать дипломную работу?
             </p>
-            <p className="block-text__par">
+            <p className="par">
                 Хотите заказать корректировку дипломной работы у лучших специалистов по выгодной цене?
             </p>
-            <p className="block-text__par">
+            <p className="par">
                 Специалисты компании BeSmarter! с радостью помогут в решении этих задач. Это отличное решение для выхода из сложившейся ситуации. Выполнить доработку диплома срочно смогут только квалифицированные исполнители, которые знают все особенности данного проекта.
             </p>
-            <p className="block-text__par">
+            <p className="par">
                 Сегодня в интернете можно найти самые разные сервисы, которые помогают дописать дипломную работу. Только не все они могут сравниться с услугами компании BeSmarter!
             </p>
-            <p className="block-text__par">
+            <p className="par">
                 Огромный опыт работы авторов позволит быстро доделать диплом. Только здесь смогут взяться за любое задание и помочь со сложным проектом. Вы будете уверены в качестве и правильности выполненной работы. Компания BeSmarter! всегда приходит на помощь в трудное для студентов время!
             </p>
-        </section>
+        </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Корректировка дипломных работ – надежно и качественно!
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Только наша компания предлагает самые выгодные и удобные условия сотрудничества. Мы долгое время работаем в данном направлении и всегда радуем клиентов. Колоссальный опыт работы позволяет переделать дипломную работу в кратчайшие сроки.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Диплом – это не простое задание, а фундаментальный труд. Если преподаватель возвращает его для исправления, то многие студенты не знают что делать дальше. Они уверены, что работа заслуживает самой высокой оценки, но их труды не могут оценить правильно. К тому же доработка диплома требует большого количества сил и времени.
           Что же делать студенту, когда времени практически нет?
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Компания BeSmarter! знает, как помочь. Здесь помогут, даже если до сдачи остались дни или часы. Специалисты гарантируют положительный результат проделанной работы!
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Компания BeSmarter! обладает рядом преимуществ:
         </h2>
         <ul>
@@ -140,20 +141,20 @@ const page = () => (
             Сопровождение до сдачи и консультирование. Заключение договора.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Исправление дипломных работ срочно – это уникальная возможность быстро, качественно и надежно получить желаемую специальность.
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как заказать рерайт диплома или его исправление?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Компания BeSmarter! каждый день ждет новых клиентов. Здесь всегда рады прийти на помощь в трудную минуту. На редактирование дипломной работы цена оговаривается в индивидуальном порядке. Она зависит от:
         </p>
         <ul>
@@ -170,10 +171,10 @@ const page = () => (
             Оригинальности.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Главная задача компании BeSmarter! – это помощь студентам. Каждый, кому понадобилась помощь, может сюда обратиться и получить ее. Только здесь на доработку диплома цена будет приемлемая и доступная каждому студенту. Мы как никто другой понимаем студентов.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Если вы решили заказать рерайт дипломной работы или его исправление, то:
         </p>
         <ul>
@@ -187,10 +188,10 @@ const page = () => (
             Приходите в офис.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Мы рады видеть новых клиентов и готовы всем помочь в срочной доработке диплома!
         </p>
-      </section>
+      </TextBlock>
 
       <Video>
           <iframe src="https://www.youtube.com/embed/FRUcAFM9y9M" frameBorder="0"

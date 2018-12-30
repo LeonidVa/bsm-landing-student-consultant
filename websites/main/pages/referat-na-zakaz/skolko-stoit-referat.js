@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -74,14 +75,14 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Сколько стоит заказать реферат
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Выяснить, сколько стоит заказать реферат в компании «BeSmarter!», можно с помощью нашего <Link href="/price"><a>прайс-листа</a></Link>. Ориентировочный диапазон цен составляет от 1 500 до <br/>7 000 рублей.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Чтобы узнать точно, сколько стоит написать реферат, заданную именно вам, понадобится собеседование. Мы определим ее цену на основании следующих факторов.
         </p>
         <ul>
@@ -95,14 +96,14 @@ const page = () => (
             Сроки. Чтобы минимизировать стоимость написания реферата, оформите заявку как можно раньше.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/skolko-stiot-ref.jpg')} altText="Сколько стоит реферат"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Что мы гарантируем?
         </h2>
         <ul>
@@ -122,7 +123,7 @@ const page = () => (
             Гарантия неразглашения. Мы строго придерживаемся принципа строгой конфиденциальности, гарантии которой прописываются в официальном договоре.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -130,20 +131,20 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Кто будет выполнять реферат?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Лучше всего пишет рефераты тот, кто их задает! Поэтому мы делегируем такие заказы действующим вузовским преподавателям по соответствующим предметам. Они абсолютно точно знают, как правильно выполнить и грамотно оформить реферат, поскольку сами их регулярно проверяют.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Такой подход совместно с фирменной системой многоступенчатого контроля качества позволил нам добиться невероятной статистики – почти 99% отличных оценок! Если хотите получить высший балл за реферат по любому предмету – обращайтесь, мы поможем!
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как мы работаем?
         </h2>
         <ul>
@@ -157,17 +158,17 @@ const page = () => (
             Завершение. Вы консультируетесь с автором по всем непонятным моментам, сдаете готовый реферат и получаете отличную оценку.
           </li>
         </ul>
-        <p className="block-text__par" style={{fontStyle: 'italic', textAlign: 'center'}}>
+        <p className="par" style={{fontStyle: 'italic', textAlign: 'center'}}>
           Все элементарно – попробуйте сами и не пожалеете!
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
       <ImageBlock imageSrc={require('static/images/block/skolko-stoit-ref-2.jpg')} altText="Сколько стоит заказать реферат"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как узнать, сколько стоит реферат?
         </h2>
         <ul>
@@ -181,10 +182,10 @@ const page = () => (
             личная заявка – наш адрес: Москва, пер. Большой Кисловский, д. 1, стр. 2, оф. 211.
           </li>
         </ul>
-        <p className="block-text__par" style={{fontStyle: 'italic', textAlign: 'center'}}>
+        <p className="par" style={{fontStyle: 'italic', textAlign: 'center'}}>
           Оформляйте заявку прямо сейчас и узнайте сколько будет стоить написание вашего реферата!
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

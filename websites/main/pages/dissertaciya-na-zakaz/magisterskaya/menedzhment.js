@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -77,29 +78,29 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Магистерская диссертация по менеджменту на заказ
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Эффективное управление – это умение грамотно распределять имеющиеся ресурсы. Кроме того, хороший менеджер – специалист, который постоянно приобретает новые навыки, знает все актуальные нормативы и, конечно же, непрерывно совершенствуется. Одно из условий для работы по данной специальности – написание магистерской
           диссертации по менеджменту.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Однако реалии студенческой жизни таковы, что выкроить время для написания диссертационной работы непросто. Тем более, что требования к ней значительно строже, чем к традиционной дипломной работе или проекту. Решение этой проблемы – написание магистерской диссертации на заказ. Специалисты компании BeSmarter! предлагают
           подготовку диссертационных работ в сжатые сроки по умеренным ценам.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/mag-men.jpg')} altText="Магистерская диссертация по менеджменту"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества написания под ключ
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Обратившись в нашу компанию, вы получите работу с высоким уровнем уникальности, при этом тема будет раскрыта исчерпывающе. Теоретическая, практическая и аналитическая части будут четко структурированы и оформлены в соответствии с вузовскими требованиями. Это даст вам возможность хорошо подготовиться к защите. Достоинства
           заказа написания магистерской диссертации следующие:
         </p>
@@ -120,7 +121,7 @@ const page = () => (
             Умеренные цены.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -128,11 +129,11 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Готовая диссертация или сделанная на заказ?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Написание диссертации на соискание степени магистра — это постоянное сотрудничество с научным руководителем. Как правило, студент после согласования плана написания работы выполняет задание поэтапно и по мере необходимости вносит дополнения или изменения в уже готовый текст. В интернете можно найти готовую магистерскую
           диссертацию по специальности «Менеджмент», но ее использование связано с определенными рисками:
         </p>
@@ -147,22 +148,22 @@ const page = () => (
             Работа, купленная или скачанная в интернете, не уникальна. Приобретение готового проекта оправдано лишь в одном случае: если вы работаете над заданием самостоятельно. Тогда такая диссертация может быть использована как основа.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От чего зависит стоимость
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Цена написания зависит от объема задания и сложности темы. Бывает так, что выполнить заказ нужно срочно. Естественно, что срочная магистерская диссертация по менеджменту стоит дороже.
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Можно ли немного сэкономить?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Многие клиенты задают вопрос: возможно ли удешевление заказа? Вот несколько способов реально сэкономить:
         </p>
         <ul>
@@ -176,17 +177,17 @@ const page = () => (
             Акции и специальные предложения. Это отличная возможность для получения по-настоящему недорогой работы.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
       <ImageBlock imageSrc={require('static/images/block/mag-po-men.jpg')} altText="Магистерская диссертация по менеджменту на заказ"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы сотрудничества с нами
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Первый этап работы над магистерским проектом – согласование темы и плана написания диссертации. Далее вы оформляете заказ в нашей компании и действуете в таком порядке:
         </p>
         <ul>
@@ -197,10 +198,10 @@ const page = () => (
             После выполнения задания вы оплачиваете полную стоимость работы, и готовая диссертация отправляется на ваш электронный адрес.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           В течении гарантированного срока все изменения и дополнения вносятся бесплатно. Оформите заказ, и защита вашей магистерской диссертации по менеджменту пройдет на отлично!
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

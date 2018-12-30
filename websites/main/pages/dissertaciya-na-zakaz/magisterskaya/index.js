@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -76,25 +77,25 @@ const page = () => (
 <MatZashGirl/>
 
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Магистерская диссертация на заказ
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Написание дипломной работы – сложная задача. Тем более, если речь идет о магистерской диссертации. Собрать и обработать качественный и актуальный материал, а затем представить его в виде диссертационной работы — все это требует значительных усилий и временных затрат. Решение проблемы – диплом магистра на заказ. Это одна
           из услуг, профессионально оказываемых специалистами компании BeSmarter!.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/magisr.jpg')} altText="Магистерская диссертация на заказ"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества написания магистерской диссертации под ключ
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Авторы нашей компании подготовят для вас качественную и уникальную работу с полным раскрытием заданной темы. В составе диплома будут хорошо структурированные и продуманные теоретический, аналитический и практический разделы. Это позволит вам проявить себя на защите с наилучшей стороны. К преимуществам нашего подхода
           относятся:
         </p>
@@ -115,7 +116,7 @@ const page = () => (
             Доступная стоимость, с учетом бесплатных доработок и изменений.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -123,11 +124,11 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Магистерская диссертация: на заказ или готовая?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
             Решение заказать магистерскую диссертацию предусматривает тесное сотрудничество с научным руководителем проекта. Вначале вы согласовываете с ним план диплома, затем отдаете на проверку отдельные главы. Специалист нашей компании при необходимости вносит дополнения и правки. Простое скачивание и редактирование готовой работы из
           интернета связано с дополнительными рисками:
         </p>
@@ -142,27 +143,27 @@ const page = () => (
             Отсутствие уникальности. Приобретение диплома в банке готовых заданий оправдано лишь в том случае, если вы сами решили работать над проектом. В такой ситуации готовая диссертация служит как основа для написания.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <Video>
         <iframe src="https://www.youtube.com/embed/ajkrUquzqB4" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
       </Video>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От чего зависит цена
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Сколько стоит написать магистерскую диссертацию на заказ в Москве? Стоимость выполнения работы зависит от степени сложности, выбранной темы и объема. Например, заказ диплома магистра по архитектуре с большим количеством графического материала имеет более высокую стоимость, чем диссертация по менеджменту или экономике. Влияет на цену и
           срочность выполнения задания.
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как можно сэкономить
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Существует несколько способов заказать магистерскую диссертацию и сэкономить при этом деньги:
         </p>
         <ul>
@@ -176,7 +177,7 @@ const page = () => (
             Спецпредложения, акции со снижением цен. Это шанс получить качественную услугу по невысокой стоимости.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
@@ -185,11 +186,11 @@ const page = () => (
                   allow="autoplay; encrypted-media" allowFullScreen></iframe>
       </Video>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы сотрудничества
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Написание дипломной работы магистра на заказ состоит из таких этапов:
         </p>
         <ul>
@@ -206,10 +207,10 @@ const page = () => (
             Все правки и дополнения в течение 2 месяцев вносятся бесплатно.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
             Оформите заказ на написание диплома магистра в BeSmarter!, и ваша защита пройдет блестяще!
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

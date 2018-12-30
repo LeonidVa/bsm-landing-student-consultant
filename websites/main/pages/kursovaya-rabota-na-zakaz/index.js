@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -70,33 +71,33 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать курсовую работу
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Многим студентам требуется помощь в написании курсовой работы. Чаще всего трудности возникают из-за недостатка времени.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Если вам срочно нужна курсовая, предлагаем воспользоваться услугами специалистов BeSmarter! Наша компания успешно работает в данной сфере более 10 лет. Мы можем написать курсовую на заказ в срок от 1 дня, вне зависимости от сложности темы и без ущерба для качества.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Своевременность сдачи готовой работы гарантируется официальным договором, подписываемым на стадии предварительного собеседования. В случае необходимости мы будем вам сдавать на проверку каждую главу.
         </p>
-        <p className="block-text__par" style={{fontStyle: 'italic'}}>
+        <p className="par" style={{fontStyle: 'italic'}}>
           Только в BeSmarter! можно заказать курсовую работу онлайн, недорого, срочно и качественно. Не теряйте времени!
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/kur-rab-na-zakaz.jpg')} altText="Заказать курсовую работу"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как купить курсовую работу на заказ недорого?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           На стоимость услуги влияют несколько объективных факторов.
         </p>
         <ul>
@@ -112,10 +113,10 @@ const page = () => (
             <b>Материалы. </b>При наличии готовых наработок они сэкономят нам время на написание, а вам – деньги.
           </li>
         </ul>
-        <p className="block-text__par" style={{fontStyle: 'italic'}}>
+        <p className="par" style={{fontStyle: 'italic'}}>
           Следуйте этим советам, и сможете писать курсовые работы на заказ недорого!
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -123,8 +124,8 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Хотите заказать курсовую работу онлайн или лично?
         </h2>
         <ol>
@@ -138,10 +139,10 @@ const page = () => (
             Визит. Лучший способ заказать курсовую работу в Москве – посетить наш уютный офис в центре столицы!
           </li>
         </ol>
-        <p className="block-text__par" style={{fontStyle: 'italic'}}>
+        <p className="par" style={{fontStyle: 'italic'}}>
           Закажите курсовую работу сегодня – это быстро и удобно!
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

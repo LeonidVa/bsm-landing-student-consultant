@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -92,8 +93,8 @@ const page = () => (
         ]}
       />
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Диплом MBA на заказ
         </h1>
         <ul>
@@ -118,26 +119,26 @@ const page = () => (
             С помощью нашего сайта заказать диплом MBA можно не только в Москве, но и в любом регионе России.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/diplom MBA.jpg')} altText="Диплом MBA на заказ"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как мы работаем?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Вы оформляете заявку на помощь в написании дипломной работы MBA удобным для себя способом – онлайн, по телефону (<b>+7 495 772-40-90</b>) или в нашем <a href="/contacts">офисе</a> (Москва, пер. Большой Кисловский, д. 1, стр. 2, оф. 211).
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Мы проводим с вами собеседование и уточняем все детали заказа. Определяется стоимость услуги и согласовывается автор. По результатам переговоров подписывается официальный договор с указанием всех ваших требований и наших обязательств.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Согласованный исполнитель пишет диплом МВА на заказ и сдает его в оговоренные сроки. При необходимости вы можете заказать бесплатные корректировки. Далее автор консультирует вас и помогает подготовиться к защите.
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -145,27 +146,27 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Кто наши авторы?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Они – наша главная гордость! Компания BeSmarter! принципиально не пользуется услугами фрилансеров-копирайтеров и прочих ненадежных кадров. В нашем штате – исключительно действующие преподаватели вузов различных дисциплин, имеющие научную степень как минимум кандидата наук.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Более того, мы предоставляем вам уникальную возможность предварительно удостовериться в компетентности потенциального исполнителя и переговорить с ним. Благодаря такому профессиональному подходу более 98% наших клиентов защищаются на «отлично»!
         </p>
-      </section>
+      </TextBlock>
 
       <Video>
         <iframe src="https://www.youtube.com/embed/mzDkG6XRKuc" frameBorder="0" allowFullScreen></iframe>
       </Video>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как сэкономить при заказе диплома MBA?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Хотите <b>написать диплом MBA недорого</b>? Вот три простых способа экономии:
         </p>
         <ol>
@@ -179,10 +180,10 @@ const page = () => (
             Предложите свои наработки. Если вы уже приступили к написанию работы, принесите эти материалы, и мы снизим цену.
           </li>
         </ol>
-        <p className="block-text__par italic">
+        <p className="par italic">
           <b>Воспользуйтесь услугами специалистов BeSmarter!, и вы не пожалеете об этом!</b>
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

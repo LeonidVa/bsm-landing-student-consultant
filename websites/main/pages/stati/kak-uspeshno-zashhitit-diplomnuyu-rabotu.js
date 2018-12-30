@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -102,16 +103,16 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Как успешно защитить дипломную работу
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Многие из студентов ведущих вузов защищают в первый раз (и частенько в последний) в своей жизни дипломный проект. Поэтому только одно упоминание о защите дипломной работы и недостаток опыта в данном деле приводит в ужас. Еще бы, ведь испытание для дипломника предстоит не из легких! Возникает мысль – купить <Link
           href="/diplom-na-zakaz"><b><a>диплом на заказ</a></b></Link>. Однако не стоит бояться, страх Вам отнюдь не товарищ. А вот сведущие специалисты с высшим образованием, написавшие не одну сотню дипломов – как раз наоборот, верные помощники и опора. Ведь кто кроме их знает досконально все правила написания дипломного проекта
           или работы.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -123,8 +124,8 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Основные правила написания диплома
         </h2>
         <ul>
@@ -145,12 +146,12 @@ const page = () => (
             что нужно обратить более пристальное внимание, а чего лучше не касаться вовсе.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Защита диплома – самая ответственная часть Вашего обучения. Ведь она показывает итоги всей учебы в вузе. По ней понятно, какой из Вас получится специалист. Многие компании набирают в свой штат сотрудников по результатам защиты дипломной работы. Поэтому стоит <Link href="/diplom-na-zakaz"><b><a>заказать
           диплом</a></b></Link> у проверенных специалистов, которыми являются сотрудники нашей компании. Тысячи довольных выпускников, с блеском защитившие свои дипломные работы – тому яркое подтверждение. Мы пишем, мы творим, мы делаем дипломы быстро, качественно, разбираясь досконально в самых сложнейших темах – от истории
           межэтнических конфликтов до создания двигателя Николы Тесла.
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

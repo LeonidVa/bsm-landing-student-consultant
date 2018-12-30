@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
 import MessBlock from 'components/common/MessBlock';
@@ -40,8 +41,8 @@ const page = () => (
       </BlockNav>
             <MessBlock/>
 
-      <section className="block-text">
-        <h1 className="block-text__title center">
+      <TextBlock>
+        <h1 className="title center">
           Карта сайта
         </h1>
         <ul className="style-none">
@@ -493,7 +494,7 @@ const page = () => (
             </ul>
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

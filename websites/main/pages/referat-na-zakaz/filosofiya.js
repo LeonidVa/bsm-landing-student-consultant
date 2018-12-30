@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -70,15 +71,15 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Реферат по философии на заказ
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Философия, прародительница всех современных наук, многим студентам кажется сложной для восприятия и запоминания. Для того чтобы выполнить реферат по философии, недостаточно подобрать первичные источники, скопировать из них определенные отрывки, увязать эти фрагменты с темой работы, выделить причинно-следственные связи и
           сформулировать выводы. Такая работа очень кропотливая, требует больших временных затрат и не всегда приносит нужный результат.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Свободного времени для написания реферата по философии может не оказаться по нескольким причинам:
         </p>
         <ul>
@@ -95,20 +96,20 @@ const page = () => (
             Другие личные причины
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/ref-po-filos.jpg')} altText="Реферат по философии"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Воспользоваться помощью профессионалов – это просто и быстро!
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Один из вариантов решения проблемы – покупка уже готовой работы в сети интернет. Однако в таком случае соответствие содержания теме работы, ее уникальность и качество не гарантируется. Наиболее эффективный способ сдать реферат по философии в срок – заказать его подготовку в специализированной компании BeSmarter!
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Преимуществами этого варианта являются:
         </p>
         <ul>
@@ -122,7 +123,7 @@ const page = () => (
             Возможность написания работы по главам для периодических консультаций с научным руководителем
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Алгоритм сотрудничества с нами выглядит следующим образом:
         </p>
         <ul>
@@ -142,7 +143,7 @@ const page = () => (
             Контроль качества, полная оплата и сопровождение до защиты
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -150,11 +151,11 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
 
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Заказать реферат по философии под ключ удобно в BeSmarter! – специалисты нашей компании окажут всю необходимую помощь. Стоимость написания зависит от нескольких критериев:
         </p>
         <ul>
@@ -171,10 +172,10 @@ const page = () => (
             Объем работы
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Для того чтобы сэкономить и купить реферат по философии на выгодных условиях, необходимо поставить перед исполнителем конкретную задачу, четко сформулировать тему и, что самое главное – сделать заказ заранее.
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

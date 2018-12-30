@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -77,27 +78,27 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Купить преддипломную практику
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Большинству студентов составление отчета по преддипломной практике дается с трудом. Основной причиной затруднения написания отчета является внесение точных данных для квалифицированного выполнения условий по написанию. Самостоятельно практику проходят лишь немногие учащиеся, поэтому не у всех есть реальные данные.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Студенты осознают, что написание отчета занимает немалый срок и требует определенных знаний. В случае если будущий выпускник получит неудовлетворительную оценку или же у него будет отсутствовать отчет по практике, его отправят на ее повторное прохождение. Как избежать таких конфузов?
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Достаточно просто заказать отчет по преддипломной практике. Доверившись специалистам своего дела, вы получите уверенность в получении высокого оценочного балла, сохраните нервы и сэкономите драгоценное время, которое сможете направить на подготовку к экзаменам.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/otchet-po-preddiplomnoy-praktike.jpg')} altText="Купить преддипломную практику"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества нашей компании
         </h2>
         <ul>
@@ -121,7 +122,7 @@ const page = () => (
             <b>Опыт. </b>Более чем за 10 лет сданы тысячи работ под заказ, из них почти 98% защищены на «хорошо» и «отлично». Без сомнения и Вы отлично защититесь.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -129,8 +130,8 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Что вы получите, заказав преддипломную практику
         </h2>
         <ul>
@@ -144,28 +145,28 @@ const page = () => (
             Время. Среднее время выполнения вашего задания до 10 рабочих дней. Мы помогаем даже в написании более срочных (от 1 дня) проектов без вреда для отчета.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как купить преддипломную практику
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Заказать или купить отчет по производственной практике недорого в Москве проще простого. Вам достаточно оставить запрос с данными на сайте BeSmarter!. От вас нужно лишь правильно сформировать список ваших пожеланий, при возможности присоединить методички с требованиями к написанию отчета вашего ВУЗа, если таковые имеются.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Отправляйте заявку прямо сейчас, чтобы узнать стоимость вашей работы.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Свяжитесь с нами по телефону <b>8 (495) 772-40-90</b>.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Закажите подробный отчет по преддипломной практике в нашем офисе по адресу: Москва, пер. Большой Кисловский, дом 1, стр. 2, офис 211.
         </p>
-        <p className="block-text__par" style={{fontStyle: 'italic', textAlign: 'center'}}>
+        <p className="par" style={{fontStyle: 'italic', textAlign: 'center'}}>
           Мы гарантируем, что ваша работа будет выполнена профессионально, с выполнением всех требований и будет отвечать самым высоким стандартам качества.
         </p>
-      </section>
+      </TextBlock>
 
       <Video>
           <iframe src="https://www.youtube.com/embed/ZhQiOLUDwWk" frameBorder="0"

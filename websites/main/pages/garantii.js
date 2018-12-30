@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
 
@@ -67,11 +68,11 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/gar.jpg')} altText="Наши гарантии"/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Гарантии
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Мы знаем, насколько важной для вашей карьеры может оказаться заказанная работа, и понимаем, что вам нужны гарантии нашей добросовестности и ответственности. Ведь «переделать» все в последний момент не получится! Поэтому мы хотим успокоить вас, перечислив 7 причин, благодаря которым можно чувствовать себя абсолютно
           уверенно.
         </p>
@@ -105,13 +106,13 @@ const page = () => (
             Наконец, самая главная гарантия успешного сотрудничества с нашей компанией – это, конечно же, реальные результаты. За 10 лет работы мы написали тысячи научных трудов, и 97,65% из них были успешно защищены. Статистика говорит сама за себя!
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Если вас удовлетворили наши гарантии, предлагаем воспользоваться услугами компании BeSmarter! прямо сейчас.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Для этого свяжитесь с нами любым удобным для себя способом – заполнив <a href="#form">онлайн форму</a> на сайте, позвонив по телефону +7(495)772-4090 или +7(495)772-9040, или посетив <Link href="/contacts"><a>офис</a></Link> (Большой Кисловский переулок, д. 1 стр. 2, офис 211).
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 

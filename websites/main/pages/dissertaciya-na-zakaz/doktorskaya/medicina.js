@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -77,18 +78,18 @@ const page = () => (
 
 
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Докторские диссертации по медицине
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Для присвоения ученой степени по медицинской специальности в России необходимо выполнить квалификационную работу – докторскую диссертацию по медицине. В основу научного труда закладываются разработки соискателя, эксперименты, новшества, аналитика уже известных сведений по теме исследования.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Для написания диссертации нужны время, знания и опыт. И здесь могут возникнуть проблемы, особенно это касается свободного времени. Если его катастрофически не хватает, то написание докторской диссертации по медицине нужно доверить профессионалам. Компания BeSmarter! решит ваши проблемы за короткий срок. Над подготовкой
           исследования будет работать штат опытных авторов.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -102,11 +103,11 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/doc-med2.jpg')} altText="Докторская диссертация по медицине"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества написания в BeSmarter!
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Заказ докторской диссертации – это правильный и оптимальный шаг для соискателей ученой степени. У написания научного труда специалистами есть масса преимуществ:
         </p>
         <ul>
@@ -120,20 +121,20 @@ const page = () => (
             Соответствие оформления работы ГОСТам и требованиям научного руководителя.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Наши исполнители имеют большой опыт в сфере написания докторских работ, дипломных и других проектов. Авторы знают тонкости оформления и все секреты успешной защиты.
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Почему лучше заказать работу, а не купить готовую?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Покупка готовой диссертации для соискателя ученой степени по медицине грозит обернуться неудачей по нескольким причинам:
         </p>
         <ol>
@@ -153,13 +154,13 @@ const page = () => (
             Вы не выбираете исполнителя и уровень его профессионализма. Кем и когда написана диссертация в готовом виде, узнать сложно.
           </li>
         </ol>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От чего зависит цена
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Стоимость докторской диссертации по медицине зависит от:
         </p>
         <ul>
@@ -173,20 +174,20 @@ const page = () => (
             Сложности темы и новизны исследования.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Если вы сами составили план, начали выполнять введение или основные главы, и требуется только доработка, то цена снижается. Стоимость докторской диссертации по медицине в BeSmarter! определяется индивидуально, исходя из тонкостей выполнения задания.
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
       <ImageBlock imageSrc={require('static/images/block/doc-med.jpg')} altText="Докторская диссертация по медицине на заказ"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как можно сэкономить?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Снизить затраты на докторскую диссертацию можно следующим образом:
         </p>
         <ul>
@@ -200,13 +201,13 @@ const page = () => (
             Согласуйте с руководителем конечный вариант плана докторской, чтобы избежать доработок впоследствии.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы сотрудничества
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Авторы BeSmarter! сотрудничают с заказчиками по следующему плану:
         </p>
         <ul>
@@ -229,10 +230,10 @@ const page = () => (
             Подготовка плана защиты.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Чтобы сделать докторскую диссертацию по медицине, свяжитесь с нами по телефону в Москве +7 (495) 772-90-40 или через форму онлайн-заказа на сайте. Компания BeSmarter! заключает официальный договор с клиентами и гарантирует успешную сдачу работы.
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

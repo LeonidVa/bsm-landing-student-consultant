@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -75,25 +76,25 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать отчет по производственной практике
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Производственная практика – последний рывок перед защитой диплома и окончанием обучения. Не все студенты сами проходят связанную с написанием работы практику, в связи с этим составление отчета дается им с огромным трудом, ведь в отчете должны быть реальные данные с расчетами. Вы можете купить производственную практику у
           нас, чтобы избавить себя от лишних хлопот.
         </p>
-        <p className="block-text__par">
+        <p className="par">
             Наши специалисты окажут вам помощь в написании отчета по производственной практике на заказ. У вас появится свободное время для подготовки к ГОСам, а нервы будут в намного лучшем состоянии.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/otchet-po-proizvodstvennoyp-praktike.jpg')} altText="Заказать отчет по производственной практике"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Почему лучше всего работать с нами
         </h2>
         <ul>
@@ -113,7 +114,7 @@ const page = () => (
             <b>Компетентность</b>. В нашем штате сотрудников работают только действующие преподаватели вузов, а не копирайтеры. Поэтому ваша заказанная работа будет уникальной.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -121,11 +122,11 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как купить отчет по производственной практике
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Есть несколько способов:
         </p>
         <ul>
@@ -139,10 +140,10 @@ const page = () => (
             Чтобы заказать отчет по производственной практике, также приходите к нам в офис по адресу: г. Москва, пер. Большой Кисловский, дом 1, стр. 2, офис 211.
           </li>
         </ul>
-        <p className="block-text__par" style={{fontStyle: 'italic', textAlign: 'center'}}>
+        <p className="par" style={{fontStyle: 'italic', textAlign: 'center'}}>
           Мы приложим все усилия для того, чтобы вы получили отличную оценку по производственной практике.
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

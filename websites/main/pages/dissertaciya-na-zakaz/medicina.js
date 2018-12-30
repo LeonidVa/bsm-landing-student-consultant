@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -75,8 +76,8 @@ const page = () => (
 
         <DoctorskayaDis/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать диссертацию по медицине
         </h1>
         <ul>
@@ -97,7 +98,7 @@ const page = () => (
             Все аспекты нашего сотрудничества останутся между нами, обязательства о неразглашении фиксируются в официальном договоре.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -105,29 +106,29 @@ const page = () => (
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Кто будет писать диссертацию по медицине на заказ?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Особенностью научных трудов по медицине является крайне строгое отношение к любым неточностям. Терпимость к ошибкам здесь традиционно нулевая. Поэтому диссертации под заказ в компании BeSmarter! пишут только настоящие профессионалы – кандидаты и доктора медицинских наук, действующие преподаватели вузов. Это гарантия
           безошибочности и идеального оформления работы.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Наши эксперты не только оказывают квалифицированную помощь в написании диссертации по медицине, но и последовательно подводят вас к ее защите. Они ответят на вопросы, дадут советы по подготовке доклада и дополнительных материалов. Мы сделаем все, чтобы вы добились поставленной цели, от вас требуется только желание!
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>
 
       <ImageBlock imageSrc={require('static/images/block/dis-med.jpg')} altText="Заказать диссертацию по медицине"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Какова стоимость диссертации по медицине?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Узнать сколько стоит написать диссертацию по медицине, можно из нашего прайс-листа, в котором указан диапазон цен. Например, магистерская диссертация обойдется вам от 25 000 до 85 000 рублей. Точная стоимость услуги озвучивается после собеседования и определяется следующими факторами:
         </p>
         <ol>
@@ -141,13 +142,13 @@ const page = () => (
             требования – желаемая уникальность текста, количество страниц, язык написания и т. д.
           </li>
         </ol>
-        <p className="block-text__par" style={{fontStyle: 'italic'}}>
+        <p className="par" style={{fontStyle: 'italic'}}>
           Желаете заказать диссертацию по медицине недорого – оформите заявку как можно раньше!
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как это работает:
         </h2>
         <ul>
@@ -161,10 +162,10 @@ const page = () => (
             наш автор пишет и в оговоренные сроки сдает работу на проверку, а затем последовательно готовит вас к успешной защите.
           </li>
         </ul>
-        <p className="block-text__par" style={{fontStyle: 'italic'}}>
+        <p className="par" style={{fontStyle: 'italic'}}>
           Компания BeSmarter! – это качественная и недорогая помощь в написании медицинской диссертации. Не упустите свой шанс!
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -77,42 +78,42 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать дипломную работу по психологии
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Вам необходимо в сжатый период написать качественный и интересный диплом по психологии на заказ?
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Хотите заказать дипломную работу по психологии, подготовленную профессиональными, опытными авторами?
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Вам нужно написать диплом по психологии, отличающийся превосходной уникальностью и актуальными исследованиями?
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Тогда Вам просто необходимо связаться с менеджерами компании BeSmarter!
         </p>
-        <p className="block-text__par">
+        <p className="par">
           При заказе диплома по психологии мы составляем техническое задание, по которому наш преподаватель выполнит работу.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           В нём мы прописываем, какие методики Вы предпочитаете, возраст и количество людей в группах, другие особенности работы.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Поэтому Вы получаете строго индивидуальную, сделанную именно для Вас отличную работу. Мы спокойны за Вас: Вы отлично защититесь!
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/dip-po-psih.jpg')} altText="Заказать дипломную работу по психологии"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Дипломная работа по психологии на заказ – всегда отличное качество
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Если Вам недостает времени для подготовки проекта, то Вы имеете возможность купить дипломную работу по психологии на заказ, написанную специалистами нашей компании. Став клиентом BeSmarter!, Вы получаете:
         </p>
         <ul>
@@ -145,7 +146,7 @@ const page = () => (
             Наши менеджеры и преподаватели точно знают, как получить твёрдую «пятёрку» на защите. Следуя их советам, Вы спокойно и уверенно отлично защититесь.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -153,20 +154,20 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Заказать диплом по психологии
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Мы охотно напишем для Вас грамотную и интересную работу по юридической, клинической, социальной, дошкольной, семейной и спортивной психологии!
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Нужно написание дипломной работы по психологии на заказ прямо сейчас? Сделаем!
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Звоните нам +7 495 772 40 90, заполните простую форму заказа или сразу приезжайте в комфортабельный <Link href="/contacts"><b><a>офис</a></b></Link> компании BeSmarter!, расположенный в самом центре Москвы!
         </p>
-      </section>
+      </TextBlock>
 
         <Video>
             <iframe src="https://www.youtube.com/embed/KM6vU-TKPoE" frameBorder="0"
