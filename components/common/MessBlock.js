@@ -39,9 +39,11 @@ justify-content: center;
 -ms-flex-pack: justify;
 height: 7em;
 transition: all .3s;
-svg { font-size: 3em; }
+svg { font-size: 33%; }
+img { width: 33%; }
 @media (max-width: 660px) {
-    height: 4.5em;
+  height: 17vw;
+  min-height: 4em;
 }
 `;
 
@@ -90,7 +92,7 @@ class MessBlock extends Component {
                rel="nofollow noopener"
                onClick={handleClick}
             >
-              {item.icon}
+              <img src={item.icon}/>
             </BlockMessItem>
           )
         }
