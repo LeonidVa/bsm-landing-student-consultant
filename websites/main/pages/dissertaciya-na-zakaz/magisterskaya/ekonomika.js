@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -80,11 +81,11 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Магистерская диссертация по экономике
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Если вам срочно нужна магистерская диссертация по экономике, а самостоятельно вы никак не укладываетесь в сроки, обратитесь за помощью в агентство BeSmarter! Мы занимаемся подготовкой научных работ по индивидуальным запросам клиентов. Чаще всего к нам обращаются, когда:
         </p>
         <ul>
@@ -104,21 +105,21 @@ const page = () => (
             вы слишком заняты практической работой, поэтому нет времени и сил на сбор данных, аналитику и формулирование собственных выводов.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/mag-po-ekon.jpg')} altText="Магистерская диссертация по экономике"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества написания диссертации на заказ
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Можно попасть в очень неприятную ситуацию, если вы покупаете готовый материал, а не делаете заказ на написание под ключ. Любая магистерская диссертация по экономике должна иметь высокий процент уникальности, новизну, отличительную особенность изложения и обладать прочими аспектами качественно выполненной исследовательской
           работы.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Конкретные преимущества при заказе BeSmarter:
         </p>
         <ul>
@@ -132,18 +133,18 @@ const page = () => (
             всегда есть возможность договориться о внесении правок.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           <b>
             Почему лучше заказать, а не купить готовую работу?
           </b>
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Мы работаем с каждым клиентом по индивидуальной схеме, начиная от разработки плана и заканчивая оформлением по ГОСТу. Гарантирована высокая уникальность работы, поэтому никто не сможет уличить вас в том, что материал скопирован, вы занимаетесь плагиатом и из-за этого не можете защитить проект.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Нами используются только свежие и актуальные источники данных, а наши авторы – преподаватели из Москвы и других городов России, что позволяет удерживать невысокие цены при достойном уровне услуг.
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -151,11 +152,11 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От чего зависит цена
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           На формирование окончательной стоимости работы влияет целый ряд различных факторов:
         </p>
         <ul>
@@ -172,16 +173,16 @@ const page = () => (
             Сложность темы и глубина исследований, которые необходимо будет провести.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как сэкономить и если в этом есть необходимость?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Обычно магистерские диссертации по экономике должны содержать данные исследований. Вы можете сэкономить на заказе, если напишете теорию сами, а практическую часть доверите агентству BeSmarter!
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Другие способы сэкономить:
         </p>
         <ul>
@@ -195,14 +196,14 @@ const page = () => (
             чем выше оригинальность (уникальность), тем дороже может обойтись услуга.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
       <ImageBlock imageSrc={require('static/images/block/mag-eko.jpg')} altText="Магистерская диссертация по экономике на заказ"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы сотрудничества
         </h2>
         <ol>
@@ -216,10 +217,10 @@ const page = () => (
             Вы можете заказать написание магистерской диссертации по экономике по частям, но лучше всего всегда иметь полную версию работы на руках, ведь тогда можно легко ответить на любой вопрос научного руководителя.
           </li>
         </ol>
-        <p className="block-text__par">
+        <p className="par">
           Обратитесь в агентство BeSmarter!, если вам нужна помощь в написании любого научного труда, требуется срочно поступать или дальше заниматься развитием своей карьеры. Наши авторы (практикующие преподаватели) не только учтут все пожелания, но и структурируют материал так, что во время защиты не возникнет никаких проблем.
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

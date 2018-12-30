@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -76,14 +77,14 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать отчет по педагогической практике
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Прохождение педагогический практики – это один из последних этапов обучения и «предвестник» написания и защиты дипломной работы. От того, насколько качественно будет подготовлен отчет по педагогической практике и проведена его защита, во многом зависит общий результат окончания учебного заведения.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           У студентов возникает множество трудностей с прохождением педагогической практики и подготовкой отчета о ней. Основными из них являются:
         </p>
         <ul>
@@ -97,21 +98,21 @@ const page = () => (
             Болезнь и иные личные обстоятельства.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/pedagogicheskaya-praktika.jpg')} altText="Заказать отчет по педагогической практике"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Поможем вам не сойти с дистанции!
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Обидно, когда возникает угроза отчисления по независящим от студента причинам, особенно в самом конце обучения. Такая ситуация возможна именно с педагогической практикой. Конечно, можно самостоятельно подготовить отчет и не проходя практику в реальности, но тогда любой опытный преподаватель может это выявить на этапе
           защиты. Сложность заключается в том, что необходимо знать все нюансы работы учебного заведения и тонкости работы педагога в том или ином коллективе.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Оказать всеобъемлющую помощь готова компания BeSmarter!, которая выполняет научные работы для студентов и аспирантов. У нас можно заказать отчет по педагогической практике. Преимущества такого варианта:
         </p>
         <ul>
@@ -122,35 +123,35 @@ const page = () => (
             Введение в тему, оказание помощи и консультирование вплоть до защиты отчета.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Можно ли сэкономить? Да!
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Для того чтобы получить готовый отчет по педагогической практике, его лучше заказать в специализированной компании. Этапы действий студента при этом аналогичны шагам при заказе курсовой или дипломной работы. Сэкономить при этом можно, если студент самостоятельно подготовит план работы и увеличит время написания для
           исполнителя. Чем меньше сроки при заказе отчета по педагогической практике, тем выше стоимость услуги.
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Важное преимущество сотрудничества с нами
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Специалисты BeSmarter! имеют подтвержденный опыт педагогической работы, готовы подробно раскрыть любую тему и описать реальные нюансы труда педагога. При этом проблемные вопросы, выводы и предложения по их решению не будут выглядеть оторванными от жизни. Это обстоятельство положительно скажется на уникальности отчета и
           восприятии преподавателем проделанной студентом работы.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Не отказывайтесь от обучения на финишном этапе! Заказав в BeSmarter! отчет по педагогической практике, вы сможете уверенно готовиться к дипломной работе и государственным экзаменам.
         </p>
-      </section>
+      </TextBlock>
 
       <Video>
           <iframe src="https://www.youtube.com/embed/ZhQiOLUDwWk" frameBorder="0"

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -84,18 +85,18 @@ const page = () => (
         <DoctorskayaDis/>
 
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Сколько стоит кандидатская диссертация
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Качественно написанная кандидатская диссертация – цена успеха на защите и шанс обеспечить безоблачное профессиональное будущее молодого ученого. К сожалению, далеко не всегда долгие месяцы кропотливой работы приводят к ожидаемому результату. Не каждый аспирант владеет соответствующими навыками для написания оригинальной и
           актуальной работы.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Иногда бывает проще купить кандидатскую диссертацию – цена ее будет намного меньше в сравнении со стоимостью напрасно потерянного времени, нервов и сил. Квалифицированную помощь в написании работы вы сможете получить в компании BeSmarter! Мы сделаем все качественно и недорого, просто доверьтесь нам!
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -108,11 +109,11 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/kandidatskie2.jpg')}/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Какова цена кандидатской диссертации?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Мы понимаем, что вас в первую очередь интересует, сколько стоит написать кандидатскую диссертацию. Ее цена обуславливается следующими факторами.
         </p>
         <ul>
@@ -126,33 +127,33 @@ const page = () => (
             <b>Оперативность.</b> Если вам нужно срочно написать кандидатскую диссертацию, стоимость ее будет тем выше, чем ближе день защиты. Желаете сэкономить – оформите свой заказ как можно раньше!
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Алгоритм сотрудничества
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           На первом этапе вы выбираете удобный для себя способ связи и оформляете заявку. Далее наши менеджеры проводят с вами собеседования и подписывают официальный договор. Данный документ фиксирует все детали – день, когда должна быть сдана кандидатская диссертация на заказ, цена услуги, исполнитель, ваши требования к работе и
           так далее.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Следующий этап – написание. После 50% предоплаты утвержденный ваш автор пишет диссертацию и по главам сдает ее вам на согласование. В случае необходимости вносятся бесплатные правки. После полной оплаты и приемки работы исполнитель помогает вам подготовиться к успешной защите.
         </p>
-        <p className="block-text__par italic center">
+        <p className="par italic center">
           Теперь вам известен алгоритм, осталось позвонить нашим менеджерам!
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как узнать точную стоимость кандидатской диссертации?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Это можно сделать любым из трех способов:
         </p>
         <ul>
@@ -169,10 +170,10 @@ const page = () => (
             посетив <b><Link href="/contacts"><a>нас</a></Link></b> по адресу: Москва, пер. Большой Кисловский, д. 1, стр. 2, офис 211.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Не теряйте времени – сделайте свой заказ прямо сейчас и избавьте себя от лишних проблем.
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

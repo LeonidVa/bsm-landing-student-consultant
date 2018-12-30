@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -79,19 +80,19 @@ const page = () => (
 
 
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Кандидатская диссертация на заказ
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Кандидатская диссертация – квалифицированная научная работа на соискание ученой степени кандидата наук. Это сложная и кропотливая работа, которая занимает 1-2 года. Подготовка кандидатской диссертации предполагает изучение большого количества литературных источников по теме, публикацию статей, выполнение экспериментальных
           исследований.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Уложиться в отведенный срок непросто. Семья и работа занимают большую часть времени. Заказать кандидатскую диссертацию в Москве или другом городе в компании BeSmarter! – отличное решение этой проблемы. Помощь может понадобиться и тем, кому кандидатская степень нужна для того, чтобы занять определенную должность, а не для построения научной карьеры.
           Компания BeSmarter! предлагает написание работ на соискание кандидатской степени по самым разнообразным темам.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -104,11 +105,11 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/kandidatskie.jpg')} altText="Кандидатская диссертация "/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества написания под ключ
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           За годы пребывания на рынке мы заработали репутацию надежного партнера, который неизменно выполняет взятые на себя обязательства. Мы дорожим собственным именем и мнением клиентов. Сотрудничество с нами по написанию кандидатской диссертации на заказ связано с такими выгодами для заказчиков:
         </p>
         <ul>
@@ -140,26 +141,26 @@ const page = () => (
               Приемлемая цена написания кандидатской диссертации под ключ.
           </li>
         </ul>
-      </section>
-      <section className="block-text">
-        <h2 className="block-text__title">
+      </TextBlock>
+      <TextBlock>
+        <h2 className="title">
           Стоит ли покупать готовую работу в интернете?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           В принципе, это возможно. Таких предложений немало, цены почти демпинговые, но и рисков, связанных с ними, предостаточно. Нередко бывает так, что заказчик вместо уникального труда получает компиляцию из скопированных текстов. И это – в лучшем случае. В худшем – исполнитель, получив деньги, попросту исчезает. Написание
           кандидатской диссертации в специализированной компании, которая успела себя зарекомендовать – гарантия высокого качества и 100% безопасности. У нас вы можете заказать подготовку исследования полностью «под ключ» или по частям. Все зависит от характера вашей работы с научным руководителем.
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Факторы, определяющие стоимость
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Цена кандидатской диссертации на заказ зависит от таких моментов:
         </p>
         <ul>
@@ -173,13 +174,13 @@ const page = () => (
             Тема и область исследования. Для технической специальности диссертация, как правило, стоит дороже.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Можно ли сэкономить и как это сделать?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Если вы хотите, чтобы работа обошлась в меньшую сумму, есть несколько способов сэкономить:
         </p>
         <ul>
@@ -193,18 +194,18 @@ const page = () => (
             Акции и скидки.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
             В любом случае, вы будете знать заранее, сколько стоит написание кандидатской диссертации частями или под ключ.
         </p>
-      </section>
+      </TextBlock>
 
       <ImageBlock imageSrc={require('static/images/block/kandidatskie2.jpg')} altText="Кандидатская диссертация на заказ "/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Порядок сотрудничества с BeSmarter!
         </h2>
-        <p className="block-text__par">
+        <p className="par">
             Первый этап – это утверждение с научным руководителем темы и плана кандидатской диссертационной работы. Алгоритм дальнейшего сотрудничества следующий:
         </p>
         <ul>
@@ -221,10 +222,10 @@ const page = () => (
               Получение вами готовой работы под ключ на электронный адрес.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Все правки, изменения и дополнения вносятся бесплатно в течение гарантийного срока от момента получения клиентом готового заказа. Какой бы сложной ни была тема кандидатской диссертации, наши специалисты успешно справятся с ее написанием.
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

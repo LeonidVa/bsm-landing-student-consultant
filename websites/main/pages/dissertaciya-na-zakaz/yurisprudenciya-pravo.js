@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -78,8 +79,8 @@ const page = () => (
 
         <DoctorskayaDis/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать диссертацию по юриспруденции
         </h1>
         <ul>
@@ -100,7 +101,7 @@ const page = () => (
             Мы не только предлагаем помощь в написании диссертации, но и оказываем содействие в подготовке к защите, включая изготовление дополнительных материалов;
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -113,33 +114,33 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/dis-uri.jpg')} altText="Заказать диссертацию по юриспруденции"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Почему мы – лучшие?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Главный козырь BeSmarter! – наши авторы. Мы сотрудничаем с ведущими учеными, преподавателями вузов с научной степенью не ниже кандидатской. Это очень важно, поскольку юриспруденция является одной из наиболее «изменчивых» наук.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Чтобы написать хорошую диссертацию по праву, нужно тонко разбираться в хитросплетениях современного законодательства и умело применять его для решения задач. Кто может сделать это лучше, чем профессиональный юрист?
         </p>
-        <p className="block-text__par">
+        <p className="par">
           При этом, даже работая с лучшими кадрами, мы контролируем каждый этап выполнения заказа. Вы получаете личного менеджера, который следит за всеми нюансами и доступен для связи в любой момент.
         </p>
-        <p className="block-text__par" style={{fontStyle: 'italic', textAlign: 'center'}}>
+        <p className="par" style={{fontStyle: 'italic', textAlign: 'center'}}>
           Воспользуйтесь нашими услугами, и сами поймете, почему мы – лучшие!
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От чего зависит стоимость написания диссертации по юриспруденции?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Конечно же, вас интересует, сколько стоит написать диссертацию по юриспруденции под заказ. Ориентировочные цены указаны в прайс-листе. Точную стоимость услуги мы озвучим после собеседования. Она будет зависеть от объективных факторов:
         </p>
         <ul>
@@ -153,13 +154,13 @@ const page = () => (
             времени – если вам нужна диссертация срочно – за дополнительную плату мы ускорим ее написание, и наоборот, если оформите заказ заранее – мы напишем работу недорого.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как заказать диссертацию по юриспруденции?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Все просто:
         </p>
         <ol>
@@ -173,10 +174,10 @@ const page = () => (
             Согласованный автор пишет диссертацию и поглавно сдает ее вам на проверку, вносит бесплатные правки и помогает подготовиться к защите.
           </li>
         </ol>
-        <p className="block-text__par" style={{fontStyle: 'italic', textAlign: 'center'}}>
+        <p className="par" style={{fontStyle: 'italic', textAlign: 'center'}}>
           Попробуйте, и вы не пожалеете о сотрудничестве!
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

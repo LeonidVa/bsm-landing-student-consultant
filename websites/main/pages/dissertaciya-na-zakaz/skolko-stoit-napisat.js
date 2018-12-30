@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -74,17 +75,17 @@ const page = () => (
 
         <DoctorskayaDis/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Сколько стоит написать диссертацию
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Для любого будущего ученого своевременное и качественное написание диссертации – цена получения очередной научной степени (магистра, кандидата или доктора). Таким образом, ставки весьма велики, и рисковать своей профессиональной карьерой никто не желает.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Профессиональная помощь в написании диссертационных работ – приоритетное направление деятельности компании BeSmarter! Если у вас возникли трудности или просто не хватает времени, воспользуйтесь нашими услугами. Мы напишем диссертацию по любой теме максимально качественно, срочно и недорого!
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -98,30 +99,30 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/skolko-stoit-nap-dis.jpg')} altText="Сколько стоит написать диссертацию"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От чего зависит стоимость диссертации?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Цена написания диссертации на заказ, в первую очередь, определяются типом работы (магистерская, кандидатская, докторская), поскольку требования к объему, степени оригинальности и актуальности к ним существенно разнятся.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Второй критерий – это сложность специальности и конкретной темы. Традиционно по техническим дисциплинам будет дороже всего написать диссертацию, цена работ по гуманитарным направлениям в разы ниже. Это связанно с трудоемкостью расчетов.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Наконец, третий важный критерий – срочность. Чем больше вы предоставите нам времени, тем меньше придется заплатить. Если же хотите еще больше сэкономить – присылайте нам свои наработки по теме, и мы их учтем. Звоните уже сегодня!
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Хотите узнать, сколько стоит написание диссертации?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Оформите заявку одним из перечисленных ниже способов и узнайте, сколько будет стоить ваша диссертация:
         </p>
         <ul>
@@ -135,10 +136,10 @@ const page = () => (
             непосредственно – адрес <b><Link href="/contacts"><a>офиса</a></Link></b>: Москва, пер. Большой Кисловский, д. 1, стр. 2, офис 211.
           </li>
         </ul>
-        <p className="block-text__par center italic">
+        <p className="par center italic">
           Сделайте свой заказ прямо сейчас, и успешная защита диссертации станет реальностью!
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

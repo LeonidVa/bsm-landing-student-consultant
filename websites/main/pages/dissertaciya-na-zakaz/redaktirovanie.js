@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -74,8 +75,8 @@ const page = () => (
 
         <DoctorskayaDis/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Сколько стоит редактирование диссертации
         </h1>
         <ul>
@@ -96,7 +97,7 @@ const page = () => (
             Также мы предоставляем помощь в написании диссертаций «с нуля» и подготовке необходимых дополнительных материалов.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -109,11 +110,11 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/dis-red.jpg')} altText="Сколько стоит редактирование диссертации"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От чего зависит стоимость редактирования диссертации?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Разумеется, вас интересует, сколько стоит отредактировать диссертацию. Заранее назвать точную сумму мы не можем, поскольку трудоемкость работы может существенно варьироваться в зависимости от следующих объективных факторов.
         </p>
         <ul>
@@ -127,35 +128,35 @@ const page = () => (
             Срочность. Чем меньше времени вы нам даете, тем дороже будет услуга. Желаете сэкономить – оформляйте заказ заранее. Можно сделать это прямо сейчас!
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Наши гарантии
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Гарантия качества. Наш отдел контроля использует фирменный многоступенчатый алгоритм проверки работ (грамотность, оформление, уникальность и т. д.).
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Гарантия соблюдения сроков. Точный день сдачи прописывается в официальном договоре, а стадии готовности отдельных глав и разделов контролируются личным менеджером.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Гарантия доступности. Мы всегда на связи и готовы помочь. Связаться с менеджером можно онлайн, по телефону или побеседовать лично в нашем офисе в Москве.
         </p>
-        <p className="block-text__par" style={{fontStyle: 'italic', textAlign: 'center'}}>
+        <p className="par" style={{fontStyle: 'italic', textAlign: 'center'}}>
           Компания BeSmarter! – это уникальная возможность качественно, срочно и недорого отредактировать диссертацию по любой теме. Воспользуйтесь ей прямо сейчас!
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы сотрудничества
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Все просто:
         </p>
         <ol>
@@ -169,10 +170,10 @@ const page = () => (
             Работа. После 50%-ной предоплаты наш специалист редактирует вашу диссертацию, сдает ее вам на проверку по главам, и при необходимости вносит бесплатные правки.
           </li>
         </ol>
-        <p className="block-text__par" style={{fontStyle: 'italic', textAlign: 'center'}}>
+        <p className="par" style={{fontStyle: 'italic', textAlign: 'center'}}>
           Станьте нашим клиентом уже сегодня, и вы не пожалеете об этом!
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

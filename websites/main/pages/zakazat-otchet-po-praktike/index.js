@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -72,25 +73,25 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать отчет по практике
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           В большинстве вузов, чтобы получить допуск к защите дипломной работы, необходимо пройти преддипломную практику и написать соответствующий отчет. Несмотря на формальность данного документа, подготовить его не так просто, поскольку потребуются навыки составления таблиц, построения графиков, выполнения расчетов и
           использования других сложных инструментов обобщения.
         </p>
-        <p className="block-text__par">
+        <p className="par">
             Если вы не готовы выполнить данную работу самостоятельно, предлагаем заказать квалифицированную помощь в написании отчета по практике по разумной цене. Специалисты компании BeSmarter! сделают все максимально быстро, качественно и недорого.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/zakazat-otchet-po-praktike.jpg')} altText="Заказать отчет по практике"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Наши преимущества
         </h2>
         <ul>
@@ -104,28 +105,28 @@ const page = () => (
             <b>Профессионализм. </b>Мы работаем по официальному договору, в котором прописаны сроки сдачи отчета и все требования к работе. За его соблюдением следит ваш личный менеджер. Вам нужно лишь заказать отчет по производственной практике – об остальном мы позаботимся сами!
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Сколько стоит написать отчет по практике?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Разумеется, любого студента интересует, сколько стоит заказать отчет по практике. Ориентировочный диапазон цен представлен в нашем <Link href="/price"><a>прайс-листе</a></Link>. Точная стоимость услуги определяется в процессе предварительного собеседования и зависит от объективных факторов – объема текста, сложности темы,
           срочности и пр.
         </p>
-        <p className="block-text__par">
+        <p className="par">
             Чтобы недорого заказать отчет по практике, постарайтесь оформить заявку как можно раньше. Если у вас уже есть собственные наработки – присылайте их нам, и мы снизим цену. Компания BeSmarter! стремится обеспечить клиентам самые выгодные условия, чтобы купить отчет о прохождении практики смог каждый студент. Воспользуетесь своим шансом!
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Алгоритм сотрудничества
         </h2>
         <ul>
@@ -142,7 +143,7 @@ const page = () => (
             Шаг 4. Автор отвечает на ваши вопросы и помогает подготовиться к сдаче ответа. Вы получаете хорошую оценку. Как видите, все очень просто – попробуйте сами!
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
@@ -151,17 +152,17 @@ const page = () => (
                   allow="autoplay; encrypted-media" allowFullScreen></iframe>
       </Video>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как купить отчет по практике?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Для наших клиентов нет никакой разницы, <b>где заказать отчет по практике</b> – в Москве или Владивостоке. В любом случае уровень сервиса будет одинаково высоким. Желаете оформить заявку на сайте – пожалуйста, по телефону – тоже никаких проблем <b>8 495 772-4090</b>
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Наконец, вы можете посетить наш <Link href="/contacts"><b><a>офис</a></b></Link> в центре Москвы (пер. Большой Кисловский, дом 1, стр. 2, оф. 211). Мы ждем вас!
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -75,25 +76,25 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать курсовую работу по бухгалтерскому учету
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Из всего экономического курса бухгалтерский учет – самая простая и формализованная дисциплина. Здесь не нужны сложные теоретические изыскания и умозаключения. Но это «палка о двух концах» – курсовые работы по бухгалтерскому учету требуют глубоких знаний нормативной базы и грамотных расчетов. Ведь практика здесь важнее
           теории.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           А нормативная база постоянно обновляется и меняется, поэтому скачать готовую работу в интернете не получится. Придется или написать ее самостоятельно или заказать курсовую по бухгалтерскому учету у квалифицированного специалиста. Если у вас не хватает времени или навыков, воспользуетесь услугами компании BeSmarter!
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/kur-rab-buhuch.jpg')} altText="Заказать курсовую работу по бухгалтерскому учету"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Какие мы даем гарантии?
         </h2>
         <ul>
@@ -107,7 +108,7 @@ const page = () => (
             <b>Гарантия конфиденциальности.</b> Все аспекты нашего сотрудничества останутся между нами – обязательства о неразглашении фиксируются в договоре. Мы всегда заботимся о ваших интересах, убедитесь в этом сами!
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -115,20 +116,20 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Сколько стоит курсовая по бухгалтерскому учету?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Ориентировочные расценки приведены в соответствующем разделе нашего сайта. Точная стоимость определяется в процессе предварительного собеседования, заносится в договор и больше не меняется.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Мы используем объективные и прозрачные критерии ценообразования. Прежде всего, это сложность темы – объем расчетов, количество графиков, таблиц и так далее. Также цена зависит от требуемого объема текста (в страницах), и срочности.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Если вы желаете недорого купить курсовую работу по бухгалтерскому учету, проконсультируйтесь с нами перед выбором темы (если это возможно), а также постарайтесь оформить заявку как можно раньше.
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
@@ -137,11 +138,11 @@ const page = () => (
                     allow="autoplay; encrypted-media" allowFullScreen></iframe>
         </Video>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как купить курсовую курсовую работу по бухгалтерскому учету?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Вы можете выбрать один из трех вариантов:
         </p>
         <ul>
@@ -155,10 +156,10 @@ const page = () => (
             визит – <b><Link href="/contacts"><a>адрес</a></Link></b>: Москва, переулок Большой Кисловский, дом 1, стр. 2, офис 211.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Закажите курсовую работу по экономике в компании BeSmarter! и обеспечьте себе высокую оценку на защите!
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

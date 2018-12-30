@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -75,8 +76,8 @@ const page = () => (
 
             <MatZashGirl/>
 
-            <section className="block-text">
-                <h1 className="block-text__title">
+            <TextBlock>
+                <h1 className="title">
                     Заказать дипломную работу по менеджменту
                 </h1>
                 <ul style={{listStyle: 'none'}}>
@@ -90,38 +91,38 @@ const page = () => (
                         Вам необходимо написание диплома по менеджменту в кратчайший период?
                     </li>
                 </ul>
-                <p className="block-text__par">
+                <p className="par">
                     Тогда Вам необходимо обратиться к специалистам компании BeSmarter! прямо сейчас!
                 </p>
-                <p className="block-text__par">
+                <p className="par">
                     Мы с радостью подготовим интересный дипломный проект по менеджменту.
                 </p>
-                <p className="block-text__par">
+                <p className="par">
                     Закажите проект у нас, и Вы уверенно и легко защититесь!
                 </p>
-            </section>
+            </TextBlock>
 
             <FormEstimate/>
 
             <ImageBlock imageSrc={require('static/images/block/dip-po-men.jpg')} altText="Заказать дипломную работу по менеджменту"/>
 
-            <section className="block-text">
-                <h2 className="block-text__title">
+            <TextBlock>
+                <h2 className="title">
                     Заказать диплом по менеджменту в Москве
                 </h2>
-                <p className="block-text__par">
+                <p className="par">
                     После приёма Вашего заказа мы составляем техническое задание, по которому автор пишет работу. В задании мы указываем предпочитаемые Вами методики исследования.
                 </p>
-                <p className="block-text__par">
+                <p className="par">
                     Поэтому Вы получаете сделанную именно для Вас интересную и качественную дипломную работу. Мы уверены, что с нею отлично защититесь!
                 </p>
-                <p className="block-text__par">
+                <p className="par">
                     Нужно написание диплома по менеджменту прямо сейчас? Сделаем!
                 </p>
-                <p className="block-text__par">
+                <p className="par">
                     Позвоните нам +7 495 772 40 90, заполните форму заявки или посетите наш <Link href="/contacts"><b><a>комфортабельный офис</a></b></Link>, который находится на Арбате!
                 </p>
-            </section>
+            </TextBlock>
 
             <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -129,14 +130,14 @@ const page = () => (
 
             <CurrentOffer/>
 
-            <section className="block-text">
-                <h2 className="block-text__title">
+            <TextBlock>
+                <h2 className="title">
                     Купить дипломную работу по менеджменту
                 </h2>
-                <p className="block-text__par">
+                <p className="par">
                     Если Вам требуется актуальное исследование, проведенное на высоком уровне, то Вы можете заказать дипломную работу по менеджменту у наших опытных авторов.
                 </p>
-                <p className="block-text__par">
+                <p className="par">
                     Вот что компания BeSmarter! гарантирует своим клиентам:
                 </p>
                 <ul style={{listStyle: 'none'}}>
@@ -161,7 +162,7 @@ const page = () => (
                         джеры и преподаватели компании BeSmarter! знают, как получить высший балл на защите. Воспользовавшись их рекомендациями, уверенно отлично защититесь на пятёрку.
                     </li>
                 </ul>
-            </section>
+            </TextBlock>
 
             <Video>
                 <iframe src="https://www.youtube.com/embed/KM6vU-TKPoE" frameBorder="0"

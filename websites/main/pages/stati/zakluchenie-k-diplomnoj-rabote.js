@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -104,29 +105,29 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Как написать заключение к дипломной работе (образец)
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Пришло время завершать дипломную работу, а значит — необходимо написать заключение. Здесь представляется картина в одной из аудиторий: сидят три студента и ломают голову над требованиями введения к диплому, спустя неделю они штудируют методические указания, дабы разобраться в правилах оформления второго и третьего
           раздела. И вот, казалось бы, трудности позади, <b><Link href="/diplom-na-zakaz"><a>дипломная</a></Link></b> почти готова, но они все спорят и выясняют, как правильно писать заключение в дипломной работе.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Пути студента неисповедимы — каждый раздел требует своей точности в исполнении и тщательности в выполнении всех требований. Кто-то решается <b><Link href="/diplom-na-zakaz"><a>заказать диплом</a></Link></b> и избавиться от всех проблем сразу, а кто-то, вопреки всему тянет тяжелую ношу и решается трудиться самостоятельно.
           В этой статье мы обсудим, как написать заключение к дипломной работе, чтобы все требования были учтены.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/zakluchenie-k-diplomnoy-rabote.jpg')} altText="Как написать заключение к дипломной работе (образец)"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Написание заключения в дипломной работе
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Написание заключения в дипломной работе подразумевает размещение в конце дипломной:
         </p>
         <ul>
@@ -143,10 +144,10 @@ const page = () => (
             собственное полное мнение касательно перспектив темы; общие итоги, строгие размышления о сфере исследования.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Простыми словами, заключение требует понимания темы и самого процесса исследования.
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -154,25 +155,25 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как правильно писать заключение в дипломной работе
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Заключение должно составлять, чаще всего, около 4 страниц. Некоторые тематики подразумевает малое заключение, некоторые — большое, превышающее размер введения. Сделать эти две структурные части равными по объему символов — вполне нормально, ошибкой такое не считается. Зачастую, методические указания не содержат конкретных
           инструкций о пропорциях "Введение/Заключение".
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Чтобы работа была оценена на отлично, следует помнить, что выводы должны составляться отдельно по каждому разделу, а объединяться должны складно. Поэтому,рекомендуется писать по 1-2 странице выводов на каждый раздел в отдельности. Затем нужно сливать эти заметки воедино и вычитывать их, лишая смысловые переходы нестыковок
           и диссонансов.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Основная задача последнего раздела — отобразить целостность и логическую завершенность всей работы.
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Структура заключения дипломной работы
         </h2>
         <ul>
@@ -186,10 +187,10 @@ const page = () => (
             Заключение. Финальная часть заключения должна содержать ваше мнение касательно перспектив, рекомендации, инновационные размышления касательно улучшений.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Все разделы заключения должны быть плавно связаны и не "выдернуты из контекста".
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
 

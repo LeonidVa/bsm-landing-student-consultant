@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -76,15 +77,15 @@ const page = () => (
 
         <KandidatDis/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Докторская диссертация на заказ
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Докторская диссертация – это научный труд, по результатам защиты которого соискателю присваивают ученую степень доктора наук. Как правило, в ее основе находится кандидатская или даже магистерская диссертация. Важный момент подготовки докторской диссертации – автореферат. Это краткое изложение ключевых моментов и выводов
           научной работы. Его написание очень важно еще и потому, что без автореферата диссертация не допускается к защите.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -98,27 +99,27 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/ddoc.jpg')} altText="Докторская диссертация"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества нашего предложения
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Самостоятельная подготовка докторской диссертации часто занимает не один год. Текст включает 3 основные части:
         </p>
-        <ul className="marker">
+        <ul>
           <li>Теоретическую.</li>
           <li>Практическую.</li>
           <li>Методологическую.</li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Кроме того, обязательным является соблюдение требований ВАК, касающихся содержания работы и ее оформления. Неслучайно на подготовку докторской диссертации отводится значительный срок – около полутора лет. Нередко бывает, что подготовка научного труда занимает гораздо больше времени. ВАК подходит к оценке работ очень
           строго и взыскательно, поэтому авторы отшлифовывают их содержимое до безукоризненного состояния. Однако не все могут найти в плотном рабочем графике место для научных изысканий. Сложно одновременно решать семейные вопросы, заниматься наукой и карьерой. Особенно это касается людей, которым докторская степень нужна, чтобы
           занимать определенные должности, а о том, чтобы сделать карьеру ученого, речь не идет. В такой ситуации вполне логично обратиться к профессионалам для написания докторской диссертации на заказ, а не пытаться написать работу самостоятельно.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Главные преимущества этого решения:
         </p>
-        <ul className="marker">
+        <ul>
           <li>
             Качественно выполненная докторская диссертация под ключ с исчерпывающим раскрытием темы. Написанием вашей работы будут заниматься настоящие профессионалы со значительным опытом в освещаемых вопросах.
           </li>
@@ -138,17 +139,17 @@ const page = () => (
             При необходимости – подготовка докторской диссертации на заказ с консультационной поддержкой клиента.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Стоит ли приобретать готовую работу?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           В интернете нередко можно встретить предложение купить научную работу в готовом виде. Однако такой шаг имеет множество недостатков:
         </p>
         <ul>
@@ -162,17 +163,17 @@ const page = () => (
             Неуникальность работы. Это может стать основным камнем преткновения при защите.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           В конечном итоге вы, в лучшем случае, заплатите за чистый плагиат, в худшем – за воздух. Случаев интернет-мошенничества, когда автор, получив предоплату, исчезает, – более чем достаточно. Написание докторской диссертации на заказ в проверенной компании – разумный и безопасный вариант. BeSmarter! поможет вам написать
           хорошую работу для успешной защиты.
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы совместной работы
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           После согласования темы и плана диссертации с научным руководителем порядок действий следующий:
         </p>
         <ul>
@@ -186,29 +187,29 @@ const page = () => (
             Получение готовой работы клиентом на электронный адрес.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           На протяжении гарантийного срока все дополнения и правки вносятся бесплатно. Компания BeSmarter! поможет вам защититься блестяще!
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
       <ImageBlock imageSrc={require('static/images/block/docto-watch.jpg')} altText="Докторская диссертация на заказ"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Факторы, определяющие цену
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           На стоимость написания докторской диссертации под ключ влияют: выбранная тема, объем и сложность работы. У «технарей» диссертационные труды сложнее, поэтому и стоимость будет выше.
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Способы сэкономить
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Хотите, чтобы написание диссертационного труда обошлось вам в меньшую сумму? Есть несколько способов сэкономить:
         </p>
         <ul>
@@ -219,7 +220,7 @@ const page = () => (
             Акции и скидки.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

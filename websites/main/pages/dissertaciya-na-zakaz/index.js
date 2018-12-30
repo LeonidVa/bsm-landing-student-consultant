@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -71,8 +72,8 @@ const page = () => (
 
         <DoctorskayaDis/>
 
-      <section className="block-text">
-        <ul className="marker-dot">
+      <TextBlock>
+        <ul>
           <li>
             Есть идеи и наработки, но нет времени на написание?
           </li>
@@ -83,18 +84,18 @@ const page = () => (
             Прямо сейчас обратитесь к нам, и Вы отлично
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           &nbsp;&nbsp;&nbsp;&nbsp;защититесь!
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
    <MatZashDisser/>
 
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
             Написание диссертации на заказ
         </h1>
         <ul>
@@ -115,7 +116,7 @@ const page = () => (
             К клиенту прикрепляется личный менеджер, контролирующий выполнение заказа и готовый помочь в любую минуту.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -124,8 +125,8 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/dissertaciya-na-zakaz.jpg')} altText="Докторская диссертация по педагогике на заказ"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Основные этапы сотрудничества
         </h2>
         <ul>
@@ -141,29 +142,29 @@ const page = () => (
             Этап 3. Согласованный автор пишет диссертацию под заказ и сдает ее вам на проверку по частям. По Вашему требованию вносятся бесплатные доработки. После 100%-ной оплаты и сдачи диссертационной работы наш эксперт помогает вам подготовиться к отличной защите.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Наши специалисты
         </h2>
-        <p className="block-text__par">
+        <p className="par">
             В нашей компании написанием диссертаций на заказ занимаются действующие преподаватели ведущих российских ВУЗов по соответствующим специальностям с ученой степенью не ниже кандидатской. Это гарантирует максимально полное раскрытие темы и грамотность оформления.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Перед тем как заказать диссертационную работу, каждому клиенту предоставляется возможность переговорить с потенциальными исполнителями. Это позволит вам убедиться в их компетентности и выбрать наиболее подходящую на ваш взгляд кандидатуру.
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Можно ли сэкономить при заказе диссертации?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Разумеется! Есть несколько простых способов заказать диссертацию недорого.
         </p>
         <ol>
@@ -177,12 +178,12 @@ const page = () => (
             Время – деньги. Мы можем написать диссертацию даже очень срочно – за сутки, но для вашей экономии лучше оформить заказ заранее. Сделайте это прямо сейчас!
           </li>
         </ol>
-        <p className="block-text__par" style={{textAlign: 'center', fontStyle: 'italic'}}>
+        <p className="par" style={{textAlign: 'center', fontStyle: 'italic'}}>
           <b>
             Заказать диссертацию в BeSmarter! могут жители не только Москвы, но и других регионов РФ. Воспользуйтесь нашим удобным сервисом!
           </b>
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -76,8 +77,8 @@ const page = () => (
 <MatZashGirl/>
 
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать дипломную работу по педагогике
         </h1>
         <ul style={{listStyle: 'none'}}>
@@ -91,26 +92,26 @@ const page = () => (
             Вам требуется качественная и интересно написанная дипломная работа по педагогике?
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Тогда Вам просто необходимо обратиться в компанию BeSmarter!
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Наши специалисты охотно подготовят для Вас диплом по коррекционной педагогике и другим педагогическим дисциплинам!
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/dip-po-ped.jpg')} altText="Заказать дипломную работу по педагогике"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Дипломная работа по педагогике
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Если у Вас не достаточного количества времени для написания главного студенческого труда, то специалисты нашей компании подготовят для Вас дипломные работы по социальной педагогике в наиболее сжатые сроки.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Обратившись в BeSmarter!, Вы получаете:
         </p>
         <ul style={{listStyle: 'none'}}>
@@ -139,7 +140,7 @@ const page = () => (
             Мы готовы вносить правки в работу в течение гарантийного срока совершенно бесплатно. Но и после этого мы продолжаем сотрудничать с Вами до Вашей успешной защиты.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -147,22 +148,22 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Заказать диплом по педагогике
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Если Вы решили заказать дипломную работу по педагогике, то мы охотно принимаем Вашу заявку и подготавливаем техническое задание, по которому наш специалист пишет работу. В задании мы перечисляем предпочитаемые Вами методики, желаемый возраст и количество детей в группах, а также другие важные детали проекта.
           Нужен качественный диплом по педагогике?
 
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Нужен качественный дипломный проект по педагогике? Напишем!
         </p>
-        <p className="block-text__par">
+        <p className="par">
           звоните нам +7 495 772 40 90, воспользуйтесь удобной формой заказа или сразу приезжайте в наш <Link href="/contacts"><b><a>офис</a></b></Link>, который находится на Арбате!
         </p>
-      </section>
+      </TextBlock>
 
         <Video>
             <iframe src="https://www.youtube.com/embed/KM6vU-TKPoE" frameBorder="0"

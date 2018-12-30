@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -75,8 +76,8 @@ const page = () => (
 
         <DoctorskayaDis/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать диссертацию по экономике
         </h1>
         <ul>
@@ -97,7 +98,7 @@ const page = () => (
             Наши цены прозрачны и объективны. Узнать, сколько стоит диссертация по экономике под заказ, вы сможете из прайс-листа.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
@@ -110,23 +111,23 @@ const page = () => (
 
       <ImageBlock imageSrc={require('static/images/block/dis-eko.jpg')} altText="Заказать диссертацию по экономике"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Можно ли сэкономить?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Конечно! Существует несколько способов недорого заказать диссертацию. Прежде всего, помните, что наше время – это ваши деньги. Чем больше вы нам дадите времени на написание диссертации, тем дешевле она будет. И, наоборот, за срочность придется доплатить.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Еще один способ экономии – выбор «правильной» темы. Дело в том, что сложность, а значит и стоимость диссертации, насыщенной математическими выкладками, намного выше в сравнении с теоретическим исследованием. Если есть возможность выбора – воспользуйтесь ею.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Наконец, можно сэкономить, приложив собственные знания. Принесите нам свои наработки по теме диссертации, и мы учтем это, снизив стоимость заказа.
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы сотрудничества
         </h2>
         <ol>
@@ -143,17 +144,17 @@ const page = () => (
             <b>Защита.</b> Автор ответит на любые ваши вопросы и поможет качественно подготовиться к защите.
           </li>
         </ol>
-        <p className="block-text__par" style={{fontStyle: 'italic'}}>
+        <p className="par" style={{fontStyle: 'italic'}}>
           Сотрудничество с BeSmarter! – гарантия вашего успеха, убедитесь в этом сами!
         </p>
-      </section>
+      </TextBlock>
 
       <ProfitsBlockSlider profitBlockConfig={dopy}/>
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Итак, что вы получаете:
         </h2>
         <ul>
@@ -173,7 +174,7 @@ const page = () => (
             несколько способов связи – онлайн, по телефону <br/>+7 (495) 772-4090 или личная встреча (Москва, пер. Большой Кисловский, д. 1, стр. 2, оф. 211). Выбирайте самый удобный и не тратьте времени на поиски лучших условий!
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

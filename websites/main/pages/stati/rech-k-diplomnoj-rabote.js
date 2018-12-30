@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -103,11 +104,11 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Как написать речь к дипломной работе
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Подготавливая речь к дипломной работе, важно ответить самому себе на следующие вопросы:
         </p>
         <ul>
@@ -121,17 +122,17 @@ const page = () => (
             Какой временной интервал необходим мне для доклада?
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Методические требования вашего учебного заведения помогут вам ответить на вышестоящие вопросы. При написании речи к дипломной работе необходимо учитывать пару-тройку нюансов.
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/19(13).jpg')} altText="Как написать речь к дипломной работе"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Структура доклада к дипломной работе
         </h2>
         <ul>
@@ -145,13 +146,13 @@ const page = () => (
             Заключительная часть
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Современное выступление, раскрывающее цели, заинтересует членов комиссии. Главным считается начать ее с приветствия членов комиссии
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Вступление
         </h2>
         <ul>
@@ -165,13 +166,13 @@ const page = () => (
             Речь должна быть простой, связной, доступной. Аудитория должна понимать автора.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Выделяют 3 главные задачи правильно подготовленной речи:
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Постарайтесь писать кратко. 15% времени от выступления отводится вступительной части.
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -179,27 +180,27 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Основная мысль
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           В этой части излагаются основные тезисы работы. Не усложняйте речь данной части слишком сложным описанием темы. Стоит задача определения базы и раскрытие взгляда на теоретическую суть вопроса и плавно перешагнуть к разбору объекта работы. Лаконично изложить суть задачи или главной темы. Кратко подытожить свой анализ.
           Добавьте короткие описания, советы, рекомендации. 65-70% предполагаемого времени занимает именно эта часть.
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <p className="block-text__par italic center">
+      <TextBlock>
+        <p className="par italic center">
           Можно сказать, что именно практическая часть работы играет главную роль в оценке академических успехов студента и определяет его оценку . Если нет логически завершенной и продуманной речи к дипломной работе, про хорошую оценку можно забыть.
         </p>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Заключительная часть
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Эта часть включает в себя написание выводов. Как и в любом другом научном проекте, мысль должна быть высказана кратко и лаконично. Для создания эффектного заключения следует придерживаться нескольких пунктов:
         </p>
         <ul>
@@ -213,10 +214,10 @@ const page = () => (
             Окончание выступление следует акцентировать на положительном аспекте.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           На заключительную часть отводится 10% отведенного времени. Задав уточняющие вопросы, комиссия восполнит поток потерянной или непонятной информации из защитной речи к дипломной работе. Написав проект самостоятельно, вы с легкостью ответите на поставленные вопросы.
         </p>
-      </section>
+      </TextBlock>
 
       <Video>
         <iframe src="https://www.youtube.com/embed/XpYziQhuZaw" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
@@ -225,11 +226,11 @@ const page = () => (
       <a name="form" id="form"/>
       <FormOrder/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Как эффектно выступить на защите дипломной работы?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Чтобы защитная речь к дипломной работе создала хорошее впечатление, следуйте трем правилам:
         </p>
         <ul>
@@ -243,7 +244,7 @@ const page = () => (
             Не волноваться.
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Пробуйте ответить на следующие вопросы:
         </p>
         <ul>
@@ -260,10 +261,10 @@ const page = () => (
             Возможно ли составление ясного заключения после прослушивания доклада?
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Если ответом на все вопросы стало «ДА!», вы отлично справились с подготовкой речи к дипломному проекту.
         </p>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 

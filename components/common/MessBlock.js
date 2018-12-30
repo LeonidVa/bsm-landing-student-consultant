@@ -1,4 +1,4 @@
-import {Component} from 'react'
+import React, {Component} from 'react'
 import socials from 'data/socials';
 import stat from 'utils/analytics';
 import styled from "styled-components"

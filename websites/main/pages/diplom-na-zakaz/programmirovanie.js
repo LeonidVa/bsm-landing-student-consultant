@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -76,14 +77,14 @@ const page = () => (
         <Diplom/>
 
 <MatZashGirl/>
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Диплом по программированию на заказ
         </h1>
-        <p className="block-text__par">
+        <p className="par">
           Если по каким-то причинам вы не успеваете закончить написание диплома по программированию в срок, закажите его в компании BeSmarter! У нас работают авторы, которые являются действующими преподавателями ВУЗов из Москвы и других регионов России.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Студенты обращаются к нам в таких случаях:
         </p>
         <ul>
@@ -106,17 +107,17 @@ const page = () => (
             когда нужно поступить в иностранный ВУЗ, а на подготовку не осталось ни времени, ни сил.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/dip-po-prog.jpg')} altText="Диплом по программированию на заказ"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Преимущества написания под ключ
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Выгодно, когда над дипломной работой по программированию работают авторы с опытом и пониманием темы. Написание на заказ имеет ряд значительных преимуществ:
         </p>
         <ol>
@@ -130,11 +131,11 @@ const page = () => (
             Можно вносить правки в процессе выполнения.
           </li>
         </ol>
-        <p className="block-text__par">
+        <p className="par">
           Лучше оставить заявку на написание под ключ, а не покупать готовый материал! При покупке уже написанной работы вы сильно рискуете – ее текст может быть лишь незначительно изменен. Это чревато неприятными вопросами со стороны научного руководителя, а то и полным провалом во время защиты диплома. Если вы делаете заказ в
           BeSmarter!, то получаете на руки работу, которая тщательно проверена на уникальность. Конечно, когда речь идет о технических дисциплинах, не стоит пренебрегать написанием диплома по программированию на заказ, потому что в свободном доступе или в продаже вряд ли найдется стоящий материал.
         </p>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -142,11 +143,11 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           От каких факторов зависит цена?
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Окончательный прайс формируется исходя из следующих пунктов:
         </p>
         <ol>
@@ -163,13 +164,13 @@ const page = () => (
             Сколько дипломов по программированию на заказ вам нужно. В случае оптовых заявок, например, вместе с однокурсниками, возможно снижение цены.
           </li>
         </ol>
-      </section>
+      </TextBlock>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Способы, как вы можете сэкономить!
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Если хочется снизить цену на наши услуги, можно воспользоваться такими советами:
         </p>
         <ul style={{listStyle: 'none'}}>
@@ -183,7 +184,7 @@ const page = () => (
             - Вы можете написать отдельные главы сами, что автоматически понизит цену.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <ReviewBlockSlider reviewBlockConfig={reviewBlockConfig}/>
 
@@ -192,8 +193,8 @@ const page = () => (
                     allow="autoplay; encrypted-media" allowFullScreen></iframe>
         </Video>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Этапы сотрудничества с нами
         </h2>
         <ol>
@@ -207,10 +208,10 @@ const page = () => (
             Частично или полностью оплатите диплом, чтобы заявка была принята в работу.
           </li>
         </ol>
-        <p className="block-text__par">
+        <p className="par">
           Обращайтесь в компанию BeSmarter!, если вам срочно нужен качественный диплом, курсовая или реферат по программированию на заказ.
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>

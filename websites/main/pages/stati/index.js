@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -66,8 +67,8 @@ const page = () => (
 
 <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Разные статьи о том, как подготовиться студенту!
         </h1>
         <ul style={{listStyle: 'none'}}>
@@ -177,7 +178,7 @@ const page = () => (
             </Link>
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 

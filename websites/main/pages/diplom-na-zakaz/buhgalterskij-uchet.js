@@ -1,6 +1,7 @@
  import Link from 'next/link';
 import Wrapper from 'components/Wrapper';
 import PageWrapper from 'components/common/PageWrapper';
+import TextBlock from 'components/common/TextBlock';
 
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
@@ -76,8 +77,8 @@ const page = () => (
 
     <MatZashGirl/>
 
-      <section className="block-text">
-        <h1 className="block-text__title">
+      <TextBlock>
+        <h1 className="title">
           Заказать дипломную работу по бухгалтерскому учёту
         </h1>
         <ul>
@@ -91,29 +92,29 @@ const page = () => (
             Необходима дипломная работа по бухучёту с высокой уникальностью?
           </li>
         </ul>
-        <p className="block-text__par">
+        <p className="par">
           Тогда Вам помогут специалисты компании BeSmarter!
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Мы напишем для Вас актуальную и содержательную работу по бухучёту в срок и даже от одного дня!
         </p>
-      </section>
+      </TextBlock>
 
       <FormEstimate/>
 
       <ImageBlock imageSrc={require('static/images/block/dip-po-buch.jpg')} altText="Заказать дипломную работу по бухгалтерскому учёту"/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Купить дипломную работу по бухгалтерскому учёту
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Заказать дипломную работу по бухгалтерскому учёту – это отличный выход для студентов, у которых нет времени на написание диплома.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Опытные кандидаты и доктора наук, работающие в компании BeSmarter!, охотно напишут для Вас качественную работу.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Став нашим заказчиком, Вы получите:
         </p>
         <ul style={{listStyle: 'none'}}>
@@ -145,7 +146,7 @@ const page = () => (
             Мы готовы написать для Вас не только диплом, но и речь для защиты, презентацию проекта и другие материалы. Также наши менеджеры дадут Вам полезные советы о том, как уверенно и отлично защититься.
           </li>
         </ul>
-      </section>
+      </TextBlock>
 
       <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
@@ -153,23 +154,23 @@ const page = () => (
 
       <CurrentOffer/>
 
-      <section className="block-text">
-        <h2 className="block-text__title">
+      <TextBlock>
+        <h2 className="title">
           Написание диплома по бухгалтерскому учёту
         </h2>
-        <p className="block-text__par">
+        <p className="par">
           Получив от Вас заказ на написание диплома, мы составляем техническое задание для нашего автора. В нём мы указываем предпочитаемые Вами научные методики и компании, на базе которых нужно провести исследования для Вас.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Благодаря этому Вы получаете отличную работу, которая написана специально для Вас. Мы уверены: Вы сможете защититься на высший балл.
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Вам нужна интересная и качественная работа по бухучёту? Напишем!
         </p>
-        <p className="block-text__par">
+        <p className="par">
           Звоните нам прямо сейчас +7 495 772 40 90, посетите наш офис на Арбате!
         </p>
-      </section>
+      </TextBlock>
 
       <a name="form" id="form"/>
       <FormOrder/>
