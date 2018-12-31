@@ -1,16 +1,17 @@
 import { PropTypes } from 'prop-types';
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BaseForm, connect } from 'components/common/forms/BaseForm';
 import Link from 'next/link';
 import Dropzone from 'react-dropzone';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import close from '@fortawesome/fontawesome-free-solid/faWindowClose';
 import Dropdown from 'react-dropdown';
-import Recaptcha from 'react-google-recaptcha';
 import DatePicker from 'components/common/DatePicker';
-
+import Fox from 'static/images/fox-circle.svg';
 import './index.scss';
 import Close from 'components/modals/Close';
+
+const ReCaptcha = React.lazy(() => import('react-google-recaptcha'));
 
 /*   fields are stored in /data/main.js   */
 
@@ -18,6 +19,7 @@ class OrderForm extends BaseForm {
   constructor(props) {
     super(props);
     this.state.Extended = false;
+    this.state.isReCaptchaShown = false;
   }
 
   closeAlert = () => this.setState({ formSent: false });
@@ -67,6 +69,7 @@ class OrderForm extends BaseForm {
           {field.rlabel}    
         </label>
         <input
+          aria-label={field.label}
           type={field.type}
           name={field.name}
           id={field.name}
@@ -135,6 +138,7 @@ class OrderForm extends BaseForm {
             {field.rlabel}
           </label>
           <textarea
+            aria-label={field.label}
             type={field.type}
             id={field.name}
             placeholder={field.placeholder}
@@ -241,7 +245,7 @@ class OrderForm extends BaseForm {
           />
           <div className="block-form__message" style={{ display: this.state.formSent.bool ? 'block' : 'none' }}>
             <Close onClick={this.closeAlert} inverse />
-            <img style={{ width: '100%' }} src={require('static/images/fox-circle.svg')} alt="Fox"/>
+            <img style={{ width: '100%' }} src={Fox} alt="Fox"/>
             <br />
             <br />
             <div className="block-form__title">Спасибо!</div>
@@ -265,11 +269,15 @@ class OrderForm extends BaseForm {
                 margin: '0.75em',
               }}
             >
-              <Recaptcha
-                ref="recaptcha"
-                onChange={this.verifyCallback}
-                sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"
-              />
+            {this.state.isReCaptchaShown &&
+              <Suspense fallback={<div>Loading...</div>}>
+                <ReCaptcha
+                  ref="recaptcha"
+                  onChange={this.verifyCallback}
+                  sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"
+                />
+              </Suspense>
+            }
             </div>
             <span className="block-form__agree">
               Отправляя эти данные, я принимаю
