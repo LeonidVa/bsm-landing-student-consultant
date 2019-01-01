@@ -107,7 +107,6 @@ export class BaseForm extends Component {
   }
 
   saveData(changes) {
-    this.setState((state, props) => ({ isReCaptchaShown: true }));
     let data = this.props.form;
     const { onChangeFieldAction } = this.props;
     Object.keys(changes).map((key) => {
