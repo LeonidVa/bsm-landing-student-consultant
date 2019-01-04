@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, {Component} from 'react';
 
 import Wrapper from 'components/Wrapper';
+import PageWrapper from 'components/common/PageWrapper';
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
 
