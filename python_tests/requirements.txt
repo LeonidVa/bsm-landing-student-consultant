@@ -1,0 +1,12 @@
+# General
+pytest
+allure-pytest
+faker
+
+# API
+requests
+
+# WebUI
+webdriver_manager
+splinter
+selenium

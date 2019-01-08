@@ -1,23 +1,24 @@
-image: node:latest
-
-cache:
-  paths:
-  - node_modules/
 
 stages:
   - build
   - test
   - staging
+  - prod_test
 
-
-before_script:
-  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-  - mkdir -p ~/.ssh
-  - eval $(ssh-agent -s)
-  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+.template:
+  image: node:latest
+  cache:
+    paths:
+    - node_modules/
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
 
 build_job:
+  extends: .template
   stage: build
   script:
   - yarn -v
@@ -45,7 +46,17 @@ build_docker:
     - docker push registry.gitlab.com/igordata/bsm.2018.4/main:latest
 
 
+api_tests:
+  stage: test
+  image: python:alpine
+  script:
+    - cd ./python_tests
+    - pip3 install -r requirements.txt
+    - python3 -m pytest --host=https://besmarter.ru -m api
+
+
 stage_deploy:
+  extends: .template
   only:
   - master
   stage: staging
