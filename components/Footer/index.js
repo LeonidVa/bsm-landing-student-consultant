@@ -48,6 +48,11 @@ export default (props) => {
             <img src={foxLogo} alt="Лого BeSmarter!"/>
           </div>
 
+            <div className="footer__center">
+                <nav className="nav">{navButtons}</nav>
+            </div>
+
+
 
 
           {/* <div className="footer__socials">
