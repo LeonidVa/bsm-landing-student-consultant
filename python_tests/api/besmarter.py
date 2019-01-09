@@ -28,6 +28,6 @@ class BeSmarter:
         kwargs["source"] = source
         kwargs["name"] = name
 
-        data = {k: v for k, v in kwargs.items() if v is not None}
+        logging.info(f"Sending form with data: {kwargs}")
 
-        return self.s.post(self.host + self.POST_MAKE_REQUEST, files=data)
+        return self.s.post(self.host + self.POST_MAKE_REQUEST, files=kwargs)
