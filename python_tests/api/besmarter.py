@@ -8,7 +8,7 @@ class BeSmarter:
 
     POST_MAKE_REQUEST = "/api/form_data"
 
-    FORM_PARAMS = ["brand", "form", "source", "name", "phone", "email",
+    FORM_PARAMS = ["form", "phone", "email",
                    "theme", "worktype", "discipline", "deadline", "size",
                    "comment", "verified"]
 
@@ -18,13 +18,15 @@ class BeSmarter:
 
     @allure.step(f"Отправка запроса на {POST_MAKE_REQUEST}")
     def post_make_request_form(self, brand="besmarter",
-                               source="besmarter main", **kwargs):
-        kwargs["brand"] = brand
-        kwargs["source"] = source
+                               source="besmarter main",
+                               name="TEST-AUTO", **kwargs):
         if not all(elem in self.FORM_PARAMS for elem in kwargs.keys()):
             logging.warning("Mismatch of keys: %s", kwargs.keys())
             raise ValueError(f"\nSupported params: {self.FORM_PARAMS}"
                              f"\nGiven:            {list(kwargs.keys())}")
+        kwargs["brand"] = brand
+        kwargs["source"] = source
+        kwargs["name"] = name
 
         data = {k: v for k, v in kwargs.items() if v is not None}
 
