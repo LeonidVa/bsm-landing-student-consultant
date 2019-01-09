@@ -44,6 +44,7 @@ class page extends Component {
             </HeaderLi>
           </HeaderUl>
         }
+        /*
         footerNavButtons={
           <ul>
             <li>
@@ -62,9 +63,10 @@ class page extends Component {
             <li><a target="_blank" href={socials.whatsapp.url}><img src={socials.whatsapp.icon}/></a></li>
             <li><a target="_blank" href={socials.instagram.url}><img src={socials.instagram.icon}/></a></li>
           </ul>
-        }
+        }*/
       >
-        <PageWrapper className="bg bg-c2 bg-img bg-img3">
+
+          <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
           <BlockNav>
             <NavRow
@@ -80,8 +82,10 @@ class page extends Component {
               description="Адрес, телефон и время работы"
             />
           </BlockNav>
- <MessBlock/>
 
+            {/*
+                <MessBlock/>
+            */}
           <ServiceBlock
             color="#333333"
             url="#pricing"
