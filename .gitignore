@@ -12,3 +12,6 @@ Thumbs.db
 **/Thumbs.db
 /out
 /pages
+**/__pycache__
+**/allure
+**/venv

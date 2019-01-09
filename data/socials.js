@@ -37,4 +37,10 @@ export default {
     url: "https://www.instagram.com/besmarter_ru/",
     targetID: "instagram"
   },
+  youtube: {
+    icon: require('static/images/messegers/youtube.svg'),
+    title: "Youtube",
+    url: "https://www.youtube.com/channel/UCLlOZuoLW6knK1QTMf6yJ7g",
+    targetID: "youtube"
+  },
 }

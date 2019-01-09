@@ -28,7 +28,7 @@ class page extends Component {
     return (
       <Wrapper
         title="BeSmarter!"
-        description="Написание диплома на заказ! Быстрая, недорогая и профессиональная помощь в подготовке дипломной работы – компания BeSmarter. Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40."
+        description="Консультация студентов по любым вопросам! Быстрая и профессиональная помощь в подготовке к защите."
         showHamburger={false}
         headerNavButtons={
           <HeaderUl>
@@ -44,9 +44,29 @@ class page extends Component {
             </HeaderLi>
           </HeaderUl>
         }
-        footerNavButtons=""
+        /*
+        footerNavButtons={
+          <ul>
+            <li>
+              <a href="#about">О нас</a>
+            </li>
+            <li>
+              <Link href="#contacts">
+                <a>Контакты</a>
+              </Link>
+            </li>
+            <li><a target="_blank" href={socials.vk.url}><img src={socials.vk.icon}/></a></li>
+            <li><a target="_blank" href={socials.facebookMessenger.url}><img src={socials.facebookMessenger.icon}/></a></li>
+            <li><a target="_blank" href={socials.facebook.url}><img src={socials.facebook.icon}/></a></li>
+            <li><a target="_blank" href={socials.youtube.url}><img src={socials.youtube.icon}/></a></li>
+            <li><a target="_blank" href={socials.telegram.url}><img src={socials.telegram.icon}/></a></li>
+            <li><a target="_blank" href={socials.whatsapp.url}><img src={socials.whatsapp.icon}/></a></li>
+            <li><a target="_blank" href={socials.instagram.url}><img src={socials.instagram.icon}/></a></li>
+          </ul>
+        }*/
       >
-        <PageWrapper className="bg bg-c2 bg-img bg-img3">
+
+          <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
           <BlockNav>
             <NavRow
@@ -62,8 +82,10 @@ class page extends Component {
               description="Адрес, телефон и время работы"
             />
           </BlockNav>
- <MessBlock/>
 
+            {/*
+                <MessBlock/>
+            */}
           <ServiceBlock
             color="#333333"
             url="#pricing"

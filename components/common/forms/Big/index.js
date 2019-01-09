@@ -1,17 +1,16 @@
 import { PropTypes } from 'prop-types';
-import React, { Suspense } from 'react';
+import React from 'react';
 import { BaseForm, connect } from 'components/common/forms/BaseForm';
 import Link from 'next/link';
 import Dropzone from 'react-dropzone';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import close from '@fortawesome/fontawesome-free-solid/faWindowClose';
 import Dropdown from 'react-dropdown';
+import Recaptcha from 'react-google-recaptcha';
 import DatePicker from 'components/common/DatePicker';
 import Fox from 'static/images/fox-circle.svg';
 import './index.scss';
 import Close from 'components/modals/Close';
-
-const ReCaptcha = React.lazy(() => import('react-google-recaptcha'));
 
 /*   fields are stored in /data/main.js   */
 
@@ -19,7 +18,6 @@ class OrderForm extends BaseForm {
   constructor(props) {
     super(props);
     this.state.Extended = false;
-    this.state.isReCaptchaShown = false;
   }
 
   closeAlert = () => this.setState({ formSent: false });
@@ -269,15 +267,11 @@ class OrderForm extends BaseForm {
                 margin: '0.75em',
               }}
             >
-            {this.state.isReCaptchaShown &&
-              <Suspense fallback={<div>Loading...</div>}>
-                <ReCaptcha
-                  ref="recaptcha"
-                  onChange={this.verifyCallback}
-                  sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"
-                />
-              </Suspense>
-            }
+              <Recaptcha
+                ref="recaptcha"
+                onChange={this.verifyCallback}
+                sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"
+              />
             </div>
             <span className="block-form__agree">
               Отправляя эти данные, я принимаю

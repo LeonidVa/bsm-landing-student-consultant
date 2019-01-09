@@ -69,15 +69,6 @@ class page extends Component {
                                 Суббота - Воскресенье <span className="bold">с 10:00 до 18:30</span><br/>
                             </p>
                             <p className="par finish-text">
-                                График работы в новогодние праздники:
-                            </p>
-                            <ul class='schedule'>
-                                <li>28 декабря с 9-00 до 15-30</li>
-                                <li>29 декабря, 3, 4 и 8 января с 10-00 до 19-00</li>
-                                <li>30 декабря с 10-00 до 15-00 </li>
-                                <li>31 декабря и 1,2,5,6,7 января - выходной</li>
-                            </ul>
-                            <p className="par finish-text">
                                 Приходите – мы ждём Вас!
                             </p>
 
@@ -92,16 +83,6 @@ class page extends Component {
                                 Понедельник - пятница <span className="bold">с 09:00 до 23:00</span><br/>
                                 Суббота - воскресенье <span className="bold">с 09:00 до 22:00</span>
                             </p>
-                            <p className="par finish-text">
-                                График работы в новогодние праздники:
-                            </p>
-                            <ul class='schedule'>
-                                <li>28 декабря с 9-00 до 19-00</li>
-                                <li>29, 30 декабря с 9-00 до 22-00 </li>
-                                <li>31 декабря, 1,2,5,6,7 января с 12-00 до 18-00  </li>
-                                <li>3,4 января с 10-00 до 22-00 </li>
-                                <li>8 января – с 10-00 до 19-00</li>
-                            </ul>
                             <p className="par finish-text">
                                 Звоните – будем рады поговорить!
                             </p>
@@ -126,8 +107,6 @@ class page extends Component {
                             </div>
                         </TextBlock>
                     </div>
-
-                    <ImageBlock imageSrc={require('static/images/block/happy-new-year.jpg')}/>
 
                     <MapBlock/>
                     <TextBlock>
