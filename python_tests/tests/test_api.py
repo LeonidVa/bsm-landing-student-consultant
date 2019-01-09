@@ -22,13 +22,3 @@ class TestForm:
         assert not json["error"]
         assert json.get("id")
         assert "заявка успешно отправлена" == json.get("msg")
-
-    @allure.title("Отправка формы со всеми пустыми полями")
-    @pytest.mark.api
-    def test_no_data_filled(self, api):
-        res = api.post_make_request_form(brand=None, source=None)
-        assert 200 == res.status_code
-        json = res.json()
-        assert not json["error"]
-        assert json.get("id")
-        assert "заявка успешно отправлена" == json.get("msg")
