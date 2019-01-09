@@ -45,6 +45,9 @@ const nextConfig = {
       fbpID: '196710264445109',
       source: process.env.SOURCE,
     },
+    testing: {
+      recaptcha: process.env.NODE_ENV === 'testing'
+    }
   },
   ///assetPrefix: process.env.NODE_ENV === "production" ? 'https://cdn.cloudflare.com' : null,
   webpack: (config, options) => {

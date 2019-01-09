@@ -2,6 +2,7 @@ import { PropTypes } from 'prop-types';
 import React from 'react';
 import { BaseForm, connect } from 'components/common/forms/BaseForm';
 import Link from 'next/link';
+import getConfig from 'next/config';
 import Dropzone from 'react-dropzone';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import close from '@fortawesome/fontawesome-free-solid/faWindowClose';
@@ -267,11 +268,21 @@ class OrderForm extends BaseForm {
                 margin: '0.75em',
               }}
             >
-              <Recaptcha
-                ref="recaptcha"
-                onChange={this.verifyCallback}
-                sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"
-              />
+              {getConfig().publicRuntimeConfig.runtime.testing ?
+                <button
+                  type="button"
+                  id="captcha"
+                  onClick={this.verifyCallback}
+                >
+                  Recaptcha
+                </button>
+                :
+                <Recaptcha
+                  ref="recaptcha"
+                  onChange={this.verifyCallback}
+                  sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"
+                />
+              }
             </div>
             <span className="block-form__agree">
               Отправляя эти данные, я принимаю
