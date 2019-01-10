@@ -4,7 +4,6 @@ import getConfig from 'next/config';
 
 import { BaseForm, connect } from 'components/common/forms/BaseForm';
 import Link from 'next/link';
-import getConfig from 'next/config';
 import Dropzone from 'react-dropzone';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import close from '@fortawesome/fontawesome-free-solid/faWindowClose';
