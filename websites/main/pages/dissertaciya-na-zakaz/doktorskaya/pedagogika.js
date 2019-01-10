@@ -33,30 +33,20 @@ import DoctorskayaDis1 from "components/common/ServiceBlock/ready-made/Doctorska
 import KandidatDis from "components/common/ServiceBlock/ready-made/KandidatDis";
 import ItemScope from "components/common/schema.org/ItemScope"
 import ItemListElement from "components/common/schema.org/ItemListElement"
+import Breadcrumbs from "components/common/Breadcrumbs";
+import React from "react";
 
 const page = () => (
   <Wrapper title="Докторская диссертация по педагогике на заказ в Москве и РФ – цены, сроки написания под ключ" description="Докторские диссертации по педагогике на заказ! Быстро, недорого и профессионально – компания BeSmarter! Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40.">
     <PageWrapper className="bg bg-c2 bg-img bg-img4">
 
-      <section className="breadcrumbs">
-        <div className="inner">
-          <Link href="/">
-            <a>Главная </a>
-          </Link>
-          <span> / </span>
-          <Link href="/dissertaciya-na-zakaz">
-            <a>Диссертация</a>
-          </Link>
-          <span> / </span>
-          <Link href="/dissertaciya-na-zakaz/doktorskaya">
-            <a>Докторская</a>
-          </Link>
-          <span> / </span>
-          <Link href="#">
-            <a>По педагогике</a>
-          </Link>
-        </div>
-      </section>
+        <Breadcrumbs links={[
+            {url:'/', text:'Главная'},
+            {url:'/dissertaciya-na-zakaz', text:'Диссертация'},
+            {url:'/dissertaciya-na-zakaz/doktorskaya', text:'Докторская'},
+            {url:'#', text:'По педагогике'},
+        ]}/>
+
 
         <ItemScope type="http://schema.org/BreadcrumbList">
             <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />

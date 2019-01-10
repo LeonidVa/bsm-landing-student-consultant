@@ -35,6 +35,8 @@ import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl"
 import MagisDisGdeZakazat from "components/common/ServiceBlock/ready-made/MagisDisGdeZakazat"
 import ItemScope from "components/common/schema.org/ItemScope"
 import ItemListElement from "components/common/schema.org/ItemListElement"
+import Breadcrumbs from "components/common/Breadcrumbs";
+import React from "react";
 
 const page = () => (
   <Wrapper title="Магистерская диссертация по юриспруденции на заказ в Москве и РФ – цены, сроки написания под ключ" description="Магистерская диссертация по юриспруденции на заказ! Быстро, недорого и профессионально – компания BeSmarter! Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40.">
@@ -42,25 +44,14 @@ const page = () => (
 
 
 
-      <section className="breadcrumbs">
-        <div className="inner">
-          <Link href="/">
-            <a>Главная </a>
-          </Link>
-          <span> / </span>
-          <Link href="/dissertaciya-na-zakaz">
-            <a>Диссертация</a>
-          </Link>
-          <span> / </span>
-          <Link href="/dissertaciya-na-zakaz/magisterskaya">
-            <a>Магистерская</a>
-          </Link>
-          <span> / </span>
-          <Link href="#">
-            <a>По юриспруденции</a>
-          </Link>
-        </div>
-      </section>
+
+        <Breadcrumbs links={[
+            {url:'/', text:'Главная'},
+            {url:'/dissertaciya-na-zakaz', text:'Диссертация'},
+            {url:'/dissertaciya-na-zakaz/magisterskaya', text:'Магистерская'},
+            {url:'#', text:'По юриспруденции'},
+        ]}/>
+
 
         <ItemScope type="http://schema.org/BreadcrumbList">
             <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />
