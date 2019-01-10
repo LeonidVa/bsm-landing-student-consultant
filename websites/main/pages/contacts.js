@@ -24,6 +24,7 @@ import ContactsPage from "components/common/ServiceBlock/ready-made/ContactsPage
 import ImageBlock from 'components/common/ImageBlock';
 import ItemScope from "components/common/schema.org/ItemScope"
 import ItemListElement from "components/common/schema.org/ItemListElement"
+import Breadcrumbs from "components/common/Breadcrumbs";
 
 class page extends Component {
     render() {
@@ -32,17 +33,11 @@ class page extends Component {
                 <PageWrapper className="bg bg-c2 bg-img bg-img5">
                     <Title>Контакты</Title>
 
-                    <section className="breadcrumbs">
-                        <div className="inner">
-                            <Link href="/">
-                                <a>Главная</a>
-                            </Link>
-                            <span> / </span>
-                            <Link href="/contacts">
-                                <a>Контакты</a>
-                            </Link>
-                        </div>
-                    </section>
+                    <Breadcrumbs links={[
+                        {url:'/', text:'Главная'},
+                        {url:'#', text:'Контакты'},
+                    ]}/>
+
 
                     <ItemScope type="http://schema.org/BreadcrumbList">
                         <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />

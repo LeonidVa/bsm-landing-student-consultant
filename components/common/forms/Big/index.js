@@ -281,7 +281,7 @@ class OrderForm extends BaseForm {
                 <Recaptcha
                   ref="recaptcha"
                   onChange={this.verifyCallback}
-                  sitekey={getConfig().publicRuntimeConfig.analytics.recaptcha | '6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS'}
+                  sitekey={getConfig().publicRuntimeConfig.analytics.recaptcha || '6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS'}
                 />
               }
             </div>

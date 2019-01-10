@@ -35,6 +35,8 @@ import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl"
 import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
 import ItemScope from "components/common/schema.org/ItemScope"
 import ItemListElement from "components/common/schema.org/ItemListElement"
+import Breadcrumbs from 'components/common/Breadcrumbs';
+
 
 const page = () => (
   <Wrapper title="Дипломная работа по экономике – купить на заказ, сколько стоит заказать диплом по экономике в Москве" description="Диплом по экономике на заказ! Быстро и профессионально – компания BeSmarter!. Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40.">
@@ -42,21 +44,13 @@ const page = () => (
 
 
 
-      <section className="breadcrumbs">
-        <div className="inner">
-          <Link href="/">
-            <a>Главная</a>
-          </Link>
-          <span> / </span>
-          <Link href="/diplom-na-zakaz">
-            <a>Дипломная работа</a>
-          </Link>
-          <span> / </span>
-          <Link href="/diplom-na-zakaz">
-            <a>По экономике</a>
-          </Link>
-        </div>
-      </section>
+        <Breadcrumbs links={[
+            {url:'/', text:'Главная'},
+            {url:'/diplom-na-zakaz', text:'Дипломная работа'},
+            {url:'#', text:'По экономике'},
+        ]}/>
+
+
 
         <ItemScope type="http://schema.org/BreadcrumbList">
             <ItemListElement url="https://besmarter.ru/" name="Главная" position="1" />

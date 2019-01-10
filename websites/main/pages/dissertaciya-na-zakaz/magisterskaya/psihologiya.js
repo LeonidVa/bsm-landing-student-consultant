@@ -37,31 +37,22 @@ import MagisDisGdeZakazat from "components/common/ServiceBlock/ready-made/MagisD
 
 import ItemScope from "components/common/schema.org/ItemScope"
 import ItemListElement from "components/common/schema.org/ItemListElement"
+import Breadcrumbs from "components/common/Breadcrumbs";
+import React from "react";
 
 
 const page = () => (
     <Wrapper title="Магистерская диссертация по психологии на заказ в Москве и РФ – цены, сроки написания под ключ" description="Магистерская диссертация по психологии на заказ! Быстро, недорого и профессионально – компания BeSmarter! Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40.">
         <PageWrapper className="bg bg-c2 bg-img bg-img2">
 
-            <section className="breadcrumbs">
-                <div className="inner">
-                    <Link href="/">
-                        <a>Главная </a>
-                    </Link>
-                    <span> / </span>
-                    <Link href="/dissertaciya-na-zakaz">
-                        <a>Диссертация</a>
-                    </Link>
-                    <span> / </span>
-                    <Link href="/dissertaciya-na-zakaz/magisterskaya">
-                        <a>Магистерская</a>
-                    </Link>
-                    <span> / </span>
-                    <Link href="#">
-                        <a>По психологии</a>
-                    </Link>
-                </div>
-            </section>
+
+            <Breadcrumbs links={[
+                {url:'/', text:'Главная'},
+                {url:'/dissertaciya-na-zakaz', text:'Диссертация'},
+                {url:'/dissertaciya-na-zakaz/magisterskaya', text:'Магистерская'},
+                {url:'#', text:'По психологии'},
+            ]}/>
+
 
             <ItemScope type="http://schema.org/BreadcrumbList">
                 <ItemListElement url="https://besmarter.ru/" name="Главная" position="1"/>
