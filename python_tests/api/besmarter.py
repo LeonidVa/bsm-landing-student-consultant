@@ -29,5 +29,6 @@ class BeSmarter:
         kwargs["name"] = name
 
         logging.info(f"Sending form with data: {kwargs}")
-
-        return self.s.post(self.host + self.POST_MAKE_REQUEST, files=kwargs)
+        res = self.s.post(self.host + self.POST_MAKE_REQUEST, json=kwargs)
+        logging.info(f"Received response, status: {res.status_code} data: {res.json()}")
+        return res
