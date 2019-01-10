@@ -268,7 +268,7 @@ class OrderForm extends BaseForm {
                 margin: '0.75em',
               }}
             >
-              {getConfig().publicRuntimeConfig.runtime.testing ?
+              {getConfig().publicRuntimeConfig.testing.recaptcha ?
                 <button
                   type="button"
                   id="captcha"
