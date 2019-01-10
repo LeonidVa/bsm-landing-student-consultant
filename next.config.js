@@ -46,6 +46,9 @@ const nextConfig = {
       source: process.env.SOURCE,
       recaptcha: process.env.RECAPTCHA
     },
+    testing: {
+      recaptcha: process.env.NODE_ENV === 'testing'
+    }
   },
   ///assetPrefix: process.env.NODE_ENV === "production" ? 'https://cdn.cloudflare.com' : null,
   webpack: (config, options) => {
