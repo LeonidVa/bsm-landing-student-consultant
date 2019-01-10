@@ -1,9 +1,9 @@
 
 stages:
   - build
-#  - test
+  - test
   - staging
-#  - prod_test
+  - prod_test
 
 .template:
   image: node:latest
@@ -31,28 +31,28 @@ build_job:
   - ./websites/landing/build.sh
 
 
-#build_docker:
-#  stage: build
-#  image: docker:stable
-#  only:
-#    - master
-#  services:
-#    - docker:dind
-#  before_script:
-#    - echo
-#  script:
-#    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
-#    - docker build -t registry.gitlab.com/igordata/bsm.2018.4/main:latest -f docker/Dockerfile .
-#    - docker push registry.gitlab.com/igordata/bsm.2018.4/main:latest
+build_docker:
+  stage: build
+  image: docker:stable
+  only:
+    - master
+  services:
+    - docker:dind
+  before_script:
+    - echo
+  script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker build -t registry.gitlab.com/igordata/bsm.2018.4/main:latest -f docker/Dockerfile .
+    - docker push registry.gitlab.com/igordata/bsm.2018.4/main:latest
 
 
-#api_tests:
-#  stage: test
-#  image: python:alpine
-#  script:
-#    - cd ./python_tests
-#    - pip3 install -r requirements.txt
-#    - python3 -m pytest --host=https://besmarter.ru -m api
+api_tests:
+  stage: test
+  image: python:alpine
+  script:
+    - cd ./python_tests
+    - pip3 install -r requirements.txt
+    - python3 -m pytest --host=https://besmarter.ru -m api
 
 
 stage_deploy:
