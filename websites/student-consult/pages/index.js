@@ -28,7 +28,7 @@ class page extends Component {
     return (
       <Wrapper
         title="BeSmarter!"
-        description="Написание диплома на заказ! Быстрая, недорогая и профессиональная помощь в подготовке дипломной работы – компания BeSmarter. Звоните: +7 (495) 772-40-90 или +7 (495) 772-90-40."
+        description="Консультация студентов по любым вопросам! Быстрая и профессиональная помощь в подготовке к защите."
         showHamburger={false}
         headerNavButtons={
           <HeaderUl>
