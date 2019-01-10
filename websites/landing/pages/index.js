@@ -44,25 +44,7 @@ class page extends Component {
             </HeaderLi>
           </HeaderUl>
         }
-        footerNavButtons={
-          <ul>
-            <li>
-              <a href="#about">О нас</a>
-            </li>
-            <li>
-              <Link href="#contacts">
-                <a>Контакты</a>
-              </Link>
-            </li>
-            <li><a target="_blank" href={socials.vk.url}><img src={socials.vk.icon}/></a></li>
-            <li><a target="_blank" href={socials.facebookMessenger.url}><img src={socials.facebookMessenger.icon}/></a></li>
-            <li><a target="_blank" href={socials.facebook.url}><img src={socials.facebook.icon}/></a></li>
-            <li><a target="_blank" href={socials.youtube.url}><img src={socials.youtube.icon}/></a></li>
-            <li><a target="_blank" href={socials.telegram.url}><img src={socials.telegram.icon}/></a></li>
-            <li><a target="_blank" href={socials.whatsapp.url}><img src={socials.whatsapp.icon}/></a></li>
-            <li><a target="_blank" href={socials.instagram.url}><img src={socials.instagram.icon}/></a></li>
-          </ul>
-        }
+        footerNavButtons=""
       >
         <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
