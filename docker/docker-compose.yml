@@ -7,6 +7,8 @@ services:
     container_name: frontend
     ports:
       - "3000:3000"
+    environment:
+      - NODE_ENV=testing
     depends_on:
       - selenium-hub
   selenium-hub:
