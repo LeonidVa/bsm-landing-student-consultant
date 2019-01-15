@@ -1,5 +1,5 @@
 import logging
-from time import sleep
+from time import sleep, time
 
 import pytest
 from faker import Faker
@@ -30,8 +30,10 @@ def pytest_addoption(parser):
 
 def check_available(url, timeout=60):
     is_enabled = False
+    until = time() + timeout
     logging.info("Waiting for server to be available")
-    for _ in range(timeout):
+    while time() < until:
+        logging.info(f"Waiting for {int(until - time())} seconds")
         try:
             status = requests.get(url).status_code
         except Exception:

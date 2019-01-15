@@ -42,6 +42,10 @@ class TestForm:
         forms = web.get_forms()
         form = web.form(forms[form_id])
         form.submit_minimal_form(phone="+79012345678")
+        res = web.load_log_response()
+        assert not res["error"]
+        assert res.get("id")
+        assert "заявка успешно отправлена" == res.get("msg")
         assert form.modal_title().visible
         assert "Спасибо!" == form.modal_title().text
         assert form.modal_text().visible
@@ -66,6 +70,10 @@ class TestForm:
             worktype=1, discipline=faker.job(), deadline="10.12.2030",
             size=faker.pyint(), comment=faker.sentence(), file_path=temp.name
         )
+        res = web.load_log_response()
+        assert not res["error"]
+        assert res.get("id")
+        assert "заявка успешно отправлена" == res.get("msg")
         assert form.modal_title().visible
         assert "Спасибо!" == form.modal_title().text
         assert form.modal_text().visible
@@ -95,7 +103,6 @@ class TestPages:
         results = []
         for link in links:
             web.open(link, use_host=False)
-            logging.info(f"Checking page {link}")
             is_ok = web.page_is_ok()
             is_404 = web.status_404()
             results.append(dict(link=link, ok=is_ok, ko=is_404))

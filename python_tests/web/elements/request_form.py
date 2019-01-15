@@ -1,3 +1,4 @@
+import logging
 from time import sleep
 
 import allure
@@ -24,16 +25,19 @@ class RequestForm:
 
     @allure.step("Ждем появления модального окна")
     def wait_modal_is_visible(self, timeout=10):
+        logging.info("Waiting for success modal is displayed")
         is_visible = False
         for _ in range(timeout):
             is_visible = self.modal_title().visible
             if is_visible:
                 break
             sleep(1)
+        logging.info("Success modal is displayed: %s", is_visible)
         return is_visible
 
     @allure.step("Закрываем модальное окно")
     def close_modal(self):
+        logging.info("Closing modal window")
         self.modal_close().scroll_with_offset(-80)
         self.modal_close().click()
 
@@ -86,15 +90,19 @@ class RequestForm:
         return self.form.find_by_css(".block-form__btn")
 
     def click_submit(self):
+        logging.info("Submitting form")
         self.submit_button().click()
 
     def select_worktype(self, _id):
+        logging.info("Selecting worktype %s", _id)
         if _id is not None:
             self.worktype_field().click()
             self.worktype_options()[_id].click()
 
     @allure.step("Заполняем форму только обязательными полями")
     def submit_minimal_form(self, name="TEST-AUTO", phone=None):
+        logging.info(f"Submitting minimal form with: "
+                     f"name: {name}, phone: {phone}")
         self.name_field().fill(name)
         self.phone_field().fill(phone)
         self.recaptcha().click()
@@ -107,6 +115,11 @@ class RequestForm:
             worktype=None, discipline="", deadline="", size="", comment="",
             file_path=""
     ):
+        logging.info("Submitting minimal form with: "
+                     "name: %s, phone: %s, email: %s, theme: %s, worktype: %s "
+                     "discipline: %s, deadline: %s, size: %s, comment: %s "
+                     "file_path: %s", name, phone, email, theme, worktype,
+                     discipline, deadline, size, comment, file_path)
         self.name_field().fill(name)
         self.phone_field().fill(phone)
         self.more_info().click()

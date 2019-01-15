@@ -1,3 +1,4 @@
+import json
 import logging
 import re
 
@@ -16,6 +17,7 @@ class BeSmarterWeb:
 
     @allure.step("Открываем страницу {url}")
     def open(self, url="/", use_host=True):
+        logging.info("Opening url: %s", url)
         if use_host:
             self.b.visit(self.host + url)
         else:
@@ -23,6 +25,7 @@ class BeSmarterWeb:
 
     @allure.step("Загружаем список форм на странице")
     def get_forms(self):
+        logging.info("Getting list of forms on the page")
         return self.b.find_by_css(".block-form")
 
     @allure.step("Работаем с формой")
@@ -34,9 +37,11 @@ class BeSmarterWeb:
         # res = requests.get(self.host + "/sitemap.xml")
         # f = re.findall(r"<loc>(.*)</loc>", res.text)
         # site_map = [i for i in f if i != self.host + "/"]
+        logging.info("Dumping sitemap URLs")
         self.open("/map")
         links = self.b.find_by_xpath("//div[contains(@class,'TextBlock')]//a")
         links = [el['href'] for el in links]
+        logging.info("Dumped sitemap: \n%s", "\n".join(links))
         return links
 
     @allure.step("Проверяем что не отображается страница с ошибкой")
@@ -44,7 +49,7 @@ class BeSmarterWeb:
         old_wt = self.b.wait_time
         self.b.wait_time = 0.5
         s = self.b.find_by_xpath("//*[@class='block-form-timer__title']//span")
-        logging.info(f"Checking 404 error on page")
+        logging.info(f"Checking 404 error on page: {s and s.text == '404'}")
         browser_error = self.b.find_by_css("#main-frame-error")
         logging.info(f"Checking Browser error on page: {len(browser_error)}")
         self.b.wait_time = old_wt
@@ -68,3 +73,10 @@ class BeSmarterWeb:
         logging.info(f"Checking Footer on page, count: {len(footer)}")
         self.b.wait_time = old_wt
         return all((header, body, footer))
+
+    def load_log_response(self):
+        logs = self.b.driver.get_log("browser")
+        logging.info("Got browser logs: %s", logs)
+        data = json.loads(
+            re.findall(r"({.+\})", logs[0]["message"])[0].replace("\\", ""))
+        return data
