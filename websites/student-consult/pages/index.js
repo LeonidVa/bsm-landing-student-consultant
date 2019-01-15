@@ -75,7 +75,7 @@ class page extends Component {
               url="#form"
               scroll={true}
               title="Оформить заявку"
-              description="Получи доступ к нашему сервису"
+              description="Получить консультацию"
             />
             <NavRow
               url="#contacts"
@@ -96,7 +96,7 @@ class page extends Component {
             title="BeSmarter!"
             text={<div>
                 <p>Профессиональный сервис<br/>для студентов</p>
-                <p>Быстро и качественно</p>
+                <p>Быстро и качественно!</p>
                 <p>С нами твоя учеба <br/>пройдет легко!</p>
                 <p>Срочно от 2 часов</p>
             </div>}
@@ -261,8 +261,9 @@ class page extends Component {
                   url="#contacts"
                   image={require('static/images/block/7.jpg')}
                   gradient="rgba(199, 212, 229, 0.95), rgba(199, 212, 229, 0.7)"
-                  title="Консультации по любым типам работ!"
+                  title="Консультации"
                   text={<div>
+                      <p>по любым типам работ!</p>
                       <p>От поступления до защиты</p>
                       <p>От 3 000 рублей</p>
                       <p>Срочно от 2 часов</p>
@@ -361,7 +362,7 @@ class page extends Component {
                 Телефон
               </h2>
               <p className="subtitle subtitle-orange">
-                <span itemProp="telephone" className="phone">+7 (495) 772-40-90</span>
+                <span itemProp="telephone" className="phone">+7 (495) 772-40-90</span><br/>
                 <span itemProp="telephone" className="phone">+7 (495) 772-90-40</span>
               </p>
               <p className="par">
