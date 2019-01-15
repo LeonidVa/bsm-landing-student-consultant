@@ -45,8 +45,6 @@ build_docker:
     - master
   services:
     - docker:dind
-  before_script:
-    - echo 
   script:
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
     - docker build -t registry.gitlab.com/igordata/bsm.2018.4/main:latest -f docker/Dockerfile .
@@ -55,7 +53,7 @@ build_docker:
 
 api_tests:
   extends: .python_template
-  stage: test
+  stage: prod_test
   image: python:alpine
   before_script:
     - pip3 install virtualenv
@@ -101,4 +99,3 @@ stage_deploy:
   script:
   - ssh-add <(echo "$STAGING_PRIVATE_KEY")
   - ssh -p2017 rs@145.239.85.163 "/var/www/update.sh"
-
