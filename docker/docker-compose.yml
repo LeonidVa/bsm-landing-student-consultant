@@ -8,7 +8,8 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=testing
+      - NODE_ENV=production
+      - TESTING=testing
     depends_on:
       - selenium-hub
   selenium-hub:

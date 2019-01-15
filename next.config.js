@@ -38,7 +38,7 @@ const nextConfig = {
       mode: process.env.NODE_ENV,
       production: process.env.NODE_ENV === "production",
       development: process.env.NODE_ENV === "development",
-      testing: process.env.NODE_ENV === "testing",
+      testing: process.env.TESTING === "testing",
     },
     analytics: {
       gaID: 'UA-119183335-1',
@@ -48,7 +48,7 @@ const nextConfig = {
       recaptcha: process.env.RECAPTCHA
     },
     testing: {
-      recaptcha: process.env.NODE_ENV === 'testing'
+      recaptcha: process.env.TESTING === 'testing'
     }
   },
   ///assetPrefix: process.env.NODE_ENV === "production" ? 'https://cdn.cloudflare.com' : null,
