@@ -1,7 +1,6 @@
 import { PropTypes } from 'prop-types';
 import React from 'react';
 import getConfig from 'next/config';
-
 import { BaseForm, connect } from 'components/common/forms/BaseForm';
 import Link from 'next/link';
 import Dropzone from 'react-dropzone';
