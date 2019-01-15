@@ -28,7 +28,7 @@ function redirectURL(req) {
     //console.log('redirect: list not found for hostname ' + req.hostname);
     return null;
   }
-  if (list === undefined) {
+  if (list === {}) {
     //console.log('redirect: list is empty for hostname ' + req.hostname);
     return null;
   }
