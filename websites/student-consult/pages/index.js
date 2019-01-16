@@ -256,19 +256,20 @@ class page extends Component {
             },
           ]}/>
           <ServiceBlock
-              color="#333333"
-              url="#contacts"
-              image={require('static/images/block/7.jpg')}
-              gradient="rgba(199, 212, 229, 0.95), rgba(199, 212, 229, 0.7)"
-              title="Консультации"
-              text={
-                <div>
-                  <p>по любым типам работ!</p>
-                  <p>От поступления до защиты</p>
-                  <p>От 3 000 рублей</p>
-                  <p>Срочно от 2 часов</p>
-                </div>
-              }
+            color="#333333"
+            url="#contacts"
+            image={require('static/images/block/7.jpg')}
+            gradient="rgba(199, 212, 229, 0.95), rgba(199, 212, 229, 0.7)"
+            title="Консультации"
+            text={
+              <div>
+                <p>по любым типам работ!</p>
+                <p>От поступления до защиты</p>
+                <p>От 3 000 рублей</p>
+                <p>Срочно от 2 часов</p>
+              </div>
+            }
+          />
 
           <Form
             isFull
