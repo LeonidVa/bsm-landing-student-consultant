@@ -38,7 +38,7 @@ import DoctorskayaDis from "components/common/ServiceBlock/ready-made/Doctorskay
 import KandidatDis from "components/common/ServiceBlock/ready-made/KandidatDis";
 import ItemScope from "components/common/schema.org/ItemScope"
 import ItemListElement from "components/common/schema.org/ItemListElement"
-import Breadcrumbs from "../../../../../components/common/Breadcrumbs";
+import Breadcrumbs from "components/common/Breadcrumbs";
 import React from "react";
 
 const page = () => (

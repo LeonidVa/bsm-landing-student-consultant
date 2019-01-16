@@ -34,7 +34,7 @@ import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl"
 import Referat from "components/common/ServiceBlock/ready-made/Referat";
 import ItemScope from "components/common/schema.org/ItemScope"
 import ItemListElement from "components/common/schema.org/ItemListElement"
-import Breadcrumbs from "../../../../components/common/Breadcrumbs";
+import Breadcrumbs from "components/common/Breadcrumbs";
 import React from "react";
 
 
