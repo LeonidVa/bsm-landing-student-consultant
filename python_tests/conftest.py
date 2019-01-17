@@ -28,17 +28,23 @@ def pytest_addoption(parser):
     )
 
 
-def check_available(url, timeout=60):
+def check_available(url, timeout=60, selenium=False):
     is_enabled = False
     until = time() + timeout
     logging.info("Waiting for server to be available")
     while time() < until:
         logging.info(f"Waiting for {int(until - time())} seconds")
         try:
-            status = requests.get(url).status_code
+            res = requests.get(url)
+            status = res.status_code
         except Exception:
             status = 0
-        is_enabled = status == 200
+        if selenium:
+            is_enabled = status == 200
+            if is_enabled:
+                is_enabled = res.json().get('value').get('ready')
+        else:
+            is_enabled = status == 200
         if is_enabled:
             logging.info("We received 200 response "
                          "- server is now started up")
@@ -70,7 +76,7 @@ def selenium_host(request):
     host = request.config.getoption("--selenium-host")
     if host:
         logging.info("Host for selenium: %s", host)
-        check_available(host + "/status")
+        check_available(host + "/status", selenium=True)
     else:
         logging.info("No host for selenium is provided. "
                      "Using local web driver")
