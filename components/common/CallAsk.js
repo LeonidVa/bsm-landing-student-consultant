@@ -73,20 +73,25 @@ const CallAskDiv = styled.div`
 class BottomHelper extends Component {
 
     render() {
-        return (
-            <CallAskDiv>
-                <section className="block-callask">
-                    <div className="inner">
-                        <div className="title">Остались вопросы?</div>
-                        <div className="title">Мы ответим!</div>
-                        <div className="buttons">
-                            <ToggleQuestionPopup targetID="question"><a className="button">Задай вопрос</a></ToggleQuestionPopup>
-                            <ToggleCallPopup targetID="call_me_bottom"><a className="button">Закажи звонок</a></ToggleCallPopup>
-                        </div>
-                    </div>
-                </section>
-            </CallAskDiv>
-        )
+      const { isTitle = true } = this.props;
+      return (
+        <CallAskDiv>
+            <section className="block-callask">
+              <div className="inner">
+                {!isTitle && 
+                  <React.Fragment>
+                    <div className="title">Остались вопросы?</div>
+                    <div className="title">Мы ответим!</div>
+                  </React.Fragment>
+                }
+                <div className="buttons">
+                  <ToggleQuestionPopup targetID="question"><a className="button">Задай вопрос</a></ToggleQuestionPopup>
+                  <ToggleCallPopup targetID="call_me_bottom"><a className="button">Закажи звонок</a></ToggleCallPopup>
+                </div>
+              </div>
+            </section>
+        </CallAskDiv>
+      )
     }
 }
 
