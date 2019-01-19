@@ -70,9 +70,11 @@ class BottomHelper extends Component {
       return (
         <CallAskSection className="block-callask">
             <Inner className="inner">
-              {!isTitle && 
-                <Title className="title">Остались вопросы?</Title>
-                <Title className="title">Мы ответим!</Title>
+              {!isTitle &&
+                <React.Fragment>
+                  <Title className="title">Остались вопросы?</Title>
+                  <Title className="title">Мы ответим!</Title>
+                </React.Fragment>
               }
                 <Buttons className="buttons">
                     <ToggleQuestionPopup targetID="question"><Button className="button">Задай вопрос</Button></ToggleQuestionPopup>
