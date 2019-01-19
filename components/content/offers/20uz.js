@@ -43,7 +43,7 @@ const Offer20uz = () => (
             formType="Скидка 20% на материалы"
             targetID="sale_20%"
         >
-            <p style={{fontSize: '70%', margin: '15px 0'}}>при одновременном заказе вместе с работой</p>
+            <p style={{fontSize: '70%', marginBottom: '11px'}}>при одновременном заказе вместе с работой</p>
         </FormWithTimer>
     </BlockFormTimer>
 );
