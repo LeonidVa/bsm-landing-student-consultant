@@ -75,7 +75,7 @@ class page extends Component {
               url="#form"
               scroll={true}
               title="Оформить заявку"
-              description="Получи доступ к нашему сервису"
+              description="Получить консультацию"
             />
             <NavRow
               url="#contacts"
@@ -96,7 +96,7 @@ class page extends Component {
             title="BeSmarter!"
             text={<div>
                 <p>Профессиональный сервис<br/>для студентов</p>
-                <p>Быстро и качественно</p>
+                <p>Быстро и качественно!</p>
                 <p>С нами твоя учеба <br/>пройдет легко!</p>
                 <p>Срочно от 2 часов</p>
             </div>}
@@ -192,25 +192,35 @@ class page extends Component {
                   <h1 className="title">
                       Какие мы даем гарантии
                   </h1>
-                  <p className="par">
+                  <ul>
+                  <li>
                       <b>Качество.</b> Итогом твоего обращения к нам станет качественно предоставленная подробная  и понятная консультация по твоим учебным вопросам.
-                  </p>
+                  </li>
 
-                  <p className="par">
+                  <li>
                       <b>Уникальность.</b> Каждый  ответ на вопрос разрабатывается и предоставляется индивидуально для тебя.
-                  </p>
+                  </li>
 
-                  <p className="par">
+                  <li>
                       <b>Оперативность.</b> Мы понимаем, как ты спешишь, поэтому наш менеджер-консультант всегда на связи с тобой по телефону, в офисе и по другим сервисам связи.
-                  </p>
+                  </li>
 
-                  <p className="par">
+                  <li>
                       <b>Конфиденциальность.</b> Мы никому не раскрываем твои контактные и персональные данные, сохраняя столь важную в современном мире анонимность.
-                  </p>
-
+                  </li>
+                  </ul>
               </TextBlock>
 
-              <InfoBlock infoBlockConfig={infoBlockConfig}/>
+              <InfoBlock infoBlockConfig={[
+                  {icon: require("static/images/info/1.svg"), title: 'Стоимость консультации', desc: 'Индивидуально по запросу' },
+                  {icon: require("static/images/info/2.svg"), title: 'Срок выполнения', desc: 'От 2 часов' },
+                  {icon: require("static/images/info/3.svg"), title: 'Гарантии', desc: 'Сделаем все, о чем договорились'},
+                  {icon: require("static/images/info/4.svg"), title: 'Договор', desc: 'Внесение дополнений и пожеланий'},
+                  {icon: require("static/images/info/5.svg"), title: 'Материалы для защиты', desc: 'Полный комплект для успешной защиты'},
+                  {icon: require("static/images/info/6.svg"), title: 'Эксперт-преподаватель', desc: 'Проверенный специалист с опытом' },
+                  {icon: require("static/images/info/7.svg"), title: 'Уникальность', desc: 'Проверка в разных системах' },
+                  {icon: require("static/images/info/8.svg"), title: 'Язык', desc: 'Русский, английский, французский, немецкий, и др.' },
+              ]}/>
 
           <a name="about" style={{position: "absolute", marginTop: "-2em"}}/>
           <ProfitsBlockSlider profitBlockConfig={[
@@ -245,24 +255,45 @@ class page extends Component {
               description: "Те, кому мы помогли, становятся нашими постоянными клиентами",
             },
           ]}/>
+          <ServiceBlock
+            color="#333333"
+            url="#contacts"
+            image={require('static/images/block/7.jpg')}
+            gradient="rgba(199, 212, 229, 0.95), rgba(199, 212, 229, 0.7)"
+            title="Консультации"
+            text={
+              <div>
+                <p>по любым типам работ!</p>
+                <p>От поступления до защиты</p>
+                <p>От 3 000 рублей</p>
+                <p>Срочно от 2 часов</p>
+              </div>
+            }
+          />
 
-              <ServiceBlock
-                  color="#333333"
-                  url="#contacts"
-                  image={require('static/images/block/7.jpg')}
-                  gradient="rgba(199, 212, 229, 0.95), rgba(199, 212, 229, 0.7)"
-                  title="Консультации по любым типам работ!"
-                  text={<div>
-                      <p>От поступления до защиты</p>
-                      <p>От 3 000 рублей</p>
-                      <p>Срочно от 2 часов</p>
-
-                  </div>}
-              />
+          <Form
+            isFull
+            formType="Получить доступ к услугам"
+            targetID="order"
+            title="Заказать помощь"
+            redForm={true}
+            buttonLabel="Отправить"
+            fields={[
+              { id: 1, label: 'Имя', name: 'name', type: 'text', placeholder: 'Ваше имя', required: true },
+              { id: 2, label: 'Телефон', name: 'phone', type: 'text', placeholder: 'Ваш телефон', required: true },
+              { id: 3, label: 'Почта', name: 'email', type: 'email', placeholder: 'email', required: false },
+              { id: 4, label: 'Тема', name: 'theme', type: 'text', placeholder: 'Тема работы', required: false },
+              { id: 5, label: 'Вид работы', name: 'worktype', type: 'text', placeholder: 'Укажите тип', required: false },
+              { id: 6, label: 'Предмет', name: 'discipline', type: 'text', placeholder: 'Предмет или дисциплина', required: false },
+              { id: 7, label: 'Срок', name: 'deadline', type: 'date', placeholder: 'Укажите срок', required: false },
+              { id: 9, label: 'Комментарии', name: 'comment', type: 'textarea', placeholder: 'Ваши комментарии', required: false },
+              { id: 10, label: 'Прикрепить Файл', name: 'file', type: 'file', placeholder: 'Добавить файл', required: false }
+            ]}
+          />
 
               <TextBlock>
                   <h2 className="title">
-                      5 причин для заказа дипломной работы в BeSmarter!
+                      5 причин для заказа в BeSmarter!
                   </h2>
                   <ul>
                       <li>
@@ -351,7 +382,7 @@ class page extends Component {
                 Телефон
               </h2>
               <p className="subtitle subtitle-orange">
-                <span itemProp="telephone" className="phone">+7 (495) 772-40-90</span>
+                <span itemProp="telephone" className="phone">+7 (495) 772-40-90</span><br/>
                 <span itemProp="telephone" className="phone">+7 (495) 772-90-40</span>
               </p>
               <p className="par">

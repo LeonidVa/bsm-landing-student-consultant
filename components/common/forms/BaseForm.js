@@ -61,11 +61,6 @@ export class BaseForm extends Component {
     if (config.publicRuntimeConfig.runtime.development) {
       url = 'http://localhost:3001/api/form_data'
     }
-    
-    if (config.publicRuntimeConfig.runtime.testing) {
-      let stringForm = JSON.parse(localStorage.getItem("persist:root"));
-      console.log(JSON.parse(stringForm.data));
-    }
 
     this.props.onShowSpinnerAction();
     axios({
@@ -77,6 +72,9 @@ export class BaseForm extends Component {
       .then(response => {
         const {data = {}} = response;
         const {error = false, id, msg} = data;
+        if (config.publicRuntimeConfig.runtime.testing) {
+          console.warn(JSON.stringify(data));
+        }
         if (error) {
           /* ошибка со стороны сервера */
           this.props.onShowModalAction();
