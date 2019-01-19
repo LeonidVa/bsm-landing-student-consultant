@@ -290,7 +290,6 @@ class OrderForm extends BaseForm {
 
     nptTextarea(field) {
       return (
-        <FormTextarea>
         <BlockFormItem
           className="block-form__item textarea"
           key={field.name}
@@ -323,7 +322,6 @@ class OrderForm extends BaseForm {
             onChange={e => this.saveData({ [field.name]: e.target.value })}
           />
         </BlockFormItem>
-        </FormTextarea>
       );
     }
 
