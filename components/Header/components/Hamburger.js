@@ -89,8 +89,14 @@ const HamburgerDesktop = styled.div`
 class Hamburger extends Component {
 
   render() {
+
+    const hamburgerBlockStyle = {
+      width: '100%',
+      height: '100%',
+    }
+
     const hMobile = (
-      <HamburgerMobile 
+      <HamburgerMobile style={hamburgerBlockStyle}
         className={"header__hamburger " + (this.props.open ? " open" : "")}
         onClick={this.props.mobileHandler}
       >
@@ -102,7 +108,7 @@ class Hamburger extends Component {
 
     );
     const hDesktop = (
-      <HamburgerDesktop 
+      <HamburgerDesktop style={hamburgerBlockStyle}
         className={"header__hamburger " + (this.props.open ? " open" : "")}
         onClick={this.props.desktopHandler}
       >
