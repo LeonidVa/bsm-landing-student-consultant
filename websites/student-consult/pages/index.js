@@ -168,7 +168,7 @@ class page extends Component {
           />
 
               <TextBlock>
-                  <h1 className="title">
+                  <h1>
                       Помощь студентам
                   </h1>
                   <p className="par">
@@ -189,7 +189,7 @@ class page extends Component {
               </TextBlock>
 
               <TextBlock>
-                  <h1 className="title">
+                  <h1>
                       Какие мы даем гарантии
                   </h1>
                   <ul>
