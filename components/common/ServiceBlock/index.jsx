@@ -8,6 +8,7 @@ import {
   BlockServiceText,
   BlockServiceTop
 } from "./style.js"
+import './serviceBlock.scss';
 
 class ServiceBlock extends Component {
   renderCards() {
