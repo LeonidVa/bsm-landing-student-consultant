@@ -3,7 +3,6 @@ import Link from "next/link";
 import Wrapper from 'components/Wrapper';
 import BlockNav from 'components/common/BlockNav';
 import NavRow from 'components/common/BlockNav/NavRow';
-import MessBlock from "components/common/MessBlock";
 import ProfitsBlockSlider from "components/common/ProfitsBlockSlider";
 import Form from "components/common/forms/Big";
 import ServiceBlock from "components/common/ServiceBlock";
@@ -11,17 +10,14 @@ import MapBlock from 'components/common/MapBlock';
 import {ToggleCallPopup, ToggleQuestionPopup} from "components/modals/Call"
 import schemaSrc from 'static/images/contacts/how-to-go.jpg';
 import Address from 'components/contacts/Address'
-import socials from 'data/socials';
 import  {
   HeaderLi,
   HeaderUl,
   HeaderNavA,
   } from '/components/Header/style.js';
-import ImageBlock from 'components/common/ImageBlock';
-import PageWrapper from 'components/common/PageWrapper';
-import TextBlock from 'components/common/TextBlock';
-import InfoBlock from "components/common/InfoBlock";
-import infoBlockConfig from "data/infoBlock/diplom";
+import PageWrapper from 'components/common/PageWrapper/index.js';
+import TextBlock from 'components/common/TextBlock/index.js';
+import InfoBlock from "components/common/InfoBlock/index.js";
 
 
 /**/
@@ -84,10 +80,6 @@ class page extends Component {
               description="Адрес, телефон и время работы"
             />
           </BlockNav>
-
-            {/*
-                <MessBlock/>
-            */}
           <ServiceBlock
             color="#333333"
             url="#pricing"

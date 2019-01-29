@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { connect as reduxConnect } from 'react-redux'
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import styled from 'styled-components'
+
 import ExitPopup, {exitPopupContext, exitPopupState} from 'components/modals/ExitPopup'
 import CallPopup, {callPopupContext, callPopupState} from 'components/modals/Call'
 import ErrorModal from 'components/modals/Error'
@@ -12,13 +12,9 @@ import stat from 'utils/analytics'
 import { sendForm } from '@redux/data/form';
 import { isStringEmpty } from '@helpers/isStringEmpty';
 
+import  { GlobalStyle } from './style';
+
 const {publicRuntimeConfig = {}} = getConfig();
-
-
-const MainBlockStyle = styled.div`
-  font-family: "Ubuntu", sans-serif;
-`;
-
 
 class Wrapper extends Component {
     static getInitialProps({req}) {
@@ -176,37 +172,41 @@ class Wrapper extends Component {
     }
 
     render() {
-        return (
-            <callPopupContext.Provider value={this.state.callPopupState}>
-                <exitPopupContext.Provider value={this.state.exitPopupState}>
-                      <MainBlockStyle>
-                          <Head>
-                            <title>{this.props.title}</title>
-                            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-                            <meta name="description" content={this.props.description}/>
-                            <link rel="icon" href={require('static/favicon.ico')} type="image/x-icon"/>
-                          </Head>
-                          <Header navButtons={this.props.headerNavButtons} showHamburger={this.props.showHamburger}/>
-                          {this.props.children}
-                          <Footer navButtons={this.props.footerNavButtons} isSiteMapShown={this.props.isSiteMapShown} />
-                          <script dangerouslySetInnerHTML={{__html: `window.recaptchaOptions = {lang: 'ru'}`}}/>
-                          <ExitPopup className="modal-sale1"
-                                    bonus={<div style={{position: "relative"}}>500<span
-                                        style={{
-                                            fontSize: "20%",
-                                            position: "absolute",
-                                            bottom: "0.5em",
-                                            right: "-1.7em",
-                                        }}>руб.</span></div>}
-                                    message={<span style={{marginLeft: "3em", lineHeight: "1.33", textAlign: "left"}}>Лови бонус при заказе прямо сейчас!</span>}
-                                    text="При сумме заказа от 2 000 рублей"
-                          />
-                          <CallPopup/>
-                          <ErrorModal isShown={this.props.modal} />
-                        </MainBlockStyle>
-                </exitPopupContext.Provider>
-            </callPopupContext.Provider>
-        )
+      return (
+        <callPopupContext.Provider value={this.state.callPopupState}>
+          <exitPopupContext.Provider value={this.state.exitPopupState}>
+            <GlobalStyle />
+            <Head>
+              <title>{this.props.title}</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+              <meta name="description" content={this.props.description}/>
+              <link rel="icon" href={require('static/favicon.ico')} type="image/x-icon"/>
+            </Head>
+            <Header navButtons={this.props.headerNavButtons} showHamburger={this.props.showHamburger}/>
+            {this.props.children}
+            <Footer navButtons={this.props.footerNavButtons} isSiteMapShown={this.props.isSiteMapShown} />
+            <script dangerouslySetInnerHTML={{__html: `window.recaptchaOptions = {lang: 'ru'}`}}/>
+            <ExitPopup className="modal-sale1"
+              bonus={
+                <div style={{position: "relative"}}>500
+                  <span
+                    style={{
+                      fontSize: "20%",
+                      position: "absolute",
+                      bottom: "0.5em",
+                      right: "-1.7em",
+                    }}>руб.
+                  </span>
+                </div>
+              }
+              message={<span style={{marginLeft: "3em", lineHeight: "1.33", textAlign: "left"}}>Лови бонус при заказе прямо сейчас!</span>}
+              text="При сумме заказа от 2 000 рублей"
+            />
+            <CallPopup/>
+            <ErrorModal isShown={this.props.modal} />
+          </exitPopupContext.Provider>
+        </callPopupContext.Provider>
+      )
     }
 }
 
