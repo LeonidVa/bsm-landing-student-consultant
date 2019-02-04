@@ -100,6 +100,7 @@ class TestPages:
     @allure.title("Проверка всех доступных страниц из sitemap")
     def test_verify_all_pages(self, web):
         links = web.dump_sitemap()
+        assert links
         results = []
         for link in links:
             web.open(link, use_host=False)
