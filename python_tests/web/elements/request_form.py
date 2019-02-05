@@ -21,7 +21,7 @@ class RequestForm:
         return self.form.find_by_css(".block-form__message img")
 
     def modal_close(self) -> WebDriverElement:
-        return self.form.find_by_css(".block-form__message .modal__close")
+        return self.form.find_by_xpath(".//*[@name=\"close\"]")
 
     @allure.step("Ждем появления модального окна")
     def wait_modal_is_visible(self, timeout=10):

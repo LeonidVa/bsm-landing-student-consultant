@@ -1,33 +1,11 @@
 import {Component, createContext} from 'react';
-import './style.scss';
+
 import Close from '../Close';
 import Form from './form'
-import styled from 'styled-components'; 
-
-const ModalOrderCallDiv = styled.div`
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0,0,0,.8);
-  z-index: 5;
-  overflow-y: scroll;
-`;
-
-const BlockForm = styled.div`
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -8.5em;
-  margin-top: 0;
-  transform: translateY(-50%);
-  @media (max-width: 660px) {
-    margin-left: 0;
-    left: 0;
-  }
-`;
+import {
+    ModalOrderCallDiv,
+    BlockForm
+}from "./style.js"
 
 const callPopupState = {
     question: false,

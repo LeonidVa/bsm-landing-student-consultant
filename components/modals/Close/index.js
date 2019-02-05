@@ -1,9 +1,9 @@
 import { Component } from 'react';
-import './style.scss';
+import{ СloseDivBlock }from "./style.js"
 
 class Close extends Component {
     render() {
-        return <div className={ 'modal__close' + (this.props.inverse ? ' modal__close--inverse' : '') } onClick={ this.props.onClick }/>;
+        return <СloseDivBlock name="close" isClose = { this.props.inverse ?  true : false} onClick={ this.props.onClick }/>;
     }
 }
 
