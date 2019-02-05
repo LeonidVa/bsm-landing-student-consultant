@@ -39,7 +39,7 @@ class BeSmarterWeb:
         # site_map = [i for i in f if i != self.host + "/"]
         logging.info("Dumping sitemap URLs")
         self.open("/map")
-        links = self.b.find_by_xpath("//div[contains(@class,'TextBlock')]//a")
+        links = self.b.find_by_xpath("//div[contains(@class, 'BlockText')]//a")
         links = [el['href'] for el in links]
         logging.info("Dumped sitemap: \n%s", "\n".join(links))
         return links
