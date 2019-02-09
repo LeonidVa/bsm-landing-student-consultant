@@ -17,9 +17,9 @@ const QualityBlock = ({
   path,
   imageBlock
 }) => (
-  <BlockQuality>
+  <BlockQuality className={Class}>
     <QualityList>
-      <QualityListItem className={Class}>
+      <QualityListItem>
         <QualityListInner>
           <QualityListTitleBlock>
             <React.Fragment>
