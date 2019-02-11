@@ -154,18 +154,6 @@ class Wrapper extends Component {
         }
     }
 
-    componentDidMount () {
-      window.addEventListener('beforeunload', () => {
-        this.onSendForm()
-      });
-    }
-
-    componentWillUnmount () {
-      window.removeEventListener('beforeunload', () => {
-        this.onSendForm()
-      });
-    }
-
     static getDerivedStateFromProps(nextProps, prevState) {
         return nextProps;
     }
