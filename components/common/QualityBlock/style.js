@@ -1,9 +1,24 @@
 import styled from 'styled-components'
 
 export const BlockQuality = styled.section`
-  &.w33 { width: 33.33333333%; }
-  &.w66 { width: 66.66666666%; }
-  &.w50 { width: 50%; }
+  &.w33 { 
+    width: 33.33333333%;   
+    @media (max-width: 660px) {
+      width: 100%;
+    }
+  }
+  &.w66 { 
+    width: 66.66666666%;   
+    @media (max-width: 660px) {
+      width: 100%;
+    }
+  }
+  &.w50 { 
+    width: 50%;  
+    @media (max-width: 660px) {
+      width: 100%;
+    }
+  }
   width: 100%;
   font-size: 1rem;
   background-color: #ffffff;
@@ -11,12 +26,23 @@ export const BlockQuality = styled.section`
   position: relative;
   z-index: 1;
   display: inline-block;
+  border: 1px solid #cfd8dc;
+  transition: all .2s;
+  &:hover {
+  box-shadow: inset 0px 0px 0px 0.2em #cfd8dc;
+  @media (max-width: 660px) {
+      box-shadow: inset 0px 0px 0px 0.125em #cfd8dc;
+  }
+  @media (max-width: 480px) {
+      box-shadow: inset 0px 0px 0px 0.075em #cfd8dc;
+  }
+}
 `;
 
 export const QualityList = styled.ul`
  display: flex;
  flex-wrap: wrap;
-`;
+ `;
 
 export const QualityListInner = styled.div`
   font-size: 1.33em;
@@ -44,22 +70,15 @@ export const QualityListInner = styled.div`
         font-size: 0.75em;
     }
 }
+  .up_string {
+    padding-top: 56px;
+  }
 `;
 
 export const QualityListItem = styled.li`
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #cfd8dc;
-  transition: all .2s;
-  &:hover {
-    box-shadow: inset 0px 0px 0px 0.2em #cfd8dc;
-    @media (max-width: 660px) {
-        box-shadow: inset 0px 0px 0px 0.125em #cfd8dc;
-    }
-    @media (max-width: 480px) {
-        box-shadow: inset 0px 0px 0px 0.075em #cfd8dc;
-    }
-  }
+ 
   @media (max-width: 660px) {
     width: 100%;
     &.w33 { width: 100%; }
@@ -105,4 +124,15 @@ export const BlockQualityQualityListTitle = styled.span`
 export const TitleLink = styled.a`
   text-decoration:none;
   cursor: pointer;
+`;
+
+export const TitleDiv = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+export const TitleBlock = styled.div`
+  display: flex;
+  align-items: center;
 `;

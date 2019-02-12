@@ -6,7 +6,9 @@ import {
   QualityListItem,
   QualityListTitleBlock,
   BlockQualityQualityListTitle,
-  TitleLink
+  TitleLink,
+  TitleDiv,
+  TitleBlock
 } from './style.js'
 import Link from 'next/link';
 
@@ -18,14 +20,14 @@ const QualityBlock = ({
   imageBlock
 }) => (
   <BlockQuality className={Class}>
-    <QualityList>
-      <QualityListItem>
+    <QualityList >
+      <QualityListItem >
         <QualityListInner>
           <QualityListTitleBlock>
-            <React.Fragment>
+            <TitleBlock>
             {imageBlock}
-            <Link href={path}><TitleLink><BlockQualityQualityListTitle>{title}</BlockQualityQualityListTitle></TitleLink></Link>
-            </React.Fragment>
+            <TitleDiv><Link href={path}><TitleLink><BlockQualityQualityListTitle>{title}</BlockQualityQualityListTitle></TitleLink></Link></TitleDiv>
+            </TitleBlock>
           </QualityListTitleBlock>
           <p>
             {text}
