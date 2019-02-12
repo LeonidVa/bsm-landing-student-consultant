@@ -122,8 +122,11 @@ export const BlockQualityQualityListTitle = styled.span`
 `;
 
 export const TitleLink = styled.a`
-  text-decoration:none;
+  text-decoration: none;
   cursor: pointer;
+  &:hover {
+    color: #f4511e;
+  }
 `;
 
 export const TitleDiv = styled.div`

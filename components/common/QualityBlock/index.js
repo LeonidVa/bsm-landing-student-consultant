@@ -26,7 +26,13 @@ const QualityBlock = ({
           <QualityListTitleBlock>
             <TitleBlock>
             {imageBlock}
-            <TitleDiv><Link href={path}><TitleLink><BlockQualityQualityListTitle>{title}</BlockQualityQualityListTitle></TitleLink></Link></TitleDiv>
+            <TitleDiv>
+              <Link href={path}>
+                <TitleLink>
+                  <BlockQualityQualityListTitle>{title}</BlockQualityQualityListTitle>
+                </TitleLink>
+              </Link>
+            </TitleDiv>
             </TitleBlock>
           </QualityListTitleBlock>
           <p>

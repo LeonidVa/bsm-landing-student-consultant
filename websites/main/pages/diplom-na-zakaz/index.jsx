@@ -35,6 +35,12 @@ import ItemScope from "components/common/schema.org/ItemScope"
 import ItemListElement from "components/common/schema.org/ItemListElement"
 import Breadcrumbs from "components/common/Breadcrumbs";
 
+import Presentation from 'static/images/QualityBlock/presentation.svg';
+import Benefits from 'static/images/QualityBlock/benefits.svg';
+import Worker from 'static/images/QualityBlock/worker.svg';
+import Meeting from 'static/images/QualityBlock/meeting.svg';
+import Idea from 'static/images/QualityBlock/idea.svg';
+import Planning from 'static/images/QualityBlock/planning.svg';
 
 const page = () => (
     <Wrapper
@@ -119,7 +125,7 @@ const page = () => (
                         }
                         title="Менеджмент и маркетинг"
                         path="/diplom-na-zakaz/menedjment"
-                        imageBlock = {<img src="/static/images/QualityBlock/presentation.svg" style={{ width: "25%", height: "25%" }}/>}
+                        imageBlock = {<img src={Presentation} style={{ width: "25%", height: "25%" }}/>}
                         Class="w50"
                     />
 
@@ -138,7 +144,7 @@ const page = () => (
                         }
                         title="Экономика"
                         path="/diplom-na-zakaz/ekonomika"
-                        imageBlock = {<img src="/static/images/QualityBlock/benefits.svg" style={{ width: "25%", height: "25%" }}/>}
+                        imageBlock = {<img src={Benefits} style={{ width: "25%", height: "25%" }}/>}
                         Class="w50"
                     />
                     </div>
@@ -159,7 +165,7 @@ const page = () => (
                         }
                         title="Программирование"
                         path="/diplom-na-zakaz/programmirovanie"
-                        imageBlock = {<img src="/static/images/QualityBlock/worker.svg" style={{ width: "25%", height: "25%" }}/>}
+                        imageBlock = {<img src={Worker} style={{ width: "25%", height: "25%" }}/>}
                         Class="w50"
                     />
 
@@ -176,7 +182,7 @@ const page = () => (
                         }
                         title="Юриспруденция"
                         path="/diplom-na-zakaz/yurisprudenciya-pravo"
-                        imageBlock = {<img src="/static/images/QualityBlock/meeting.svg" style={{ width: "25%", height: "25%" }}/>}
+                        imageBlock = {<img src={Meeting} style={{ width: "25%", height: "25%" }}/>}
                         Class="w50"
                     />
                 </div>
@@ -195,7 +201,7 @@ const page = () => (
                         }
                         title="Психология"
                         path="/diplom-na-zakaz/psihologiya"
-                        imageBlock = {<img src="/static/images/QualityBlock/idea.svg" style={{ width: "25%", height: "25%" }}/>}
+                        imageBlock = {<img src={Idea} style={{ width: "25%", height: "25%" }}/>}
                         Class="w50"
                     />
 
@@ -212,7 +218,7 @@ const page = () => (
                         }
                         title="Бухгалтерский учет"
                         path="/diplom-na-zakaz/buhgalterskij-uchet"
-                        imageBlock = {<img src="/static/images/QualityBlock/planning.svg" style={{ width: "25%", height: "25%" }}/>}
+                        imageBlock = {<img src={Planning} style={{ width: "25%", height: "25%" }}/>}
                         Class="w50"
                     />
                 </div>
