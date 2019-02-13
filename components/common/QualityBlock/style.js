@@ -60,10 +60,6 @@ export const QualityListInner = styled.div`
     padding: 0.75em 0.5em;
   }
   p {
-    padding-top: 1em;
-    &:first-child {
-        padding-top: 0;
-    }
     font-size: 0.85em;
     line-height: 1.57;
     @media (max-width: 480px) {
