@@ -56,12 +56,6 @@ class RequestForm:
     def theme_field(self) -> WebDriverElement:
         return self.form.find_by_xpath(".//input[@name=\"theme\"]")
 
-    def worktype_field(self) -> WebDriverElement:
-        return self.form.find_by_css(".Dropdown-root")
-
-    def worktype_options(self) -> WebDriverElement:
-        return self.form.find_by_css(".Dropdown-option")
-
     def discipline_field(self) -> WebDriverElement:
         return self.form.find_by_xpath(".//input[@name=\"discipline\"]")
 
@@ -93,12 +87,6 @@ class RequestForm:
         logging.info("Submitting form")
         self.submit_button().click()
 
-    def select_worktype(self, _id):
-        logging.info("Selecting worktype %s", _id)
-        if _id is not None:
-            self.worktype_field().click()
-            self.worktype_options()[_id].click()
-
     @allure.step("Заполняем форму только обязательными полями")
     def submit_minimal_form(self, name="TEST-AUTO", phone=None):
         logging.info(f"Submitting minimal form with: "
@@ -112,20 +100,19 @@ class RequestForm:
     @allure.step("Заполняем всю форму")
     def submit_full_form(
             self, name="TEST-AUTO", phone="", email="", theme="",
-            worktype=None, discipline="", deadline="", size="", comment="",
+            discipline="", deadline="", size="", comment="",
             file_path=""
     ):
         logging.info("Submitting minimal form with: "
-                     "name: %s, phone: %s, email: %s, theme: %s, worktype: %s "
+                     "name: %s, phone: %s, email: %s, theme: %s "
                      "discipline: %s, deadline: %s, size: %s, comment: %s "
-                     "file_path: %s", name, phone, email, theme, worktype,
+                     "file_path: %s", name, phone, email, theme,
                      discipline, deadline, size, comment, file_path)
         self.name_field().fill(name)
         self.phone_field().fill(phone)
         self.more_info().click()
         self.email_field().fill(email)
         self.theme_field().fill(theme)
-        self.select_worktype(worktype)
         self.discipline_field().fill(discipline)
         self.deadline_field().fill(deadline)
         self.size_field().fill(size)
