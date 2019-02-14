@@ -27,21 +27,12 @@ import links from "data/linksBlock/diplom";
 
 import Video from "components/common/VideoBlock";
 import ImageBlock from "components/common/ImageBlock";
-import QualityBlock from "components/common/QualityBlock/index.js"
 
 import MatZashGirl from "components/common/ServiceBlock/ready-made/MatZashGirl"
 import Diplom from "components/common/ServiceBlock/ready-made/Diplom"
 import ItemScope from "components/common/schema.org/ItemScope"
 import ItemListElement from "components/common/schema.org/ItemListElement"
 import Breadcrumbs from "components/common/Breadcrumbs";
-
-import Presentation from 'static/images/QualityBlock/presentation.svg';
-import Benefits from 'static/images/QualityBlock/benefits.svg';
-import Worker from 'static/images/QualityBlock/worker.svg';
-import Meeting from 'static/images/QualityBlock/meeting.svg';
-import Idea from 'static/images/QualityBlock/idea.svg';
-import Planning from 'static/images/QualityBlock/planning.svg';
-import Businessman from '/static/images/QualityBlock/businessman.svg';
 
 const page = () => (
     <Wrapper
@@ -100,66 +91,7 @@ const page = () => (
             </TextBlock>
 
             <FormEstimate/>
-            <div style={{ width: "100%", maxWidth: "62em", margin: "1.56em auto 0" }}>
-              <QualityBlock 
-                text={
-                  <div style={{ textAlign: "center" }}>
-                    <div>
-                      Делаем работы по самым трудным специальностям, которые вы видите на этой странице, и по многим другим.
-                      Не нашли свою специальность, &#8212; просто звоните нам, и всё будет хорошо!
-                    </div>
-                  </div>
-                }   
-              />
-              <div style={{ display: "flex", flexWrap: "wrap" }}>
-                <QualityBlock
-                  title="Педагогика"
-                  path="/diplom-na-zakaz/pedagogika"
-                  imageBlock = {<img src={Businessman} style={{ width: "25%", height: "25%" }}/>}
-                  Class="w33"
-                />
-                <QualityBlock
-                  title="Экономика"
-                  path="/diplom-na-zakaz/ekonomika"
-                  imageBlock = {<img src={Benefits} style={{ width: "25%", height: "25%" }}/>}
-                  Class="w33"
-                />
-                <QualityBlock
-                  title="Бухгалтерский учет"
-                  path="/diplom-na-zakaz/buhgalterskij-uchet"
-                  imageBlock = {<img src={Planning} style={{ width: "25%", height: "25%" }}/>}
-                  Class="w33"
-                />
-              </div>
-              <div style={{ display: "flex", flexWrap: "wrap" }}>
-                <QualityBlock
-                  title="Юриспруденция"
-                  path="/diplom-na-zakaz/yurisprudenciya-pravo"
-                  imageBlock = {<img src={Meeting} style={{ width: "25%", height: "25%" }}/>}
-                  Class="w50"
-                />
-                <QualityBlock
-                  title="Психология"
-                  path="/diplom-na-zakaz/psihologiya"
-                  imageBlock = {<img src={Idea}  style={{ width: "25%", height: "25%" }}/>}
-                  Class="w50"
-                />
-              </div>
-              <div style={{ display: "flex", flexWrap: "wrap" }}>
-                <QualityBlock
-                  title="Менеджмент и маркетинг"
-                  path="/diplom-na-zakaz/menedjment"
-                  imageBlock = {<img src={Presentation} style={{ width: "25%", height: "25%" }}/>}
-                  Class="w50"
-                />
-                <QualityBlock
-                  title="Программирование"
-                  path="/diplom-na-zakaz/programmirovanie"
-                  imageBlock = {<img src={Worker} style={{ width: "25%", height: "25%" }}/>}
-                  Class="w50"
-                />
-            </div>
-            </div>  
+
             <ImageBlock imageSrc={require("static/images/block/dip-na-zakaz.jpg")} altText="Диплом на заказ"/>
 
             <TextBlock>
