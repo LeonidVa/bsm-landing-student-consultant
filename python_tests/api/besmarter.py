@@ -9,7 +9,7 @@ class BeSmarter:
     POST_MAKE_REQUEST = "/api/form_data"
 
     FORM_PARAMS = ["form", "phone", "email",
-                   "theme", "worktype", "discipline", "deadline", "size",
+                   "theme", "discipline", "deadline", "size",
                    "comment", "verified"]
 
     def __init__(self, host):

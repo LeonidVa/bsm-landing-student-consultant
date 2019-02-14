@@ -121,7 +121,7 @@ class OrderForm extends BaseForm {
 
           
           <DatePicker
-            placeholder={field.placeholder}
+            placeholder={field.placeholder || ''}
             value={this.props.form[field.name]}
             onDayChange={value => this.saveData({ [field.name]: value })}
           />

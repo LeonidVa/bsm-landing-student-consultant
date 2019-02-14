@@ -23,7 +23,6 @@ class TestForm:
         assert form.more_info().visible
         assert not form.email_field().visible
         assert not form.theme_field().visible
-        assert not form.worktype_field().visible
         assert not form.discipline_field().visible
         assert not form.deadline_field().visible
         assert not form.size_field().visible
@@ -67,7 +66,7 @@ class TestForm:
         temp.close()
         form.submit_full_form(
             phone="+79012345678", email=faker.email(), theme=faker.word(),
-            worktype=1, discipline=faker.job(), deadline="10.12.2030",
+            discipline=faker.job(), deadline="10.12.2030",
             size=faker.pyint(), comment=faker.sentence(), file_path=temp.name
         )
         res = web.load_log_response()

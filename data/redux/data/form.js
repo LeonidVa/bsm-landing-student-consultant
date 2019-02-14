@@ -21,10 +21,6 @@ const initialState = {
   phone: '',
   email: '',
   theme: '',
-  worktype: {
-    label: 'Укажите тип работы',
-    value: '',
-  },
   discipline: '',
   deadline: '',
   size: '',
@@ -43,7 +39,6 @@ export const sendForm = (form) => async () => {
   formData.append("phone", form.phone);
   formData.append("email", form.email);
   formData.append("theme", form.theme);
-  formData.append("worktype", form.worktype.value);
   formData.append("discipline", form.discipline);
   formData.append("deadline", form.deadline);
   formData.append("size", form.size);

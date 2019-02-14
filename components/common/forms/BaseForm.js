@@ -31,7 +31,6 @@ export class BaseForm extends Component {
       phone = "",
       email = "",
       theme = "",
-      worktype = "",
       discipline = "",
       deadline = "",
       size = "",
@@ -48,7 +47,6 @@ export class BaseForm extends Component {
     formData.append("phone", phone);
     formData.append("email", email);
     formData.append("theme", theme);
-    formData.append("worktype", worktype.value);
     formData.append("discipline", discipline);
     formData.append("deadline", deadline);
     formData.append("size", size);
@@ -169,10 +167,6 @@ export class BaseForm extends Component {
       phone: '',
       email: '',
       theme: '',
-      worktype: {
-        label: 'Укажите тип работы',
-        value: '',
-      },
       discipline: '',
       deadline: '',
       size: '',
