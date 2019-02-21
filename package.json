@@ -2,7 +2,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 49512",
     "build": "next build",
     "start": "next start"
   },
