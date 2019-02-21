@@ -10,7 +10,7 @@ module.exports = {
       args: "start",
       env: {
         NODE_ENV: "production",
-        PORT: 3003,
+        PORT: 49512,
         SOURCE: "besmarter student-consult",
         RECAPTCHA: "6LdTN4gUAAAAAPDhSJCyzDJ4xzgCiucKm7LndGWd"
       },
