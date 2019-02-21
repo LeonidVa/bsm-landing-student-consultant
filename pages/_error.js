@@ -1,15 +1,15 @@
 import React from 'react';
 import Router from 'next/router';
 import Link from 'next/link';
-import Wrapper from 'components/Wrapper';
-import PageWrapper from 'components/common/PageWrapper/index.js';
-import BlockNav from 'components/common/BlockNav';
-import NavRow from 'components/common/BlockNav/NavRow';
-import MessBlock from 'components/common/MessBlock/index.js';
-import OrderForm from 'components/common/forms/Big/Order';
-import FormWithTimer from 'components/common/forms/WithTimer';
-import Title from 'components/common/Title/index.js'
-import telega from 'utils/telega';
+import Wrapper from 'bsm-shared/components/Wrapper';
+import PageWrapper from 'bsm-shared/components/common/PageWrapper/index.js';
+import BlockNav from 'bsm-shared/components/common/BlockNav';
+import NavRow from 'bsm-shared/components/common/BlockNav/NavRow';
+import MessBlock from 'bsm-shared/components/common/MessBlock/index.js';
+import OrderForm from 'bsm-shared/components/common/forms/Big/Order';
+import FormWithTimer from 'bsm-shared/components/common/forms/WithTimer';
+import Title from 'bsm-shared/components/common/Title/index.js'
+import telega from 'bsm-shared/utils/telega';
 
 // Script errors occuring during initial client render can cause the server-rendered
 // content to be hidden by an error page. Track router events to determine if the
@@ -105,7 +105,7 @@ export default class Error extends React.Component {
 
           <MessBlock/>
 
-          <section className="block-form-timer" style={{backgroundImage: "url(" + require('static/images/block/h.jpg') + ")"}}>
+          <section className="block-form-timer" style={{backgroundImage: "url(" + require('bsm-shared/static/images/block/h.jpg') + ")"}}>
             <h2 className="block-form-timer__title">
               <span style={{fontSize: "5em", marginTop: "-3em"}}>{statusCode}</span><br/>
               Не работает сайт? Работает телефон!
