@@ -12,7 +12,7 @@ module.exports = {
         NODE_ENV: "production",
         PORT: 49512,
         SOURCE: "besmarter student-consult",
-        RECAPTCHA: "6LdTN4gUAAAAAPDhSJCyzDJ4xzgCiucKm7LndGWd"
+        RECAPTCHA: "6Lf-lpQUAAAAAEkLgw1iQWWKO46lkp9mQ4GtpFM2"
       },
     },
   ],
