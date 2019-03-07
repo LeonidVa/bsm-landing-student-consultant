@@ -357,6 +357,14 @@ class page extends Component {
                 Понедельник - пятница <span className="bold">с 09:00 до 19:30</span><br/>
                 Суббота - Воскресенье <span className="bold">с 10:00 до 18:30</span><br/>
               </p>
+              <p className="par">
+              <span className="bold">График работы в праздники:</span>
+              </p>
+              <ul class='schedule'>
+                  <li>08 марта 2019 наш офис не работает</li>
+                  <li>09 и 10 марта 2019 г. офис работает<br/>
+                  с 10-00 до 18-30</li>
+              </ul>
               <p className="par finish-text">
                 Приходите – мы ждём Вас!
               </p>
@@ -372,6 +380,13 @@ class page extends Component {
                 Понедельник - пятница <span className="bold">с 09:00 до 23:00</span><br/>
                 Суббота - воскресенье <span className="bold">с 09:00 до 22:00</span>
               </p>
+              <p className="par">
+              <span className="bold">В праздники:</span>
+              </p>
+              <ul class='schedule'>
+                  <li>08 марта 2019 менеджер на телефоне ответит
+                  на ваши вопросы с 10-00 до 18-00</li>
+              </ul>
               <p className="par finish-text">
                 Звоните – будем рады поговорить!
               </p>
