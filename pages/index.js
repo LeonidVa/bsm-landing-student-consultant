@@ -360,10 +360,10 @@ class page extends Component {
               <p className="par">
               <span className="bold">График работы в праздники:</span>
               </p>
-              <ul class='schedule'>
+              <ul className='schedule'>
                   <li>08 марта 2019 наш офис не работает</li>
-                  <li>09 и 10 марта 2019 г. офис работает<br/>
-                  с 10-00 до 18-30</li>
+                  <li>09 и 10 марта 2019 офис работает<br/>
+                  с 10:00 до 18:30</li>
               </ul>
               <p className="par finish-text">
                 Приходите – мы ждём Вас!
@@ -383,9 +383,9 @@ class page extends Component {
               <p className="par">
               <span className="bold">В праздники:</span>
               </p>
-              <ul class='schedule'>
+              <ul className='schedule'>
                   <li>08 марта 2019 менеджер на телефоне ответит
-                  на ваши вопросы с 10-00 до 18-00</li>
+                  на ваши вопросы с 10:00 до 18:00</li>
               </ul>
               <p className="par finish-text">
                 Звоните – будем рады поговорить!
