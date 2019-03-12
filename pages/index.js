@@ -271,7 +271,17 @@ class page extends Component {
             title="Заказать помощь"
             redForm={true}
             buttonLabel="Отправить"
-            fields={FormsData}
+            fields={[
+              {label: 'Имя', name: "name", type: 'text',  required: true},
+              {label: 'Телефон', name: "phone", type: 'text',  required: true},
+              {label: 'Почта', name: "email", type: 'email',  required: true},
+              {label: 'Тема', name: 'theme', type: 'text',  required: false},
+              {label: 'Предмет', name: 'discipline', type: 'text',  required: false},
+              {label: 'Срок сдачи', name: 'deadline', type: 'date', placeholder: '' , required: false},
+              {label: 'Объём', name: 'size', type: 'text',  required: false},
+              {label: 'Комментарии', name: 'comment', type: 'textarea',  required: false},
+              {label: 'Прикрепить Файл', name: 'file', type: 'file',  required: false}
+            ]}
           />
 
               <TextBlock>

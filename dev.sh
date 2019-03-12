@@ -1,12 +1,12 @@
 #!/bin/bash
 export NODE_ENV="development"
 set -e
-DIR="$( dirname $( realpath "${0}" ) )"
+DIR="$( dirname $( dirname "${0}" ) )"
 
 if [ ! -e "${DIR}/bsm-shared" ]; then
     if [ ! -d ${DIR}/../bsm-common ]; then
         cd ../
-        git clone git@gitlab.com:besmarter/bsm-common.git
+        git clone https://github.com/LeonidVa/bsm-common.git
         cd ${DIR}
     fi
 
@@ -14,7 +14,7 @@ if [ ! -e "${DIR}/bsm-shared" ]; then
 fi
 
 if [ ! -e "${DIR}/node_modules" ]; then
-    yarn install
+    npm install
 fi
 
-yarn run dev
+npm run dev
